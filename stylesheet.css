@@ -1,0 +1,348 @@
+/* 基礎 */
+html,
+body,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif, 'Yu Mincho', 'Cormorant';
+    margin: 0;
+    padding: 0;
+}
+
+/* test text */
+div p {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+/* 上部固定メニュー */
+.fixed_header {
+    display: none;
+    /*初期状態：非表示にする*/
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1100;
+    background: #fff;   
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu li {
+    color: #ac6f8e;
+    padding: 0 30px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu a {
+    color: #707070;
+    cursor: pointer;
+    line-height: 80px;
+    font-family: serif;
+}
+
+.menu a:hover {
+    color: #ead9b9;
+    border-bottom: 1px solid #ead9b9;
+}
+
+/* 左メニュー */
+/*メニュー部分*/
+#ham-menu {
+    background-color: #fff;
+    /*メニュー背景色*/
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px 40px;
+    /*メニュー内部上下左右余白*/
+    position: fixed;
+    right: -300px;
+    /*メニュー横幅①と合わせる*/
+    top: 0;
+    transition: transform 0.3s linear 0s;
+    /*0.3s は変化するのにかかる時間*/
+    width: 300px;
+    /*メニュー横幅①*/
+    z-index: 1000;
+}
+
+#ham-menu a {
+    color: #707070;
+    font-family: serif;
+}
+
+#ham-menu li {
+    margin: 30% 0;
+}
+
+
+#ham-menu a:hover {
+    color: #ead9b9;
+    border-bottom: 1px solid #ead9b9;
+}
+
+/*メニューアイコン部分は疑似要素で*/
+#ham-menu::before {
+    background-color: #fff;
+    /*ボタン部分背景色*/
+    border-radius: 0 0 0 10px;
+    /*左下角丸*/
+    color: #333;
+    /*アイコン（フォント）色*/
+    content: "≡";
+    /*メニューアイコン*/
+    display: block;
+    font-size: 50px;
+    /*アイコン（フォント）サイズ*/
+    height: 50px;
+    line-height: 50px;
+    /*縦位置中央化*/
+    position: absolute;
+    right: 100%;
+    text-align: center;
+    top: 0;
+    width: 50px;
+}
+
+/*透過背景部分*/
+#menu-background {
+    background-color: #333;
+    /*黒背景部分背景色*/
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.3s linear 0s;
+    /*0.3s は変化するのにかかる時間*/
+    width: 100%;
+    z-index: -1;
+}
+
+/*hover 時の処理*/
+#ham-menu:hover {
+    transform: translate(-300px);
+    /*メニュー横幅①と合わせる*/
+}
+
+#ham-menu:hover + #menu-background {
+    opacity: 0.5;
+    /*黒背景部分透過度*/
+    z-index: 999;
+}
+
+/* ヘッダー */
+.header-wrapper {
+    height: 100vh;
+    width: auto;
+    position: relative;
+    background-color: #fff;
+}
+
+.logo-mellow {
+    width: 10%;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    z-index: 2;
+}
+
+.header-img {
+    position: absolute;
+    top: 8%;
+    right: 0;
+    
+}
+
+.img-wrap1 {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+
+.img-wrap2 {
+    overflow: hidden;
+    position: absolute;
+    top: 61%;
+    left: 10%;
+}
+
+.img-wrap1 img {
+    width: 15%;
+    padding: 1% 0;
+}
+
+.img-wrap2 img {
+    width: 15%;
+    padding: 1% 0;
+}
+
+/* サイン アニメーション */
+.cls-1 {
+    fill: none;
+    stroke: #b27293;
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#svganimation {
+    width: 10%;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    z-index: 2;
+}
+
+
+/* コンセプト コンテンツ */
+#concept-contents {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 28% 0;
+    position: relative;
+}
+
+.concept-title, .concept-text {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.concept-title h2 {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: serif;
+    color: #707070;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 2;
+}
+
+.concept-title img {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 1;
+}
+
+.concept-title p {
+    display: inline-block;
+    color: #707070;
+    font-family: 'Yu Mincho';
+    margin: 0;
+}
+
+.concept-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.concept-text p {
+    font-size: 16px;
+    font-family: 'Yu Mincho';
+    color: #707070;
+    display: inline-block;
+    line-height: 3;
+    letter-spacing: 5px;
+}
+
+.concept-catch {
+    width: 30%;
+    padding: 5% 0;
+    margin: 0 auto;
+}
+
+.mellow-movie {
+    display: block;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.mellow-movie video {
+    display: inline-block;
+}
+
+.flower-img1 {
+    position: absolute;
+    width: 6%;
+    top: 40%;
+    left: 15%;
+}
+
+.flower-img2 {
+    position: absolute;
+    width: 4%;
+    top: 48%;
+    left: 28%;
+    transform: rotate(-45deg);
+}
+
+.flower-img3 {
+    position: absolute;
+    width: 3%;
+    top: 53%;
+    left: 20%;
+    transform: rotate(-90deg);
+}
+
+.flower-img4 {
+    position: absolute;
+    width: 5%;
+    top: 50%;
+    left: 65%;
+    transform: rotate(-200deg);
+}
+
+.flower-img5 {
+    position: absolute;
+    width: 4%;
+    top: 45%;
+    left: 75%;
+    transform: rotate(-120deg);
+}
+
+.flower-img6 {
+    position: absolute;
+    width: 3%;
+    top: 55%;
+    left: 80%;
+    transform: rotate(50deg);
+}
+
