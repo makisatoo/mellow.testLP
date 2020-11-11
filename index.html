@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mellow_testLP</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="media" href="media.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- 上部メニューバー -->
+        <nav class="fixed_header">
+            <ul id="fixed-menu" class="menu">
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="">How to</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- ヘッダーコンテンツ -->
+        <div class="header-wrapper">
+            <img class="logo-mellow left" src="img/mellow_logo-00.png" alt="mellow">
+            <img class="header-img right" src="img/woman.jpg" alt="mellow">
+            <div class="img-wrap1 left">
+                <img class="catchcopy-img1" src="img/catchcopy_img_side_1.png" alt="わたしがつくる">
+            </div>
+            <div class="img-wrap2 left">
+                <img class="catchcopy-img2" src="img/catchcopy_img_side_2.png" alt="なりたいわたし">
+            </div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div id="ham-menu">
+                <ul>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="">How to</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+            <div id="menu-background"></div>
+            <!-- サインSVG -->
+            <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
+                <path class="cls-1" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
+	c8.7-2.6-11.7,40.4-9.2,40.2c8.9-1.8,57.1-51.5,63.7-44.4c10.2,5.2-13.1,54.3-9.2,60.9c1.6,6.8,116.9-56.1,92.7-71.6
+	c-29.7-4.4-57.8,66.9-29.5,71.8c62.4,0.4,290.8-199.2,259-229.6C515.7-5.8,355.8,251.5,402,247.2c91.5-25.1,291.5-205,271.9-239.7
+	C660-12.2,499,259.4,543.1,248.4c22.9-5.9,68.7-41.2,68.7-41.2" />
+                <path class="cls-1" d="M634.6,180.1c-15.3,1.9-48.7,71.7-25.2,71.8c45.2-3.6,65.8-109.5,15.7-94c-25.8,13.1,20.4,72.7,63.6,59
+	C740,203.3,769.2,134,806.5,147c31,9.1-62.4,110.7-43.7,100.2c11.4-6.4,67.3-54,66.4-50.3c1.2,3.4-40.5,63.6-26.1,57.7
+	c5.6,1.4,65.2-40.7,66.9-42.2" />
+            </svg>
+        </div>
+    </header>
+
+    <div id="concept-contents">
+        <div class="concept-title">
+            <h2>Consept</h2>
+            <p>― コンセプト ―</p>
+            <img src="img/title_back.png">
+        </div>
+        <div class="concept-text">
+            <img src="img/catchcopy_concept.png" alt="" class="concept-catch bottom">
+            <p>「わたし」を形成している、<br>
+                これまで過ごしてきたすべての時間。<br>
+                <br>
+                たった今のこの瞬間だって、<br>
+                たったひとりの「わたし」をつくる要素の一片になる。<br>
+                <br>
+                もしそれが本当だとすれば、<br>
+                この先の毎日は「なりたいわたし」を<br>
+                つくる要素でいっぱいにしたい。<br>
+                <br>
+                思い描いた想像の先。<br>
+                どうせならその過程も彩って、<br>
+                とびきり贅沢な手間を「わたし」に。
+            </p>
+        </div>
+        <div class="mellow-movie">
+            <video src="img/production%20ID_4155524.mp4" controls autoplay muted width="500px" height="auto"></video>
+        </div>
+        <img class="flower-img1 delay1" src="img/flower-img.png">
+        <img class="flower-img2 delay2" src="img/flower-img.png">
+        <img class="flower-img3 delay3" src="img/flower-img.png">
+        <img class="flower-img4 delay4" src="img/flower-img.png">
+        <img class="flower-img5 delay5" src="img/flower-img.png">
+        <img class="flower-img6 delay6" src="img/flower-img.png">
+    </div>
+
+    <div id="sec03">
+        <p></p>
+    </div>
+</body>
+
+<script type="text/javascript">
+    //上部メニュー
+    $(function() {
+        //表示するスクロール量（px）
+        var scrollPoint = 500;
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > scrollPoint) {
+                $('.fixed_header').fadeIn();
+            } else {
+                $('.fixed_header').fadeOut();
+            }
+        });
+    });
+
+    //キャッチコピーアニメーション
+    new Vivus('svganimation', //2）で付与したID名を書く
+        {
+            type: 'oneByOne', //1パスずつ書く
+            start: 'inViewport', //ビューポート内に表示されたらスタート
+            duration: 200, //速さ
+            animTimingFunction: Vivus.EASE_OUT //イージング
+        });
+</script>
+
+<!-- ScrollReveal読み込み -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    // fade
+    ScrollReveal().reveal('.fade', {
+        duration: 3000,
+        opacity: 0.1
+    });
+
+    //左から
+    ScrollReveal().reveal('.left', {
+        duration: 1600,
+        origin: 'left',
+        distance: '50px',
+        reset: false
+    });
+
+    //右から
+    ScrollReveal().reveal('.right', {
+        duration: 1600,
+        origin: 'right',
+        distance: '50px',
+        reset: false
+    });
+
+    //下から
+    ScrollReveal().reveal('.bottom', {
+        duration: 1600,
+        origin: 'bottom',
+        distance: '50px',
+        reset: false
+    });
+
+    //上から
+    ScrollReveal().reveal('.top', {
+        duration: 1600,
+        origin: 'top',
+        distance: '50px',
+        reset: false
+    });
+
+
+    //花 遅れる　delay1
+    ScrollReveal().reveal('.delay1', {
+        delay: 500,
+        reset: false
+    });
+
+    //花 遅れる　delay2
+    ScrollReveal().reveal('.delay2', {
+        delay: 800,
+        reset: false
+    });
+
+    //花 遅れる　delay3
+    ScrollReveal().reveal('.delay3', {
+        delay: 1100,
+        reset: false
+    });
+
+    //花 遅れる　delay
+    ScrollReveal().reveal('.delay4', {
+        delay: 1400,
+        reset: false
+    });
+
+    //花 遅れる　delay3
+    ScrollReveal().reveal('.delay5', {
+        delay: 1700,
+        reset: false
+    });
+
+    //花 遅れる　delay3
+    ScrollReveal().reveal('.delay6', {
+        delay: 2000,
+        reset: false
+    });
+</script></html>
