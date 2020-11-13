@@ -165,7 +165,7 @@ header {
 }
 
 .logo-mellow {
-    width: 10%;
+    width: 130px;
     position: absolute;
     top: 3%;
     left: 3%;
@@ -173,10 +173,11 @@ header {
 }
 
 .header-img {
+    width:80vw;
+    height: 100vh;
     position: absolute;
-    top: 8%;
     right: 0;
-    
+    object-fit: cover;
 }
 
 .img-wrap1 {
@@ -190,18 +191,16 @@ header {
 .img-wrap2 {
     overflow: hidden;
     position: absolute;
-    top: 61%;
+    top: 60%;
     left: 10%;
 }
 
 .img-wrap1 img {
-    width: 15%;
-    padding: 1% 0;
+    width: 250px;
 }
 
 .img-wrap2 img {
-    width: 15%;
-    padding: 1% 0;
+    width: 250px;
 }
 
 /* サイン アニメーション */
@@ -214,7 +213,7 @@ header {
 }
 
 #svganimation {
-    width: 10%;
+    width: 180px;
     position: absolute;
     top: 65%;
     left: 20%;
