@@ -1,0 +1,9 @@
+@media screen and (max-width: 896px) {
+    .menu-bar {
+        display: none;
+    }
+    
+    #ham-menu {
+        display: block!important;
+    }
+}
