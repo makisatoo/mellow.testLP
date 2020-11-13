@@ -6,47 +6,68 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>mellow_testLP</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="media" href="media.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- アイコン -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- jquery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- サインアニメーション -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+    <!-- imgトリミングjs -->
+    <script src="object-fit-images-master/dist/ofi.min.js"></script>
+    <!-- ScrollReveal読み込み -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
+    <div class="scroll">Scroll</div>
     <header>
-        <!-- 上部メニューバー -->
+        <!-- 上部メニューバー 
         <nav class="fixed_header">
             <ul id="fixed-menu" class="menu">
                 <li><a href="#">Concept</a></li>
                 <li><a href="#">Product</a></li>
-                <li><a href="">How to</a></li>
+                <li><a href="">How TO</a></li>
                 <li><a href="#">Buy</a></li>
                 <li><a href="#">Shop</a></li>
             </ul>
         </nav>
-
+        -->
 
         <!-- ヘッダーコンテンツ -->
         <div class="header-wrapper">
-            <img class="logo-mellow left" src="img/mellow_logo-00.png" alt="mellow">
-            <img class="header-img right" src="img/woman.jpg" alt="mellow">
-            <div class="img-wrap1 left">
-                <img class="catchcopy-img1" src="img/catchcopy_img_side_1.png" alt="わたしがつくる">
+            <img class="logo-mellow top" src="img/mellow_logo-00.png" alt="mellow">
+            <img class="headerimg-left left object-fit-img" src="img/headerimg-left.jpg" alt="mellow">
+            <div class="right-contents">
+                <img class="headerimg-right right" src="img/headerimg-right.jpg" alt="">
+                <video class="header-movie" src="img/header-movie2.mp4" autoplay muted loop autoplay muted width="45%" height="auto"></video>
             </div>
-            <div class="img-wrap2 left">
-                <img class="catchcopy-img2" src="img/catchcopy_img_side_2.png" alt="なりたいわたし">
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="">How TO</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
             </div>
             <!-- ハンバーガーメニュー部分 -->
             <div id="ham-menu">
                 <ul>
                     <li><a href="#">Concept</a></li>
                     <li><a href="#">Product</a></li>
-                    <li><a href="">How to</a></li>
+                    <li><a href="">How TO</a></li>
                     <li><a href="#">Buy</a></li>
                     <li><a href="#">Shop</a></li>
                 </ul>
             </div>
             <div id="menu-background"></div>
+            <div class="img-wrap1 bottom">
+                <img class="catchcopy-img1" src="img/catchcopy_img_s1.png" alt="わたしがつくる">
+            </div>
+            <div class="img-wrap2 bottom">
+                <img class="catchcopy-img2" src="img/catchcopy_img_s2.png" alt="なりたいわたし">
+            </div>
             <!-- サインSVG -->
             <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
                 <path class="cls-1" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
@@ -60,6 +81,10 @@
         </div>
     </header>
 
+    <div class="catchcopy-pt2 fade">
+        <h3>I make Ideal srlf.</h3>
+    </div>
+
     <div id="concept-contents">
         <div class="concept-title">
             <h2>Consept</h2>
@@ -67,7 +92,7 @@
             <img src="img/title_back.png">
         </div>
         <div class="concept-text">
-            <img src="img/catchcopy_concept.png" alt="" class="concept-catch bottom">
+            <img src="img/catchcopy_concept_s.png" alt="concept" class="fade">
             <p>「わたし」を形成している、<br>
                 これまで過ごしてきたすべての時間。<br>
                 <br>
@@ -84,34 +109,42 @@
             </p>
         </div>
         <div class="mellow-movie">
-            <video src="img/mellow-img-movie.mp4" autoplay muted loop autoplay muted width="500px" height="auto"></video>
+            <video src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted width="500px" height="auto"></video>
         </div>
-        <img class="flower-img1 delay1" src="img/flower-img.png">
-        <img class="flower-img2 delay2" src="img/flower-img.png">
-        <img class="flower-img3 delay3" src="img/flower-img.png">
-        <img class="flower-img4 delay4" src="img/flower-img.png">
-        <img class="flower-img5 delay5" src="img/flower-img.png">
-        <img class="flower-img6 delay6" src="img/flower-img.png">
+        <img class="flower-img1 delay1" src="img/flower-img.png" alt="花">
+        <img class="flower-img2 delay2" src="img/flower-img.png" alt="花">
+        <img class="flower-img3 delay3" src="img/flower-img.png" alt="花">
+        <img class="flower-img4 delay4" src="img/flower-img.png" alt="花">
+        <img class="flower-img5 delay5" src="img/flower-img.png" alt="花">
+        <img class="flower-img6 delay6" src="img/flower-img.png" alt="花">
     </div>
 
-    <div id="sec03">
-        <p></p>
+    <div class="product-contents">
+        <div class="product-title">
+            <h2>Product</h2>
+            <p>― 商品 ―</p>
+            <img src="img/title_back.png" alt="concept">
+        </div>
+        <div class="product-body">
+            <img src="img/decolletecareoil_l1.png" alt="decollete care oil" class="oil-name">
+            <img src="img/product-img.jpg" alt="mellow" class="product-img">
+        </div>
     </div>
 </body>
 
 <script type="text/javascript">
     //上部メニュー
-    $(function() {
-        //表示するスクロール量（px）
-        var scrollPoint = 500;
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > scrollPoint) {
-                $('.fixed_header').fadeIn();
-            } else {
-                $('.fixed_header').fadeOut();
-            }
-        });
-    });
+    //$(function() {
+    //表示するスクロール量（px）
+    //var scrollPoint = 500;
+    //$(window).scroll(function() {
+    //if ($(this).scrollTop() > scrollPoint) {
+    //$('.fixed_header').fadeIn();
+    //} else {
+    //$('.fixed_header').fadeOut();
+    //}
+    //});
+    //});
 
     //キャッチコピーアニメーション
     new Vivus('svganimation', //2）で付与したID名を書く
@@ -121,23 +154,11 @@
             duration: 200, //速さ
             animTimingFunction: Vivus.EASE_OUT //イージング
         });
-    
-    //img自動調整
-    $(function() {
-        $('img').each(function() {
-            var pwidth=($(this).parent().innerWidth());
-            var phzoom=pwidth/$(this).innerWidth();
-            if (phzoom<1) {
-                $(this).width(pwidth);
-                $(this).height($(this).innerHeight()*phzoom);
-            }
-        });
-    });
-</script>
 
-<!-- ScrollReveal読み込み -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<script>
+    //imgトリミングjs
+    objectFitImages();
+
+    //ScrollRevealアニメーション
     // fade
     ScrollReveal().reveal('.fade', {
         duration: 3000,
@@ -195,19 +216,19 @@
         reset: false
     });
 
-    //花 遅れる　delay
+    //花 遅れる　delay4
     ScrollReveal().reveal('.delay4', {
         delay: 1400,
         reset: false
     });
 
-    //花 遅れる　delay3
+    //花 遅れる　delay5
     ScrollReveal().reveal('.delay5', {
         delay: 1700,
         reset: false
     });
 
-    //花 遅れる　delay3
+    //花 遅れる　delay6
     ScrollReveal().reveal('.delay6', {
         delay: 2000,
         reset: false
