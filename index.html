@@ -22,35 +22,27 @@
 <body>
     <div class="scroll">Scroll</div>
     <header>
-        <!-- 上部メニューバー 
-        <nav class="fixed_header">
-            <ul id="fixed-menu" class="menu">
-                <li><a href="#">Concept</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="">How TO</a></li>
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Shop</a></li>
-            </ul>
-        </nav>
-        -->
-
         <!-- ヘッダーコンテンツ -->
         <div class="header-wrapper">
-            <img class="logo-mellow top" src="img/mellow_logo-00.png" alt="mellow">
-            <img class="headerimg-left left object-fit-img" src="img/headerimg-left.jpg" alt="mellow">
-            <div class="right-contents">
-                <img class="headerimg-right right" src="img/headerimg-right.jpg" alt="">
-                <video class="header-movie" src="img/header-movie2.mp4" autoplay muted loop autoplay muted width="45%" height="auto"></video>
+            <img class="logo-mellow" src="img/mellow_logo-00.png" alt="mellow">
+            <div class="icons">
+                <a href="#"><i class="fas fa-shopping-cart fa-fw fa-3x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-fw fa-3x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-fw fa-3x"></i></a>
             </div>
-            <div class="menu-bar">
-                <ul>
+            <img class="headerimg-left left object-fit-img" src="img/headerimg-left.jpg" alt="mellow">
+            <dev class="header-right"></dev>
+            <img class="headerimg-right right" src="img/headerimg-right.jpg" alt="">
+            <video class="header-movie" src="img/header-movie2.mp4" autoplay muted loop autoplay muted></video>
+            <!-- 上部メニュー部分 -->
+            <nav id="menu-bar" class="g-nav">
+                <ul class="g-nav-menu">
                     <li><a href="#">Concept</a></li>
                     <li><a href="#">Product</a></li>
-                    <li><a href="">How TO</a></li>
+                    <li><a href="#">How TO</a></li>
                     <li><a href="#">Buy</a></li>
-                    <li><a href="#">Shop</a></li>
                 </ul>
-            </div>
+            </nav>
             <!-- ハンバーガーメニュー部分 -->
             <div id="ham-menu">
                 <ul>
@@ -58,16 +50,16 @@
                     <li><a href="#">Product</a></li>
                     <li><a href="">How TO</a></li>
                     <li><a href="#">Buy</a></li>
-                    <li><a href="#">Shop</a></li>
                 </ul>
+                <div class="ham-menu-icons">
+                    <a href="#"><i class="fas fa-shopping-cart fa-fw fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-fw fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-fw fa-lg"></i></a>
+                </div>
             </div>
             <div id="menu-background"></div>
-            <div class="img-wrap1 bottom">
-                <img class="catchcopy-img1" src="img/catchcopy_img_s1.png" alt="わたしがつくる">
-            </div>
-            <div class="img-wrap2 bottom">
-                <img class="catchcopy-img2" src="img/catchcopy_img_s2.png" alt="なりたいわたし">
-            </div>
+            <img class="cacthcopy-img-s1 bottom" src="img/catchcopy_img_s1.png" alt="わたしがつくる、なりたいわたし">
+            <img class="cacthcopy-img-s2 bottom" src="img/catchcopy_img_s2.png" alt="わたしがつくる、なりたいわたし">
             <!-- サインSVG -->
             <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
                 <path class="cls-1" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
@@ -81,18 +73,20 @@
         </div>
     </header>
 
+    <!--
     <div class="catchcopy-pt2 fade">
         <h3>I make Ideal srlf.</h3>
     </div>
-
-    <div id="concept-contents">
+    -->
+    <div class="concept-wrap">
         <div class="concept-title">
-            <h2>Consept</h2>
+            <h2 class="text-animation">Consept</h2>
             <p>― コンセプト ―</p>
-            <img src="img/title_back.png">
         </div>
-        <div class="concept-text">
-            <img src="img/catchcopy_concept_s.png" alt="concept" class="fade">
+        <img class="concept-cacth-s1" src="img/catchcopy_img_s1.png" alt="わたしがつくる、なりたいわたし">
+        <img class="concept-cacth-s2" src="img/catchcopy_img_s2.png" alt="わたしがつくる、なりたいわたし">
+        <div class="concept-text fade">
+            <img class="concept-cacth" src="img/catchcopy_concept_s.png" alt="わたしがつくる、なりたいわたし">
             <p>「わたし」を形成している、<br>
                 これまで過ごしてきたすべての時間。<br>
                 <br>
@@ -108,25 +102,31 @@
                 とびきり贅沢な手間を「わたし」に。
             </p>
         </div>
+        <img class="concept-img object-fit-img parallax1" src="img/concept-img.jpg" alt="mellow">
+        <img class="concept-img2 object-fit-img parallax2" src="img/concept-img2.jpg" alt="mellow">
         <div class="mellow-movie">
-            <video src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted width="500px" height="auto"></video>
+            <h2 class="movie-title bottom">Brand movie for mellow</h2>
+            <video class="object-fit-img" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
+            <div class="movie-box"></div>
         </div>
+        <!--
         <img class="flower-img1 delay1" src="img/flower-img.png" alt="花">
         <img class="flower-img2 delay2" src="img/flower-img.png" alt="花">
         <img class="flower-img3 delay3" src="img/flower-img.png" alt="花">
         <img class="flower-img4 delay4" src="img/flower-img.png" alt="花">
         <img class="flower-img5 delay5" src="img/flower-img.png" alt="花">
         <img class="flower-img6 delay6" src="img/flower-img.png" alt="花">
+        -->
     </div>
 
-    <div class="product-contents">
+
+    <div class="product-wrap">
         <div class="product-title">
-            <h2>Product</h2>
+            <h2 class="text-animation">Product</h2>
             <p>― 商品 ―</p>
-            <img src="img/title_back.png" alt="concept">
         </div>
+        <img src="img/decolletecareoil_l1.png" alt="decollete care oil" class="oil-name">
         <div class="product-body">
-            <img src="img/decolletecareoil_l1.png" alt="decollete care oil" class="oil-name">
             <img src="img/product-img.jpg" alt="mellow" class="product-img">
         </div>
     </div>
@@ -134,17 +134,29 @@
 
 <script type="text/javascript">
     //上部メニュー
-    //$(function() {
-    //表示するスクロール量（px）
-    //var scrollPoint = 500;
-    //$(window).scroll(function() {
-    //if ($(this).scrollTop() > scrollPoint) {
-    //$('.fixed_header').fadeIn();
-    //} else {
-    //$('.fixed_header').fadeOut();
-    //}
-    //});
-    //});
+    $(function() {
+        var headNav = $('#menu-bar');
+        //scrollだけだと読み込み時困るのでloadも追加
+        $(window).on('load scroll', function() {
+            //現在の位置が500px以上かつ、クラスfixedが付与されていない時
+            if ($(this).scrollTop() > 800 && headNav.hasClass('fixed') == false) {
+                //headerの高さ分上に設定
+                headNav.css({
+                    "top": '-100px'
+                });
+                //クラスfixedを付与
+                headNav.addClass('fixed');
+                //位置を0に設定し、アニメーションのスピードを指定
+                headNav.animate({
+                    "top": 0
+                }, 600);
+            }
+            //現在の位置が300px以下かつ、クラスfixedが付与されている時にfixedを外す
+            else if ($(this).scrollTop() < 800 && headNav.hasClass('fixed') == true) {
+                headNav.removeClass('fixed');
+            }
+        });
+    });
 
     //キャッチコピーアニメーション
     new Vivus('svganimation', //2）で付与したID名を書く
@@ -232,5 +244,14 @@
     ScrollReveal().reveal('.delay6', {
         delay: 2000,
         reset: false
+    });
+
+    //パララックス
+    jQuery(window).bind('scroll', function() {
+        scrolled = jQuery(window).scrollTop();
+        weight1 = 0.3;
+        weight2 = 0.3;
+        jQuery('.parallax1').css('top', 800 - scrolled * weight1 + 'px');
+        jQuery('.parallax2').css('top', 1500 - scrolled * weight2 + 'px');
     });
 </script></html>

@@ -1,9 +1,13 @@
 /* 基礎 */
-html,
-body,
-img {
+html,body,img,h1,h2,h3,p,video,a,ul,li,div,nav {
     margin: 0;
     padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
 }
 
 a {
@@ -12,14 +16,10 @@ a {
 
 li,ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif, 'Yu Mincho', 'Cormorant';
-    margin: 0;
-    padding: 0;
+    font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif, 'Yu Mincho', 'Cormorant';
 }
 
 /* スクロール */
@@ -40,7 +40,7 @@ body {
     text-decoration: none;
     writing-mode: vertical-lr;
     z-index: 999;
-    color: #707070;
+    color: #595754;
     font-family: serif;
     text-orientation: upright;
 }
@@ -51,7 +51,7 @@ body {
     left: 50%;
     width: 1px;
     height: 100px;
-    background: #ead9b9;
+    background: #c2b8a7;
 }
 
 .scroll::after {
@@ -78,41 +78,47 @@ body {
     }
 }
 
-/* 上部固定メニュー 
-.fixed_header {
-    display: none;
-   初期状態：非表示にする
-    width: 100vw;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1100;
-    background: #fff;   
+/* 上部固定メニュー */
+header {
+    position: relative;
+    width: 100%;
 }
 
-.menu {
+.g-nav{
+    position: absolute;
+    width: 100%;
+    z-index: 1100;
+}
+
+.g-nav a {
+    color: #595754;
+    font-family: serif;
+    font-size: 2rem;
+}
+
+.g-nav a:hover {
+    color: #ac6f8e;
+}
+
+.g-nav-menu{
     text-align: center;
 }
-
-.menu li {
-    color: #ac6f8e;
+.g-nav-menu li{
     padding: 0 30px;
     list-style-type: none;
     display: inline-block;
-}
-
-.menu a {
-    color: #707070;
-    cursor: pointer;
     line-height: 80px;
-    font-family: serif;
 }
-
-.menu a:hover {
-    color: #ead9b9;
-    border-bottom: 1px solid #ead9b9;
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.8);
+    z-index: 2000;
 }
-*/
+.fixed .g-nav-menu li{
+    line-height: 60px;
+}
 
 /* 左メニュー */
 /*メニュー部分*/
@@ -136,8 +142,9 @@ body {
 }
 
 #ham-menu a {
-    color: #707070;
+    color: #595754;
     font-family: serif;
+    font-size: 2rem;
 }
 
 #ham-menu li {
@@ -194,10 +201,14 @@ body {
     /*メニュー横幅①と合わせる*/
 }
 
-#ham-menu:hover + #menu-background {
+#ham-menu:hover + #menu-background{
     opacity: 0.5;
     /*黒背景部分透過度*/
     z-index: 999;
+}
+
+.ham-menu-icons a {
+    padding: 0 5%;
 }
 
 /* ヘッダー */
@@ -209,11 +220,28 @@ body {
 }
 
 .logo-mellow {
-    width: 10%;
     position: absolute;
-    top: 3%;
+    top: 2%;
     left: 3%;
     z-index: 3;
+}
+
+.icons {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    z-index: 1200;
+    width: 200px;
+    text-align: center;
+}
+
+.icons a {
+    color: #595754;
+    padding: 0 5%;
+}
+
+.icons a:hover {
+    color: #c2b8a7;
 }
 
 .headerimg-left {
@@ -222,7 +250,6 @@ body {
     position: absolute;
     left: 0;
     object-fit: cover;
-    object-position: 100%;
     z-index: 2
 }
 
@@ -239,10 +266,11 @@ body {
 }
 
 .header-movie {
+    width: 45vw;
     display: inline-block;
     position: absolute;
     top: 18%;
-    z-index: 10;
+    z-index: 2;
     right: 10%;
 }
 
@@ -252,53 +280,18 @@ body {
     font-family: 'object-fit: cover; object-position: bottom;'
 }
 
-.menu-bar{
-    position: fixed;
-    top: 50%;
-    left: 3%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
+.cacthcopy-img-s1 {
+    position: absolute;
+    top: 78%;
+    right: 25%;
     z-index: 3;
 }
 
-.menu-bar a{
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    font-family: serif;
-    color: #707070;
-    z-index: 999;
-    text-orientation: upright;
-}
-
-.menu-bar a:hover {
-    color: #ac6f8e;
-    cursor: pointer;
-}
-
-.menu-bar li {
-    padding: 80% 0;
-}
-
-.img-wrap1 {
-    display: inline-block;
-    overflow: hidden;
+.cacthcopy-img-s2 {
     position: absolute;
-    bottom: 23%;
-    right: 20%;
-    z-index: 20;
-}
-
-.img-wrap2 {
-    overflow: hidden;
-    position: absolute;
-    bottom: 18%;
-    right: 18%;
-    z-index: 20;
-}
-
-.img-wrap1 img,.img-wrap2 img {
-    width: 15vw;
+    top: 85%;
+    right: 15%;
+    z-index: 3;
 }
 
 /* サイン アニメーション */
@@ -313,8 +306,8 @@ body {
 #svganimation {
     width: 10%;
     position: absolute;
-    bottom: 13%;
-    right: 10%;
+    top: 90%;
+    right: 8%;
     z-index: 4;
 }
 
@@ -323,7 +316,7 @@ body {
     overflow: hidden;
 }
 
-/* キャッチコピー　背景 */
+/* キャッチコピー　背景 
 .catchcopy-pt2 h3{
     font-family: serif;
     font-weight: normal;
@@ -332,118 +325,162 @@ body {
     opacity: 0.1;
     letter-spacing: 5px;
 }
-
+*/
 
 /* コンセプト コンテンツ */
-#concept-contents {
+.concept-wrap {
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    height: 2400px;
     position: relative;
+    margin: 10% 0;
 }
 
 .concept-title {
-    height: 250px;
-}
-
-.concept-title, .concept-text {
-    width: 100%;
-    text-align: center;
-    display: block;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .concept-title h2 {
-    font-size: 40px;
+    font-size: 4.5rem;
     font-weight: normal;
     font-family: serif;
-    color: #707070;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    z-index: 2;
-}
-
-.concept-title img {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    z-index: 1;
-}
-
-.concept-title p {
-    position: absolute;
-    top: 13%;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    display: inline-block;
-    color: #707070;
-    font-family: 'Yu Mincho';
-    margin: 0;
-    z-index: 2;
-}
-
-.concept-text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-}
-
-
-.concept-text p {
-    font-size: 16px;
-    font-family: 'Yu Mincho';
-    color: #707070;
-    display: inline-block;
-    line-height: 3;
-    letter-spacing: 5px;
-    margin-top: 80px;
-}
-
-.concept-text img{
-    width: auto;
-    overflow: hidden;
+    color: #595754;
     margin: 0 auto;
 }
 
+.concept-title p {
+    font-size: 1.6rem;
+    color: #595754;
+    font-family: 'Yu Mincho';
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.concept-img, parallax1 {
+    width: 50vw;
+    height: 80vh;
+    object-fit: cover; 
+    object-position: 100% 0;
+    position: absolute;
+    left: 0;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.concept-img2, parallax2 {
+    width: 25vw;
+    height: 40vh;
+    object-fit: cover; 
+    object-position: 0 140%;
+    position: absolute;
+    right: 0;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.concept-cacth-s1 {
+    display: none;
+}
+
+.concept-cacth-s2 {
+    display: none;
+}
+
+.concept-text {
+    position: absolute;
+    top: 600px;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.concept-text p {
+    font-size: 1.6rem;
+    font-family: 'Yu Mincho';
+    color: #595754;
+    line-height: 2.5;
+    letter-spacing: 5px;
+    padding-top: 13%;
+}
+
+
 .mellow-movie {
-    display: block;
-    text-align: center;
-    margin: 5% 0;
+    width: 100%;
+    position: relative;
+    top:1500px;
+}
+
+.movie-title {
+    font-size: 6rem;
+    font-family: serif;
+    font-weight: normal;
+    color: #c2b8a7;
+    position: absolute;
+    left: 15%;
 }
 
 .mellow-movie video {
-    display: inline-block;
+    width: 60vw;
+    height: 60vh;
+    object-fit: cover;
+    object-position: 100% 0;
+    position: absolute;
+    top:200px;
+    left: 15%;
+    z-index: 2;
 }
 
+.movie-box {
+    width: 60vw;
+    height: 60vh;
+    background-color: #c2b8a7;
+    position: absolute;
+    top: 300px;
+    right: 15%;
+}
+
+
+/*
 .flower-img1 {
     position: absolute;
     width: 6%;
-    top: 40%;
-    left: 15%;
+    top: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 999;
 }
 
 .flower-img2 {
     position: absolute;
     width: 4%;
-    top: 48%;
-    left: 28%;
+    top: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 999;
     transform: rotate(-45deg);
 }
 
 .flower-img3 {
     position: absolute;
     width: 3%;
-    top: 53%;
-    left: 20%;
+    top: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 999;
     transform: rotate(-90deg);
 }
 
@@ -470,76 +507,54 @@ body {
     left: 80%;
     transform: rotate(50deg);
 }
+*/
 
 /* 商品コンテンツ */
-.product-contents{
+.product-wrap{
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    height: 1500px;
+    margin: 10% 0;
     position: relative;
 }
 
 .product-title {
-    width: 100%;
-    height: 250px;
-    text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    left: 15%;
 }
 
 .product-title h2 {
-    font-size: 40px;
+    font-size: 4.5rem;
     font-weight: normal;
     font-family: serif;
-    color: #707070;
-    position: absolute;
-    top: 5%;
-    left: 20%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+    color: #595754;
     z-index: 2;
-}
-
-.product-title img {
-    position: absolute;
-    top: 5%;
-    left: 20%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    z-index: 1;
 }
 
 .product-title p {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    display: inline-block;
-    color: #707070;
+    font-size: 1.6rem;
+    color: #595754;
     font-family: 'Yu Mincho';
-    margin: 0;
     z-index: 2;
-}
-
-.product-body {
-    
 }
 
 .oil-name {
     width: 30vw;
     position: absolute;
-    right: 10%;
-    top: 150%;
+    top:400px;
+    left: 8%;
     z-index: 2;
-    opacity: 0.7
+}
+
+.product-body {
+    position: absolute;
+    top: 300px;
+    left: 15%;
 }
 
 .product-img {
-    position: absolute;
-    left: 15%;
     width: 60vw;
     z-index: 1;
 }

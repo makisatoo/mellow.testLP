@@ -1,9 +1,39 @@
+@media screen and (max-width: 1024px) {
+    .header-movie {
+        top: 25%;
+    }
+    
+}
+
 @media screen and (max-width: 896px) {
-    .menu-bar {
+    .g-nav, .icons{
         display: none;
     }
     
     #ham-menu {
         display: block!important;
     }
+    
+    .headerimg-left {
+        height: 50vh;
+        width: 50vw;
+        bottom: 0;
+    }
+    
+    .header-movie {
+        height: 50vh;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        object-fit: cover;
+        object-position: 0 100%;
+    }
+    
+    .cacthcopy-img-s1 {
+       wid 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
 }
