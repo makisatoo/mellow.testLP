@@ -22,6 +22,62 @@ body {
     font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif, 'Yu Mincho', 'Cormorant';
 }
 
+/* アニメーション */
+.fade-in {
+    opacity : 0;
+    transform : translate(0, 0);
+    transition : all 1s;
+}
+
+.fade-in.active{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.fade-top {
+    opacity : 0;
+    transform : translate(100px, 0);
+    transition : all 1s;
+}
+
+.fade-top.active{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.fade-bottom {
+    opacity : 0;
+    transform : translate(0, 100px);
+    transition : all 1s;
+}
+
+.fade-bottom.active{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.fade-left {
+    opacity : 0;
+    transform : translateX(-100px);
+    transition : all 1s;
+}
+
+.fade-left.active{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.fade-right {
+    opacity : 0;
+    transform : translateX(100px);
+    transition : all 1s;
+}
+
+.fade-right.active{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
 /* スクロール */
 .scroll {
     display: inline-block;
@@ -85,6 +141,7 @@ header {
 }
 
 .g-nav{
+    display: inline-block;
     position: absolute;
     width: 100%;
     z-index: 1100;
@@ -104,6 +161,7 @@ header {
     text-align: center;
 }
 .g-nav-menu li{
+    width: 130px;
     padding: 0 30px;
     list-style-type: none;
     display: inline-block;
@@ -119,6 +177,52 @@ header {
 .fixed .g-nav-menu li{
     line-height: 60px;
 }
+
+.btn {
+    display: table-cell;
+    width: inherit;
+    margin-right: 5px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.btn span {
+    font-family: 'Yu mincho';
+    font-size: 1.3rem;
+    position: relative;
+    top: -50px;
+}
+
+.btn:hover {
+    color: #ac6f8e;
+}
+
+.btn-action {
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.btn-action:hover, .btn-action:active {
+    letter-spacing: 5px;
+}
+
+.btn-action:after, .btn-action:before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: #ac6f8e;
+    content: "";
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.btn-action:hover:after, .btn-action:hover:before {
+    width: 100%;
+}
+
 
 /* 左メニュー */
 /*メニュー部分*/
@@ -316,17 +420,6 @@ header {
     overflow: hidden;
 }
 
-/* キャッチコピー　背景 
-.catchcopy-pt2 h3{
-    font-family: serif;
-    font-weight: normal;
-    font-size: 70px;
-    color: #ac6f8e;
-    opacity: 0.1;
-    letter-spacing: 5px;
-}
-*/
-
 /* コンセプト コンテンツ */
 .concept-wrap {
     width: 100%;
@@ -356,11 +449,21 @@ header {
 }
 
 .concept-title p {
+    height: 150px;
     font-size: 1.6rem;
     color: #595754;
+    letter-spacing: 3px;
     font-family: 'Yu Mincho';
     z-index: 2;
     margin: 0 auto;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
 }
 
 .concept-img, parallax1 {
@@ -447,68 +550,6 @@ header {
     right: 15%;
 }
 
-
-/*
-.flower-img1 {
-    position: absolute;
-    width: 6%;
-    top: 1200px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    z-index: 999;
-}
-
-.flower-img2 {
-    position: absolute;
-    width: 4%;
-    top: 1300px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    z-index: 999;
-    transform: rotate(-45deg);
-}
-
-.flower-img3 {
-    position: absolute;
-    width: 3%;
-    top: 1400px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    z-index: 999;
-    transform: rotate(-90deg);
-}
-
-.flower-img4 {
-    position: absolute;
-    width: 5%;
-    top: 50%;
-    left: 65%;
-    transform: rotate(-200deg);
-}
-
-.flower-img5 {
-    position: absolute;
-    width: 4%;
-    top: 45%;
-    left: 75%;
-    transform: rotate(-120deg);
-}
-
-.flower-img6 {
-    position: absolute;
-    width: 3%;
-    top: 55%;
-    left: 80%;
-    transform: rotate(50deg);
-}
-*/
-
 /* 商品コンテンツ */
 .product-wrap{
     width: 100%;
@@ -534,10 +575,15 @@ header {
 }
 
 .product-title p {
+    height: 150px;
     font-size: 1.6rem;
     color: #595754;
+    letter-spacing: 3px;
     font-family: 'Yu Mincho';
     z-index: 2;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 80px;
 }
 
 .oil-name {

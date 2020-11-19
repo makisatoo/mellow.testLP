@@ -15,8 +15,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
     <!-- imgトリミングjs -->
     <script src="object-fit-images-master/dist/ofi.min.js"></script>
-    <!-- ScrollReveal読み込み -->
-    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -30,17 +28,17 @@
                 <a href="#"><i class="fab fa-instagram fa-fw fa-3x"></i></a>
                 <a href="#"><i class="fab fa-twitter fa-fw fa-3x"></i></a>
             </div>
-            <img class="headerimg-left left object-fit-img" src="img/headerimg-left.jpg" alt="mellow">
+            <img class="headerimg-left object-fit-img" src="img/headerimg-left.jpg" alt="mellow">
             <dev class="header-right"></dev>
-            <img class="headerimg-right right" src="img/headerimg-right.jpg" alt="">
+            <img class="headerimg-right" src="img/headerimg-right.jpg" alt="">
             <video class="header-movie" src="img/header-movie2.mp4" autoplay muted loop autoplay muted></video>
             <!-- 上部メニュー部分 -->
             <nav id="menu-bar" class="g-nav">
                 <ul class="g-nav-menu">
-                    <li><a href="#">Concept</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">How TO</a></li>
-                    <li><a href="#">Buy</a></li>
+                    <li><a class="btn btn-action" href="#">Concept</a></li>
+                    <li><a class="btn btn-action" href="#">Product</a></li>
+                    <li><a class="btn btn-action" href="#">How TO</a></li>
+                    <li><a class="btn btn-action" href="#">Buy</a></li>
                 </ul>
             </nav>
             <!-- ハンバーガーメニュー部分 -->
@@ -58,8 +56,8 @@
                 </div>
             </div>
             <div id="menu-background"></div>
-            <img class="cacthcopy-img-s1 bottom" src="img/catchcopy_img_s1.png" alt="わたしがつくる、なりたいわたし">
-            <img class="cacthcopy-img-s2 bottom" src="img/catchcopy_img_s2.png" alt="わたしがつくる、なりたいわたし">
+            <img class="cacthcopy-img-s1 fade" src="img/catchcopy_img_s1.png" alt="わたしがつくる、なりたいわたし">
+            <img class="cacthcopy-img-s2 fade" src="img/catchcopy_img_s2.png" alt="わたしがつくる、なりたいわたし">
             <!-- サインSVG -->
             <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
                 <path class="cls-1" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
@@ -72,12 +70,6 @@
             </svg>
         </div>
     </header>
-
-    <!--
-    <div class="catchcopy-pt2 fade">
-        <h3>I make Ideal srlf.</h3>
-    </div>
-    -->
     <div class="concept-wrap">
         <div class="concept-title">
             <h2 class="text-animation">Consept</h2>
@@ -85,7 +77,7 @@
         </div>
         <img class="concept-cacth-s1" src="img/catchcopy_img_s1.png" alt="わたしがつくる、なりたいわたし">
         <img class="concept-cacth-s2" src="img/catchcopy_img_s2.png" alt="わたしがつくる、なりたいわたし">
-        <div class="concept-text fade">
+        <div class="concept-text fade-in">
             <img class="concept-cacth" src="img/catchcopy_concept_s.png" alt="わたしがつくる、なりたいわたし">
             <p>「わたし」を形成している、<br>
                 これまで過ごしてきたすべての時間。<br>
@@ -106,17 +98,9 @@
         <img class="concept-img2 object-fit-img parallax2" src="img/concept-img2.jpg" alt="mellow">
         <div class="mellow-movie">
             <h2 class="movie-title bottom">Brand movie for mellow</h2>
-            <video class="object-fit-img" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
-            <div class="movie-box"></div>
+            <video class="object-fit-img fade-left" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
+            <div class="movie-box fade-right"></div>
         </div>
-        <!--
-        <img class="flower-img1 delay1" src="img/flower-img.png" alt="花">
-        <img class="flower-img2 delay2" src="img/flower-img.png" alt="花">
-        <img class="flower-img3 delay3" src="img/flower-img.png" alt="花">
-        <img class="flower-img4 delay4" src="img/flower-img.png" alt="花">
-        <img class="flower-img5 delay5" src="img/flower-img.png" alt="花">
-        <img class="flower-img6 delay6" src="img/flower-img.png" alt="花">
-        -->
     </div>
 
 
@@ -170,82 +154,6 @@
     //imgトリミングjs
     objectFitImages();
 
-    //ScrollRevealアニメーション
-    // fade
-    ScrollReveal().reveal('.fade', {
-        duration: 3000,
-        opacity: 0.1
-    });
-
-    //左から
-    ScrollReveal().reveal('.left', {
-        duration: 1600,
-        origin: 'left',
-        distance: '50px',
-        reset: false
-    });
-
-    //右から
-    ScrollReveal().reveal('.right', {
-        duration: 1600,
-        origin: 'right',
-        distance: '50px',
-        reset: false
-    });
-
-    //下から
-    ScrollReveal().reveal('.bottom', {
-        duration: 1600,
-        origin: 'bottom',
-        distance: '50px',
-        reset: false
-    });
-
-    //上から
-    ScrollReveal().reveal('.top', {
-        duration: 1600,
-        origin: 'top',
-        distance: '50px',
-        reset: false
-    });
-
-
-    //花 遅れる　delay1
-    ScrollReveal().reveal('.delay1', {
-        delay: 500,
-        reset: false
-    });
-
-    //花 遅れる　delay2
-    ScrollReveal().reveal('.delay2', {
-        delay: 800,
-        reset: false
-    });
-
-    //花 遅れる　delay3
-    ScrollReveal().reveal('.delay3', {
-        delay: 1100,
-        reset: false
-    });
-
-    //花 遅れる　delay4
-    ScrollReveal().reveal('.delay4', {
-        delay: 1400,
-        reset: false
-    });
-
-    //花 遅れる　delay5
-    ScrollReveal().reveal('.delay5', {
-        delay: 1700,
-        reset: false
-    });
-
-    //花 遅れる　delay6
-    ScrollReveal().reveal('.delay6', {
-        delay: 2000,
-        reset: false
-    });
-
     //パララックス
     jQuery(window).bind('scroll', function() {
         scrolled = jQuery(window).scrollTop();
@@ -253,5 +161,53 @@
         weight2 = 0.3;
         jQuery('.parallax1').css('top', 800 - scrolled * weight1 + 'px');
         jQuery('.parallax2').css('top', 1500 - scrolled * weight2 + 'px');
+    });
+
+    //アニメーション
+    $(function() {
+        $('.fade').hide().fadeIn(1500);
+        
+        $(window).scroll(function() {
+            $('.fade-in').each(function() {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight + 200) {
+                    $(this).addClass('active');
+                }
+            });
+            $('.fade-top').each(function() {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight + 200) {
+                    $(this).addClass('active');
+                }
+            });
+            $('.fade-bottom').each(function() {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight + 200) {
+                    $(this).addClass('active');
+                }
+            });
+            $('.fade-left').each(function() {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight + 200) {
+                    $(this).addClass('active');
+                }
+            });
+            $('.fade-right').each(function() {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight + 200) {
+                    $(this).addClass('active');
+                }
+            });
+        });
     });
 </script></html>
