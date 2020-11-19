@@ -26,6 +26,10 @@ body {
     font-family: 'Noto Serif JP', serif;
 }
 
+.webfonts {
+    font-family: 'Yu Mincho';
+}
+
 /* アニメーション */
 .fade-in {
     opacity : 0;
@@ -208,7 +212,6 @@ header {
 
 .g-nav a {
     color: #595754;
-    font-family: serif;
     font-size: 2rem;
 }
 
@@ -388,7 +391,6 @@ header {
 
 .drawer-item{
     width: 20%;
-    font-family: serif;
     color: #595754;
     font-size: 4rem; 
     text-align: center;
@@ -476,7 +478,6 @@ header {
 }
 
 .top-catchcopy1 {
-    font-family: 'Yu Mincho';
     font-size: 4.5rem;
     color: #595754;
     font-weight: normal;
@@ -487,7 +488,6 @@ header {
 }
 
 .top-catchcopy2 {
-    font-family: serif;
     font-size: 2rem;
     font-weight: normal;
     color: #595754;
@@ -542,7 +542,6 @@ header {
 .concept-title h2 {
     font-size: 4.5rem;
     font-weight: normal;
-    font-family: serif;
     color: #595754;
     margin: 0 auto;
 }
@@ -552,7 +551,6 @@ header {
     font-size: 1.6rem;
     color: #595754;
     letter-spacing: 3px;
-    font-family: 'Yu Mincho';
     z-index: 2;
     writing-mode: vertical-rl;
     position: absolute;
@@ -595,7 +593,6 @@ header {
 }
 
 .concept-catchcopy1 {
-    font-family: 'Yu Mincho';
     font-size: 4rem;
     color: #595754;
     font-weight: normal;
@@ -603,7 +600,6 @@ header {
 }
 
 .concept-catchcopy2 {
-    font-family: serif;
     font-size: 2rem;
     font-weight: normal;
     color: #595754;
@@ -612,7 +608,6 @@ header {
 
 .concept-text p {
     font-size: 1.6rem;
-    font-family: 'Yu Mincho';
     color: #595754;
     line-height: 2.5;
     letter-spacing: 5px;
@@ -628,7 +623,6 @@ header {
 
 .movie-title {
     font-size: 6rem;
-    font-family: serif;
     font-weight: normal;
     color: #e3e0da;
     position: absolute;
@@ -722,7 +716,6 @@ header {
 }
 
 .set-text  h1{
-    font-family: serif;
     font-size: 4rem;
     font-weight: normal;
     color: #595754;
@@ -730,14 +723,12 @@ header {
 }
 
 .set-text h3 {
-    font-family: 'Yu Mincho';
     font-size: 2rem;
     font-weight: normal;
     color: #595754;
 }
 
 .set-text p {
-    font-family: 'Yu Mincho';
     font-size: 1.6rem;
     font-weight: normal;
     color: #595754;
