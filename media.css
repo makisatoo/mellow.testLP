@@ -17,9 +17,6 @@
         z-index: 9999;
     }
     
-    .webfonts {
-        font-family: "Noto sans JP", sans-serif !important;
-    }
 }
 
 @media screen and (max-width: 896px) {
