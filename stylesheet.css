@@ -77,6 +77,62 @@ body {
     opacity : 1;
     transform : translate(0, 0);
 }
+/* ローディング */
+#logo_loader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3000;
+    background-color: #fff;
+}
+#logo_loader .f_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+#logo_loader .f_logo img {
+    width: 200px;
+    height: auto;
+}
+
+#logo_loader .f_logo:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 110%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    animation: loadLogo 1.5s;
+}
+
+@keyframes loadLogo {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+#logo_loader .f_logo:before {
+    animation: loadLogo 1.5s;
+}
 
 /* スクロール */
 .scroll {
@@ -107,7 +163,7 @@ body {
     left: 50%;
     width: 1px;
     height: 100px;
-    background: #c2b8a7;
+    background: #ac6f8e;
 }
 
 .scroll::after {
@@ -144,7 +200,7 @@ header {
     display: inline-block;
     position: absolute;
     width: 100%;
-    z-index: 1100;
+    z-index: 100;
 }
 
 .g-nav a {
@@ -172,7 +228,7 @@ header {
     top: 0;
     left: 0;
     background: rgba(255,255,255,0.8);
-    z-index: 2000;
+    z-index: 1000;
 }
 .fixed .g-nav-menu li{
     line-height: 60px;
@@ -184,13 +240,6 @@ header {
     margin-right: 5px;
     box-sizing: border-box;
     vertical-align: middle;
-}
-
-.btn span {
-    font-family: 'Yu mincho';
-    font-size: 1.3rem;
-    position: relative;
-    top: -50px;
 }
 
 .btn:hover {
@@ -223,96 +272,153 @@ header {
     width: 100%;
 }
 
-
-/* 左メニュー */
-/*メニュー部分*/
-#ham-menu {
-    background-color: #fff;
-    /*メニュー背景色*/
-    box-sizing: border-box;
-    height: 100%;
-    padding: 10px 40px;
-    /*メニュー内部上下左右余白*/
-    position: fixed;
-    right: -300px;
-    /*メニュー横幅①と合わせる*/
-    top: 0;
-    transition: transform 0.3s linear 0s;
-    /*0.3s は変化するのにかかる時間*/
-    width: 300px;
-    /*メニュー横幅①*/
-    z-index: 1000;
-    display: none;
+.icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    right: 3%;
+    z-index: 100;
+    width: 200px;
+    text-align: center;
+    line-height: 80px;
 }
 
-#ham-menu a {
+.icons a {
     color: #595754;
-    font-family: serif;
-    font-size: 2rem;
+    padding: 0 5%;
 }
 
-#ham-menu li {
-    margin: 30% 0;
-}
-
-
-#ham-menu a:hover {
+.icons a:hover {
     color: #ac6f8e;
 }
 
-/*メニューアイコン部分は疑似要素で*/
-#ham-menu::before {
-    background-color: #fff;
-    /*ボタン部分背景色*/
-    border-radius: 0 0 0 10px;
-    /*左下角丸*/
-    color: #333;
-    /*アイコン（フォント）色*/
-    content: "≡";
-    /*メニューアイコン*/
-    display: block;
-    font-size: 50px;
-    /*アイコン（フォント）サイズ*/
-    height: 50px;
-    line-height: 50px;
-    /*縦位置中央化*/
-    position: absolute;
-    right: 100%;
-    text-align: center;
-    top: 0;
-    width: 50px;
-}
-
-/*透過背景部分*/
-#menu-background {
-    background-color: #333;
-    /*黒背景部分背景色*/
-    display: block;
-    height: 100%;
-    opacity: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transition: all 0.3s linear 0s;
-    /*0.3s は変化するのにかかる時間*/
+/* 右メニュー */
+.drawer {
     width: 100%;
-    z-index: -1;
+    height: 60px;
+    position: relative;
+    display: none;
 }
 
-/*hover 時の処理*/
-#ham-menu:hover {
-    transform: translate(-300px);
-    /*メニュー横幅①と合わせる*/
+/* チェックボックスは非表示に */
+.drawer-hidden {
+    display: none;
 }
 
-#ham-menu:hover + #menu-background{
-    opacity: 0.5;
-    /*黒背景部分透過度*/
-    z-index: 999;
+/* ハンバーガーアイコンの設置スペース */
+.drawer-open {
+    display: flex;
+    height: 100%;
+    width: 60px;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    z-index: 5000;/* 重なり順を一番上に */
+    cursor: pointer;
+    margin: 0 0 0 auto;
 }
 
-.ham-menu-icons a {
-    padding: 0 5%;
+/* ハンバーガーメニューのアイコン */
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #595754;
+    transition: 0.5s;
+    position: absolute;
+}
+
+/* 三本線のうち一番上の棒の位置調整 */
+.drawer-open span:before {
+    bottom: 8px;
+}
+
+/* 三本線のうち一番下の棒の位置調整 */
+.drawer-open span:after {
+    top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* メニューのデザイン*/
+.drawer-content {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 100%;/* メニューを画面の外に飛ばす */
+    z-index: 2000;
+    background: #c2b8a7;
+    transition: .5s;
+}
+
+.drawer-list {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.drawer-item{
+    width: 20%;
+    font-family: serif;
+    color: #595754;
+    font-size: 4rem; 
+    text-align: center;
+    margin: 1% 0;
+}
+
+
+.drawer-item a{
+    color: #595754;
+}
+
+.drawer-item a:hover{
+    color: #ac6f8e;
+}
+
+.ham-menu-icons {
+    margin-top: 5%;
+    width: 300px;
+    text-align: center;
+}
+
+.ham-menu-icons i {
+    margin: 0 5%;
+    color: #595754;
+}
+
+.ham-menu-icons i:hover {
+    color: #ac6f8e;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-check:checked ~ .drawer-content {
+    left: 0;/* メニューを画面に入れる */
 }
 
 /* ヘッダー */
@@ -330,53 +436,37 @@ header {
     z-index: 3;
 }
 
-.icons {
-    position: absolute;
-    top: 3%;
-    right: 3%;
-    z-index: 1200;
-    width: 200px;
-    text-align: center;
-}
-
-.icons a {
-    color: #595754;
-    padding: 0 5%;
-}
-
-.icons a:hover {
-    color: #c2b8a7;
-}
-
-.headerimg-left {
-    width:35vw;
+.headerimg-wrap {
+    width:80vw;
     height: 100vh;
-    position: absolute;
-    left: 0;
-    object-fit: cover;
-    z-index: 2
+    position: relative;
+    float: right;
 }
 
-.headerimg-right {
-    display: block;
-    text-align: center;
-    width:65vw;
-    height: 80vh;
+.headerimg-wrap img {
+    width:80vw;
+    height: 85vh;
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 5%;
+    right: : 0;
     object-fit: cover;
     object-position: 100%;
+    z-index: 1;
 }
 
-.header-movie {
-    width: 45vw;
+.headerimg-wrap video {
+    width: 65vw;
+    height: 80vh;
     display: inline-block;
     position: absolute;
-    top: 18%;
+    top: 20%;
+    right: 0;
     z-index: 2;
-    right: 10%;
+    object-fit: cover;
+    object-position: 0 100%;
 }
+
+
 
 .object-fit-img {
     object-fit: cover;
@@ -384,18 +474,27 @@ header {
     font-family: 'object-fit: cover; object-position: bottom;'
 }
 
-.cacthcopy-img-s1 {
+.top-catchcopy1 {
+    font-family: 'Yu Mincho';
+    font-size: 4.5rem;
+    color: #595754;
+    font-weight: normal;
+    z-index: 4;
+    text-shadow: 3px 3px 1px rgba(0,0,0,0.3);
     position: absolute;
-    top: 78%;
-    right: 25%;
-    z-index: 3;
+    left: 6%;
+    top: 40%;
 }
 
-.cacthcopy-img-s2 {
+.top-catchcopy2 {
+    font-family: serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #595754;
     position: absolute;
-    top: 85%;
-    right: 15%;
-    z-index: 3;
+    top:58%;
+    left: 6%;
+    z-index: 4;
 }
 
 /* サイン アニメーション */
@@ -410,8 +509,8 @@ header {
 #svganimation {
     width: 10%;
     position: absolute;
-    top: 90%;
-    right: 8%;
+    top: 60%;
+    left: 18%;
     z-index: 4;
 }
 
@@ -455,7 +554,6 @@ header {
     letter-spacing: 3px;
     font-family: 'Yu Mincho';
     z-index: 2;
-    margin: 0 auto;
     writing-mode: vertical-rl;
     position: absolute;
     top: 80px;
@@ -463,7 +561,6 @@ header {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-
 }
 
 .concept-img, parallax1 {
@@ -488,21 +585,30 @@ header {
     z-index: 1;
 }
 
-.concept-cacth-s1 {
-    display: none;
-}
-
-.concept-cacth-s2 {
-    display: none;
-}
-
 .concept-text {
     position: absolute;
-    top: 600px;
+    top: 500px;
     left: 40%;
     display: flex;
     flex-direction: column;
     z-index: 3;
+}
+
+.concept-catchcopy1 {
+    font-family: 'Yu Mincho';
+    font-size: 4rem;
+    color: #595754;
+    font-weight: normal;
+    text-shadow: 3px 3px 1px rgba(0,0,0,0.3);
+    padding: 5% 0;
+}
+
+.concept-catchcopy2 {
+    font-family: serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #595754;
+    padding: 2% 0;
 }
 
 .concept-text p {
@@ -536,7 +642,7 @@ header {
     object-fit: cover;
     object-position: 100% 0;
     position: absolute;
-    top:200px;
+    top: 200px;
     left: 15%;
     z-index: 2;
 }
@@ -546,7 +652,7 @@ header {
     height: 60vh;
     background-color: #c2b8a7;
     position: absolute;
-    top: 300px;
+    top: 280px;
     right: 15%;
 }
 

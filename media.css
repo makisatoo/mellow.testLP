@@ -2,23 +2,21 @@
     .header-movie {
         top: 25%;
     }
-    
+
     #svganimation {
         width: 15%;
     }
 
-}
-
-@media screen and (max-width: 896px) {
-    .g-nav,
-    .icons {
+    .g-nav {
         display: none;
     }
 
-    #ham-menu {
-        display: block !important;
+    .drawer {
+        display: block;
     }
+}
 
+@media screen and (max-width: 896px) {
     .headerimg-left {
         height: 50vh;
         width: 50vw;
@@ -41,11 +39,11 @@
     .cacthcopy-img-s2 {
         width: 30%;
     }
-    
+
     .concept-cacth {
         display: none;
     }
-    
+
     .concept-cacth-s1 {
         width: 30%;
         display: block;
