@@ -13,7 +13,7 @@
 
     .drawer {
         display: block;
-        position: fixed;
+        position: fixed!important;
         z-index: 9999;
     }
     
