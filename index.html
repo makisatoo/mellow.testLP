@@ -7,6 +7,9 @@
     <title>mellow_testLP</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="media.css">
+    <!-- Googlefont -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <!-- アイコン -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- jquery -->
@@ -20,12 +23,12 @@
 <body>
     <div id="logo_loader" class="anime">
         <div class="f_logo">
-            <img src="img/mellow_logo-M.png" alt="logo">
+            <img src="img/mellow_logo-load.png" alt="logo">
         </div>
     </div>
 
     <div class="scroll">Scroll</div>
-    <div class="mainSite">
+    <div class="mainSite serif">
         <header>
             <!-- ヘッダーコンテンツ -->
             <div class="header-wrapper">
@@ -38,16 +41,16 @@
                         <li><a class="btn btn-action" href="#">How TO</a></li>
                         <li><a class="btn btn-action" href="#">Buy</a></li>
                         <div class="icons">
-                            <a href="#"><i class="fas fa-shopping-cart fa-fw fa-lg"></i></a>
-                            <a href="#"><i class="fab fa-instagram fa-fw fa-lg"></i></a>
-                            <a href="#"><i class="fab fa-twitter fa-fw fa-lg"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart fa-fw fa-1x"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-fw fa-1x"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-fw fa-1x"></i></a>
                         </div>
                     </ul>
                 </nav>
                 <!-- ハンバーガーメニュー部分 -->
                 <div class="drawer">
                     <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-                    <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+                    <input type="checkbox" id="drawer-check" class="drawer-hidden">
                     <!-- ハンバーガーアイコン -->
                     <label for="drawer-check" class="drawer-open"><span></span></label>
                     <!-- メニュー -->
@@ -73,7 +76,7 @@
                         </ul>
                     </nav>
                 </div>
-                
+
                 <div class="top-catchcopy">
                     <h1 class="top-catchcopy1">わたしがつくる、<br>なりたいわたし</h1>
                     <h1 class="top-catchcopy2">― I make Ideal self. ―</h1>
@@ -98,7 +101,7 @@
         <div class="concept-wrap">
             <div class="concept-title">
                 <h2 class="text-animation">Consept</h2>
-                <p>― コンセプト ―</p>
+                <p>― コンセプト</p>
             </div>
             <div class="concept-text fade-in">
                 <h1 class="concept-catchcopy1">わたしがつくる、なりたいわたし</h1>
@@ -127,15 +130,20 @@
             </div>
         </div>
 
-
         <div class="product-wrap">
             <div class="product-title">
                 <h2 class="text-animation">Product</h2>
-                <p>― 商品 ―</p>
+                <p>― 商品</p>
             </div>
-            <img src="img/decolletecareoil_l1.png" alt="decollete care oil" class="oil-name">
-            <div class="product-body">
-                <img src="img/product-img.jpg" alt="mellow" class="product-img">
+            <div class="special-body">
+                <img src="img/product-img.jpg" alt="mellow">
+                <div class="set-text">
+                    <h1>Special set</h1>
+                    <h3>テキストテキストテキストテキスト</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="special-box"></div>
+                <div class="special-box2"></div>
             </div>
         </div>
     </div>
@@ -147,7 +155,7 @@
         $(".mainSite").css("display", "none");
         setTimeout(function() {
             $('.anime').fadeOut();
-        }, 3000);
+        }, 2500);
     });
 
     $(function() {
@@ -159,7 +167,7 @@
             $(".mainSite").stop().animate({
                 opacity: '1'
             }, 1000);
-        }, 3000);
+        }, 2500);
     });
 
     //上部メニュー
@@ -232,7 +240,7 @@
             });
         });
     });
-    
+
     //imgトリミングjs
     objectFitImages();
 
