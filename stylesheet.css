@@ -38,7 +38,7 @@ ul {
 }
 
 body {
-    font-family: 'Noto Sans JP', serif;
+    font-family: 'Noto Sans JP', serif, "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho";
 }
 
 /* アニメーション */
