@@ -21,41 +21,44 @@
 </head>
 
 <body>
+    
     <div id="logo_loader" class="anime">
         <div class="f_logo">
             <img src="img/mellow_logo-load.png" alt="logo">
         </div>
     </div>
-
-    <div class="scroll">Scroll</div>
+    
     <div class="mainSite">
+        <div class="icons">
+            <a href="#"><i class="fab fa-instagram fa-fw fa-1x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-fw fa-1x"></i></a>
+        </div>
+        <div class="scroll">Scroll</div>
+
         <header>
             <!-- ヘッダーコンテンツ -->
             <div class="header-wrapper">
-                <img class="logo-mellow" src="img/mellow_logo-00.png" alt="mellow">
                 <!-- 上部メニュー部分 -->
                 <nav id="menu-bar" class="g-nav">
-                    <ul class="g-nav-menu webfonts">
+                    <img class="logo-mellow" src="img/mellow_logo-00.png" alt="mellow">
+                    <a class="shop-icon" href="#">Online Shop<i class="fas fa-shopping-cart fa-fw fa-1x"></i></a>
+                    <ul class="g-nav-menu">
                         <li><a class="btn btn-action" href="#">Concept</a></li>
                         <li><a class="btn btn-action" href="#">Product</a></li>
                         <li><a class="btn btn-action" href="#">How TO</a></li>
-                        <li><a class="btn btn-action" href="#">Buy</a></li>
-                        <div class="icons">
-                            <a href="#"><i class="fas fa-shopping-cart fa-fw fa-1x"></i></a>
-                            <a href="#"><i class="fab fa-instagram fa-fw fa-1x"></i></a>
-                            <a href="#"><i class="fab fa-twitter fa-fw fa-1x"></i></a>
-                        </div>
+                        <li><a class="btn btn-action" shref="#">Buy</a></li>
                     </ul>
                 </nav>
                 <!-- ハンバーガーメニュー部分 -->
                 <div class="drawer">
+                    <img class="logo-mellow" src="img/mellow_logo-00.png" alt="mellow">
                     <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
                     <input type="checkbox" id="drawer-check" class="drawer-hidden">
                     <!-- ハンバーガーアイコン -->
                     <label for="drawer-check" class="drawer-open"><span></span></label>
                     <!-- メニュー -->
                     <nav class="drawer-content">
-                        <ul class="drawer-list webfonts">
+                        <ul class="drawer-list">
                             <li class="drawer-item btn btn-action">
                                 <a href="#">Concept</a>
                             </li><!-- /.drawer-item -->
@@ -69,28 +72,30 @@
                                 <a href="#">Buy</a>
                             </li>
                             <div class="ham-menu-icons">
-                                <a href="#"><i class="fas fa-shopping-cart fa-fw fa-4x"></i></a>
-                                <a href="#"><i class="fab fa-instagram fa-fw fa-4x"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-fw fa-4x"></i></a>
+                                <a href="#"><i class="fas fa-shopping-cart fa-fw icons-m"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-fw icons-m"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-fw icons-m"></i></a>
                             </div>
                         </ul>
                     </nav>
                 </div>
 
-                <div class="top-catchcopy webfonts">
+                <div class="top-catchcopy">
                     <h1 class="top-catchcopy1">わたしがつくる、<br>なりたいわたし</h1>
                     <h1 class="top-catchcopy2">― I make Ideal self. ―</h1>
+
+                    <!-- サインSVG -->
+                    <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
+                        <path class="cls-1" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
+                                               c8.7-2.6-11.7,40.4-9.2,40.2c8.9-1.8,57.1-51.5,63.7-44.4c10.2,5.2-13.1,54.3-9.2,60.9c1.6,6.8,116.9-56.1,92.7-71.6
+                                               c-29.7-4.4-57.8,66.9-29.5,71.8c62.4,0.4,290.8-199.2,259-229.6C515.7-5.8,355.8,251.5,402,247.2c91.5-25.1,291.5-205,271.9-239.7
+                                               C660-12.2,499,259.4,543.1,248.4c22.9-5.9,68.7-41.2,68.7-41.2" />
+                        <path class="cls-1" d="M634.6,180.1c-15.3,1.9-48.7,71.7-25.2,71.8c45.2-3.6,65.8-109.5,15.7-94c-25.8,13.1,20.4,72.7,63.6,59
+                                               C740,203.3,769.2,134,806.5,147c31,9.1-62.4,110.7-43.7,100.2c11.4-6.4,67.3-54,66.4-50.3c1.2,3.4-40.5,63.6-26.1,57.7
+                                               c5.6,1.4,65.2-40.7,66.9-42.2" />
+                    </svg>
                 </div>
-                <!-- サインSVG -->
-                <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
-                    <path class="cls-1" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
-                                       c8.7-2.6-11.7,40.4-9.2,40.2c8.9-1.8,57.1-51.5,63.7-44.4c10.2,5.2-13.1,54.3-9.2,60.9c1.6,6.8,116.9-56.1,92.7-71.6
-                                       c-29.7-4.4-57.8,66.9-29.5,71.8c62.4,0.4,290.8-199.2,259-229.6C515.7-5.8,355.8,251.5,402,247.2c91.5-25.1,291.5-205,271.9-239.7
-                                       C660-12.2,499,259.4,543.1,248.4c22.9-5.9,68.7-41.2,68.7-41.2" />
-                    <path class="cls-1" d="M634.6,180.1c-15.3,1.9-48.7,71.7-25.2,71.8c45.2-3.6,65.8-109.5,15.7-94c-25.8,13.1,20.4,72.7,63.6,59
-                                       C740,203.3,769.2,134,806.5,147c31,9.1-62.4,110.7-43.7,100.2c11.4-6.4,67.3-54,66.4-50.3c1.2,3.4-40.5,63.6-26.1,57.7
-                                       c5.6,1.4,65.2-40.7,66.9-42.2" />
-                </svg>
+
                 <div class="headerimg-wrap">
                     <img class="object-fit-img" src="img/headerimg-right.jpg" alt="">
                     <video class="object-fit-img" src="img/header-movie2.mp4" autoplay muted loop autoplay muted></video>
@@ -99,12 +104,12 @@
         </header>
 
         <div class="concept-wrap">
-            <div class="concept-title webfonts">
+            <div class="concept-title">
                 <h2 class="text-animation">Consept</h2>
                 <p>― コンセプト</p>
             </div>
-            <div class="concept-text fade-in webfonts">
-                <h1 class="concept-catchcopy1">わたしがつくる、なりたいわたし</h1>
+            <div class="concept-text fade-in">
+                <h1 class="concept-catchcopy1">わたしがつくる、<span class="break"></span>なりたいわたし</h1>
                 <h1 class="concept-catchcopy2">― I make Ideal self. ―</h1>
                 <p class="webfonts-jp">「わたし」を形成している、<br>
                     これまで過ごしてきたすべての時間。<br>
@@ -123,27 +128,32 @@
             </div>
             <img class="concept-img object-fit-img parallax1" src="img/concept-img.jpg" alt="mellow">
             <img class="concept-img2 object-fit-img parallax2" src="img/concept-img2.jpg" alt="mellow">
-            <div class="mellow-movie">
-                <h2 class="movie-title webfonts">Brand movie for mellow</h2>
-                <video class="object-fit-img fade-left" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
-                <div class="movie-box fade-right"></div>
-            </div>
+        </div>
+
+        <div class="mellow-movie">
+            <h2 class="movie-title fade-bottom" data-inverted="Brand movie for mellow">Brand movie for mellow</h2>
+            <video class="object-fit-img" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
+            <div class="movie-box"></div>
+            <img src="img/movie_background_olive.jpg">
         </div>
 
         <div class="product-wrap">
-            <div class="product-title webfonts-js">
+            <div class="product-title">
                 <h2 class="text-animation">Product</h2>
                 <p>― 商品</p>
             </div>
             <div class="special-body">
                 <img src="img/product-img.jpg" alt="mellow">
-                <div class="set-text  webfonts">
+                <div class="set-text">
                     <h1>Special set</h1>
                     <h3>テキストテキストテキストテキスト</h3>
                     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
                 <div class="special-box"></div>
                 <div class="special-box2"></div>
+            </div>
+            <div class="product-body">
+                <img src="img/">
             </div>
         </div>
     </div>
@@ -155,17 +165,17 @@
         $(".mainSite").css("display", "none");
         setTimeout(function() {
             $('.anime').fadeOut();
-        }, 2500);
+      }, 2500);
     });
 
     $(function() {
         $(".mainSite").css({
-            opacity: '0'
+        opacity: '0'
         });
         setTimeout(function() {
             $(".mainSite").css("display", "block");
             $(".mainSite").stop().animate({
-                opacity: '1'
+               opacity: '1'
             }, 1000);
         }, 2500);
     });

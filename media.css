@@ -1,6 +1,21 @@
+@media screen and (max-width: 1260px) {
+    .g-nav-menu li{
+        width: 100px;
+        padding: 0 20px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
-    .header-movie {
-        top: 25%;
+    .html, body {
+        font-size: 80px;!important;
+    }
+    
+    .top-catchcopy1, .concept-catchcopy1 {
+        font-size: 0.35rem;
+    }
+    
+    .top-catchcopy2, concept-catchcopy2{
+        top: 55%;
     }
 
     #svganimation {
@@ -17,53 +32,45 @@
         z-index: 9999;
     }
     
+    .drawer-item {
+        font-size: 0.3rem;
+    }
+    
+    .icons-m {
+        font-size: 0.3rem;
+    }
+    
+    .mellow-movie {
+        height: 800px;
+    }
+    
+    .mellow-movie video {
+        width: 100%;
+    }
+    
+    .movie-box {
+        height: 800px;
+    }
+    
+    .mellow-movie img {
+        height: 800px;
+    }
 }
 
 @media screen and (max-width: 896px) {
-    .headerimg-left {
-        height: 50vh;
-        width: 50vw;
-        bottom: 0;
+    .top-catchcopy1, .top-catchcopy2 {
+        left: 4%;
+    }
+    
+    .break:before {
+        content: "\A";
+        white-space: pre; /* あわせてこれを指定しないと改行しない */
     }
 
-    .header-movie {
-        height: 50vh;
-        width: 100vw;
-        top: 0;
-        right: 0;
-        object-fit: cover;
-        object-position: 0 100%;
-    }
-
-    .cacthcopy-img-s1 {
-        width: 30%;
-    }
-
-    .cacthcopy-img-s2 {
-        width: 30%;
-    }
-
-    .concept-cacth {
-        display: none;
-    }
-
-    .concept-cacth-s1 {
-        width: 30%;
-        display: block;
-        position: absolute;
-        top: 500px;
-        left: 40%;
-        z-index: 2;
-    }
-
-    .concept-cacth-s2 {
-        width: 30%;
-        display: block;
-        position: absolute;
-        top: 550px;
-        left: 40%;
-        z-index: 2;
-    }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    
+    
+    
+}

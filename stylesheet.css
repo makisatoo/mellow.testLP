@@ -1,88 +1,102 @@
 /* 基礎 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
 
-html,body,img,h1,h2,h3,p,video,a,ul,li,div,nav {
+html,
+body,
+img,
+h1,
+h2,
+h3,
+p,
+video,
+a,
+ul,
+li,
+div,
+nav {
     margin: 0;
     padding: 0;
 }
 
-html,body{
+html {
     width: 100%;
     height: 100%;
-    font-size: 62.5%;
+    font-size: 100px;
+}
+
+.body {
+    font-size: 0.16em;
 }
 
 a {
     text-decoration: none;
 }
 
-li,ul{
+li,
+ul {
     list-style: none;
 }
 
 body {
-    font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif, 'Yu Mincho', 'Cormorant';
-}
-
-.webfonts {
-    font-family: 'Noto Serif JP', serif;font-family: 'Noto Sans JP', serif;
+    font-family: 'Noto Sans JP', serif;
 }
 
 /* アニメーション */
 .fade-in {
-    opacity : 0;
-    transform : translate(0, 0);
-    transition : all 1s;
+    opacity: 0;
+    transform: translate(0, 0);
+    transition: all 1s;
 }
 
-.fade-in.active{
-    opacity : 1;
-    transform : translate(0, 0);
+.fade-in.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .fade-top {
-    opacity : 0;
-    transform : translate(100px, 0);
-    transition : all 1s;
+    opacity: 0;
+    transform: translate(100px, 0);
+    transition: all 1s;
 }
 
-.fade-top.active{
-    opacity : 1;
-    transform : translate(0, 0);
+.fade-top.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .fade-bottom {
-    opacity : 0;
-    transform : translate(0, 100px);
-    transition : all 1s;
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: all 1s;
 }
 
-.fade-bottom.active{
-    opacity : 1;
-    transform : translate(0, 0);
+.fade-bottom.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .fade-left {
-    opacity : 0;
-    transform : translateX(-100px);
-    transition : all 1s;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s;
 }
 
-.fade-left.active{
-    opacity : 1;
-    transform : translate(0, 0);
+.fade-left.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .fade-right {
-    opacity : 0;
-    transform : translateX(100px);
-    transition : all 1s;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s;
 }
 
-.fade-right.active{
-    opacity : 1;
-    transform : translate(0, 0);
+.fade-right.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
+
 /* ローディング */
 #logo_loader {
     display: block;
@@ -139,6 +153,28 @@ body {
     animation: loadLogo 1.5s;
 }
 
+/* SNS */
+
+.icons {
+    position: fixed;
+right: 40px;x;
+    bottom: 250px;
+    z-index: 3;
+display: flex;
+flex-direction: column;
+}
+
+.icons a {
+    padding: 0 0 30px 0;
+    font-size: 25px;
+color: #595754;
+}
+
+.icons a:hover {
+color: #ac6f8e;
+}
+
+
 /* スクロール */
 .scroll {
     display: inline-block;
@@ -161,6 +197,7 @@ body {
     font-family: serif;
     text-orientation: upright;
 }
+
 .scroll::after {
     content: '';
     position: absolute;
@@ -174,20 +211,25 @@ body {
 .scroll::after {
     animation: sdl 2s cubic-bezier(1, 0, 0, 1) infinite;
 }
+
 @keyframes sdl {
     0% {
         opacity: 1;
         transform: scale(1, 0);
         transform-origin: 0 0;
     }
+
     30% {
         transform: scale(1, 1);
         transform-origin: 0 0;
     }
-    30.1%, 70% {
+
+    30.1%,
+    70% {
         transform: scale(1, 1);
         transform-origin: 0 100%;
     }
+
     100% {
         opacity: 0;
         transform: scale(1, 0);
@@ -196,46 +238,66 @@ body {
 }
 
 /* 上部固定メニュー */
-header {
+.header-wrapper {
     position: relative;
     width: 100%;
 }
 
-.g-nav{
-    display: inline-block;
-    position: absolute;
+.g-nav {
+    position: relative;
+    top: 0;
+    height: 80px;
     width: 100%;
     z-index: 100;
 }
 
 .g-nav a {
     color: #595754;
-    font-size: 2rem;
+    font-size: 0.2rem;
 }
 
 .g-nav a:hover {
     color: #ac6f8e;
 }
 
-.g-nav-menu{
-    text-align: center;
+.logo-mellow {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    z-index: 3;
 }
-.g-nav-menu li{
+
+.g-nav-menu {
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.g-nav-menu li {
     width: 130px;
     padding: 0 30px;
     list-style-type: none;
     display: inline-block;
-    line-height: 80px;
 }
-.fixed{
+
+.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     z-index: 1000;
 }
-.fixed .g-nav-menu li{
-    line-height: 60px;
+
+.fixed .g-nav-menu li {
+    line-height: 80px;
 }
 
 .btn {
@@ -251,16 +313,17 @@ header {
 }
 
 .btn-action {
-    display: inline-block;
     position: relative;
     transition: 0.3s;
 }
 
-.btn-action:hover, .btn-action:active {
+.btn-action:hover,
+.btn-action:active {
     letter-spacing: 5px;
 }
 
-.btn-action:after, .btn-action:before {
+.btn-action:after,
+.btn-action:before {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -272,30 +335,52 @@ header {
     transform: translateX(-50%);
 }
 
-.btn-action:hover:after, .btn-action:hover:before {
+.btn-action:hover:after,
+.btn-action:hover:before {
     width: 100%;
 }
 
-.icons {
+.shop-icon {
     position: absolute;
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+    right: 3%;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    right: 3%;
-    z-index: 100;
-    width: 200px;
-    text-align: center;
-    line-height: 80px;
-}
-
-.icons a {
+    z-index: 3;
     color: #595754;
-    padding: 0 5%;
+    box-sizing: border-box;
+    /* shopグラデ */
+    background: transparent;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background: -webkit-linear-gradient(180deg, rgba(172,111,142,0.8), rgba(229, 196, 213, 0.8), rgba(247, 211, 229, 0), rgba(247, 211, 229, 0));
+    background: -webkit-linear-gradient(right, rgba(172,111,142,0.8), rgba(229, 196, 213, 0.8), rgba(247, 211, 229, 0), rgba(247, 211, 229, 0));
+    background: linear-gradient(270deg, rgba(172,111,142,0.8), rgba(229, 196, 213, 0.8), rgba(247, 211, 229, 0), rgba(247, 211, 229, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    border: none;
+    border: 1px solid #595754;
+    border-radius: 20px;
 }
 
-.icons a:hover {
-    color: #ac6f8e;
+.shop-icon:hover {
+    background-position: 99% 50%;
+    color: #fff !important;
+    border: 1px solid rgba(205, 200, 252, 0);
+}
+
+.shop-icon a:hover {
+    background-position: 99% 50%;
+    color: #fff !important;
+    border: 1px solid rgba(205, 200, 252, 0);
+}
+
+.fa-shopping-cart {
+    padding: 0 5%;
 }
 
 /* 右メニュー */
@@ -319,7 +404,8 @@ header {
     align-items: center;
     position: absolute;
     right: 0;
-    z-index: 5000;/* 重なり順を一番上に */
+    z-index: 5000;
+    /* 重なり順を一番上に */
     cursor: pointer;
     margin: 0 0 0 auto;
 }
@@ -371,7 +457,8 @@ header {
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 100%;/* メニューを画面の外に飛ばす */
+    left: 100%;
+    /* メニューを画面の外に飛ばす */
     z-index: 2000;
     background: #e3e0da;
     transition: .5s;
@@ -387,20 +474,19 @@ header {
     position: absolute;
 }
 
-.drawer-item{
+.drawer-item {
     width: 20%;
     color: #595754;
-    font-size: 4rem; 
+    font-size: 0.4rem;
     text-align: center;
     margin: 1% 0;
 }
 
-
-.drawer-item a{
+.drawer-item a {
     color: #595754;
 }
 
-.drawer-item a:hover{
+.drawer-item a:hover {
     color: #ac6f8e;
 }
 
@@ -421,7 +507,8 @@ header {
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer-check:checked ~ .drawer-content {
-    left: 0;/* メニューを画面に入れる */
+    left: 0;
+    /* メニューを画面に入れる */
 }
 
 /* ヘッダー */
@@ -432,22 +519,15 @@ header {
     background-color: #fff;
 }
 
-.logo-mellow {
-    position: absolute;
-    top: 2%;
-    left: 3%;
-    z-index: 3;
-}
-
 .headerimg-wrap {
-    width:80vw;
+    width: 80vw;
     height: 100vh;
     position: relative;
     float: right;
 }
 
 .headerimg-wrap img {
-    width:80vw;
+    width: 80vw;
     height: 85vh;
     position: absolute;
     top: 5%;
@@ -476,7 +556,7 @@ header {
 }
 
 .top-catchcopy1 {
-    font-size: 4.5rem;
+    font-size: 0.45rem;
     color: #595754;
     font-weight: normal;
     z-index: 4;
@@ -486,11 +566,11 @@ header {
 }
 
 .top-catchcopy2 {
-    font-size: 2rem;
+    font-size: 0.2rem;
     font-weight: normal;
     color: #595754;
     position: absolute;
-    top:58%;
+    top: 58%;
     left: 6%;
     z-index: 4;
 }
@@ -520,7 +600,7 @@ header {
 /* コンセプト コンテンツ */
 .concept-wrap {
     width: 100%;
-    height: 2400px;
+    height: 1400px;
     position: relative;
     margin: 10% 0;
 }
@@ -538,7 +618,7 @@ header {
 }
 
 .concept-title h2 {
-    font-size: 4.5rem;
+    font-size: 0.45rem;
     font-weight: normal;
     color: #595754;
     margin: 0 auto;
@@ -546,7 +626,7 @@ header {
 
 .concept-title p {
     height: 150px;
-    font-size: 1.6rem;
+    font-size: 0.16rem;
     color: #595754;
     letter-spacing: 3px;
     z-index: 2;
@@ -559,10 +639,11 @@ header {
     -ms-transform: translateX(-50%);
 }
 
-.concept-img, parallax1 {
+.concept-img,
+parallax1 {
     width: 50vw;
     height: 80vh;
-    object-fit: cover; 
+    object-fit: cover;
     object-position: 100% 0;
     position: absolute;
     left: 0;
@@ -570,10 +651,11 @@ header {
     z-index: 1;
 }
 
-.concept-img2, parallax2 {
+.concept-img2,
+parallax2 {
     width: 25vw;
     height: 40vh;
-    object-fit: cover; 
+    object-fit: cover;
     object-position: 0 140%;
     position: absolute;
     right: 0;
@@ -591,21 +673,21 @@ header {
 }
 
 .concept-catchcopy1 {
-    font-size: 4rem;
+    font-size: 0.4rem;
     color: #595754;
     font-weight: normal;
     padding: 5% 0;
 }
 
 .concept-catchcopy2 {
-    font-size: 2rem;
+    font-size: 0.2rem;
     font-weight: normal;
     color: #595754;
     padding: 2% 0;
 }
 
 .concept-text p {
-    font-size: 1.6rem;
+    font-size: 0.16rem;
     color: #595754;
     line-height: 2.5;
     letter-spacing: 5px;
@@ -615,40 +697,49 @@ header {
 
 .mellow-movie {
     width: 100%;
+    height: 1000px;
     position: relative;
-    top:1500px;
+    margin: 10% 0;
 }
 
 .movie-title {
-    font-size: 6rem;
+    font-size: 0.6rem;
     font-weight: normal;
     color: #e3e0da;
     position: absolute;
-    left: 15%;
+    top: -100px;
+    left: 3%;
+    z-index: 4;
 }
 
 .mellow-movie video {
-    width: 60vw;
-    height: 60vh;
-    object-fit: cover;
-    object-position: 100% 0;
+    display: inline-block;
+    width: 60%;
     position: absolute;
-    top: 200px;
-    left: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     z-index: 2;
 }
 
 .movie-box {
+    display: inline-block;
     width: 60%;
-    height: 60vh;
-    background-color: #e3e0da;
+    height: 1000px;
     position: absolute;
-    top: 280px;
-    right: 15%;
+    left: 10%;;
+    background-color: #e3e0da;
+}
+
+.mellow-movie img {
+    position: absolute;
+    right: 10%;
 }
 
 /* 商品コンテンツ */
-.product-wrap{
+.product-wrap {
     width: 100%;
     height: 2000px;
     margin: 10% 0;
@@ -664,7 +755,7 @@ header {
 }
 
 .product-title h2 {
-    font-size: 4.5rem;
+    font-size: 0.45rem;
     font-weight: normal;
     font-family: serif;
     color: #595754;
@@ -673,7 +764,7 @@ header {
 
 .product-title p {
     height: 150px;
-    font-size: 1.6rem;
+    font-size: 0.16rem;
     color: #595754;
     letter-spacing: 3px;
     font-family: 'Yu Mincho';
@@ -713,21 +804,21 @@ header {
     z-index: 2;
 }
 
-.set-text  h1{
-    font-size: 4rem;
+.set-text h1 {
+    font-size: 0.4rem;
     font-weight: normal;
     color: #595754;
     margin: 2% 0;
 }
 
 .set-text h3 {
-    font-size: 2rem;
+    font-size: 0.2rem;
     font-weight: normal;
     color: #595754;
 }
 
 .set-text p {
-    font-size: 1.6rem;
+    font-size: 0.16rem;
     font-weight: normal;
     color: #595754;
     margin: 5% 0;
