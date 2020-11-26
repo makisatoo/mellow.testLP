@@ -21,16 +21,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
     <!-- imgトリミングjs -->
     <script src="object-fit-images-master/dist/ofi.min.js"></script>
+    <!-- 動画ポップアップ表示 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.css'/>
+    <style>.lity { background: #fff; }.lity-close{position: fixed; top: 40px; right: 40px; color: #595754; font-size: 50px; text-shadow: none; font-family: serif; } .lity-close:hover { position: fixed; top: 40px; right: 40px; color: #ac6f8e; font-size: 50px; text-shadow: none; font-family: serif;</style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.js'></script>
 </head>
 
 <body>
-    
+<!--
     <div id="logo_loader" class="anime">
         <div class="f_logo">
             <img src="img/mellow_logo-load.png" alt="logo">
         </div>
     </div>
-    
+-->
     <div class="mainSite">
         <div class="icons">
             <a href="#"><i class="fab fa-instagram fa-fw fa-1x"></i></a>
@@ -135,9 +139,13 @@
 
         <div class="mellow-movie">
             <h2 class="movie-title fade-bottom" data-inverted="Brand movie for mellow">Brand movie for mellow</h2>
-            <video class="object-fit-img" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
-            <div class="movie-box"></div>
-            <img src="img/movie_background_olive.jpg">
+            <a class="movie-link" href="https://www.youtube.com/embed/fUEW3bK6pdw" data-lity>
+               <span class="movie-btn">
+                   <img class="movie-btn-box" src="img/movie_btn_box.png">
+                   <img class="movie-btn-center" src="img/movie_btn_center.png">
+               </span>
+                <video class="object-fit-img" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
+            </a>
         </div>
 
         <div class="product-wrap">
@@ -164,24 +172,24 @@
 
 <script type="text/javascript">
     //ローディング
-    $(function() {
-        $(".mainSite").css("display", "none");
-        setTimeout(function() {
-            $('.anime').fadeOut();
-      }, 2500);
-    });
+    //$(function() {
+    //    $(".mainSite").css("display", "none");
+    //    setTimeout(function() {
+    //        $('.anime').fadeOut();
+    //    }, 2500);
+    //});
 
-    $(function() {
-        $(".mainSite").css({
-        opacity: '0'
-        });
-        setTimeout(function() {
-            $(".mainSite").css("display", "block");
-            $(".mainSite").stop().animate({
-               opacity: '1'
-            }, 1000);
-        }, 2500);
-    });
+    //$(function() {
+    //    $(".mainSite").css({
+    //        opacity: '0'
+    //    });
+    //    setTimeout(function() {
+    //        $(".mainSite").css("display", "block");
+    //        $(".mainSite").stop().animate({
+    //            opacity: '1'
+    //        }, 1000);
+    //    }, 2500);
+    //});
 
     //上部メニュー
     $(function() {

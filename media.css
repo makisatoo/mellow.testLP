@@ -50,11 +50,6 @@
     
     .movie-box {
         height: 800px;
-    }
-    
-    .mellow-movie img {
-        height: 800px;
-    }
 }
 
 @media screen and (max-width: 896px) {
