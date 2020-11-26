@@ -1,5 +1,5 @@
 /* 基礎 */
-@import url(‘https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap&subset=japanese’);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 html,
 body,
@@ -197,7 +197,7 @@ body {
     writing-mode: vertical-lr;
     z-index: 999;
     color: #595754;
-    font-family: 'Noto Sans JP', serif,
+    font-family: "Noto Serif JP", serif;
     text-orientation: upright;
 }
 
@@ -290,7 +290,6 @@ body {
     padding: 0 30px;
     list-style-type: none;
     display: inline-block;
-    font-family: 'Noto Sans JP', serif;
 }
 
 .fixed {
@@ -370,7 +369,6 @@ body {
     border: none;
     border: 1px solid #595754;
     border-radius: 20px;
-    font-family: 'Noto Sans JP', serif;
 }
 
 .shop-icon:hover {
@@ -562,7 +560,6 @@ body {
 }
 
 .top-catchcopy1 {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.45rem;
     color: #595754;
     font-weight: normal;
@@ -573,7 +570,6 @@ body {
 }
 
 .top-catchcopy2 {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.2rem;
     font-weight: normal;
     color: #595754;
@@ -611,6 +607,7 @@ body {
     height: 1400px;
     position: relative;
     margin: 10% 0;
+    font-family: "Noto Serif JP", serif;
 }
 
 .concept-title {
@@ -626,7 +623,6 @@ body {
 }
 
 .concept-title h2 {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.45rem;
     font-weight: normal;
     color: #595754;
@@ -634,7 +630,6 @@ body {
 }
 
 .concept-title p {
-    font-family: 'Noto Sans JP', serif;
     height: 150px;
     font-size: 0.16rem;
     color: #595754;
@@ -683,7 +678,6 @@ parallax2 {
 }
 
 .concept-catchcopy1 {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.4rem;
     color: #595754;
     font-weight: normal;
@@ -691,7 +685,6 @@ parallax2 {
 }
 
 .concept-catchcopy2 {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.2rem;
     font-weight: normal;
     color: #595754;
@@ -699,7 +692,6 @@ parallax2 {
 }
 
 .concept-text p {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.16rem;
     color: #595754;
     line-height: 2.5;
@@ -710,6 +702,7 @@ parallax2 {
 
 /* 動画 */
 .mellow-movie {
+    font-family: "Noto Serif JP", serif;
     max-width: 820px;
     width: 100%;
     height: 500px;
@@ -718,7 +711,6 @@ parallax2 {
 }
 
 .movie-title {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.35rem;
     font-weight: normal;
     color: #595754;
@@ -789,6 +781,7 @@ parallax2 {
 
 /* 商品コンテンツ */
 .product-wrap {
+    font-family: "Noto Serif JP", serif;
     width: 100%;
     height: 2000px;
     margin: 10% 0;
@@ -804,21 +797,18 @@ parallax2 {
 }
 
 .product-title h2 {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.45rem;
     font-weight: normal;
-    font-family: serif;
+   
     color: #595754;
     z-index: 2;
 }
 
 .product-title p {
-    font-family: 'Noto Sans JP', serif;
     height: 150px;
     font-size: 0.16rem;
     color: #595754;
     letter-spacing: 3px;
-    font-family: 'Yu Mincho';
     z-index: 2;
     writing-mode: vertical-rl;
     position: absolute;
@@ -856,7 +846,6 @@ parallax2 {
 }
 
 .set-text h1 {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.4rem;
     font-weight: normal;
     color: #595754;
@@ -864,14 +853,12 @@ parallax2 {
 }
 
 .set-text h3 {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.2rem;
     font-weight: normal;
     color: #595754;
 }
 
 .set-text p {
-    font-family: 'Noto Sans JP', serif;
     font-size: 0.16rem;
     font-weight: normal;
     color: #595754;
