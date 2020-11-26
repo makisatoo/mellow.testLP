@@ -709,11 +709,11 @@ parallax2 {
 }
 
 .movie-title {
-    font-size: 0.6rem;
+    font-size: 0.35rem;
     font-weight: normal;
-    color: #e3e0da;
+    color: #595754;
     position: absolute;
-    top: -100px;
+    top: -80px;
     z-index: 4;
 }
 
