@@ -17,6 +17,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
     <!-- imgトリミングjs -->
     <script src="object-fit-images-master/dist/ofi.min.js"></script>
+    <!-- テキストアニメーション -->
+    <script src="textillate-master/jquery.textillate.js"></script>
+    <script src="textillate-master/jquery.lettering.js"></script>
+    <link rel="stylesheet" type="text/css" href="textillate-master/animate.css">
     <!-- 動画ポップアップ表示 -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.css' />
     <style>
@@ -42,22 +46,23 @@
             font-size: 50px;
             text-shadow: none;
             font-family: serif;
+
     </style>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.js'></script>
 </head>
 
 <body>
-
+    <!--
     <div id="logo_loader" class="anime">
         <div class="f_logo">
             <img src="img/mellow_logo.svg" alt="logo">
         </div>
     </div>
-
+-->
     <div class="mainSite">
         <div class="icons">
-            <a href="#"><i class="fab fa-instagram fa-fw fa-1x shake"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-fw fa-1x shake"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-fw fa-1x icon-shake"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-fw fa-1x icon-shake"></i></a>
         </div>
         <div class="scroll">Scroll</div>
 
@@ -108,15 +113,15 @@
                 </div>
 
                 <div class="top-catchcopy">
-                    <h1 class="top-catchcopy1 fadein1 late1">わたしがつくる、<br>なりたいわたし</h1>
-                    <h1 class="top-catchcopy2 fadein2 late2">― I make Ideal self. ―</h1>
+                    <h1 class="top-catchcopy1 fade late1">わたしがつくる、<br>なりたいわたし</h1>
+                    <h1 class="top-catchcopy2 fade late2">― I make Ideal self. ―</h1>
                     <!-- サインSVG -->
                     <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
-                        <path class="cls-1 fadein3 late3" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
+                        <path class="cls-1 fade late3" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
                                                c8.7-2.6-11.7,40.4-9.2,40.2c8.9-1.8,57.1-51.5,63.7-44.4c10.2,5.2-13.1,54.3-9.2,60.9c1.6,6.8,116.9-56.1,92.7-71.6
                                                c-29.7-4.4-57.8,66.9-29.5,71.8c62.4,0.4,290.8-199.2,259-229.6C515.7-5.8,355.8,251.5,402,247.2c91.5-25.1,291.5-205,271.9-239.7
                                                C660-12.2,499,259.4,543.1,248.4c22.9-5.9,68.7-41.2,68.7-41.2" />
-                        <path class="cls-1 fadein3 late3" d="M634.6,180.1c-15.3,1.9-48.7,71.7-25.2,71.8c45.2-3.6,65.8-109.5,15.7-94c-25.8,13.1,20.4,72.7,63.6,59
+                        <path class="cls-1 fade late3" d="M634.6,180.1c-15.3,1.9-48.7,71.7-25.2,71.8c45.2-3.6,65.8-109.5,15.7-94c-25.8,13.1,20.4,72.7,63.6,59
                                                C740,203.3,769.2,134,806.5,147c31,9.1-62.4,110.7-43.7,100.2c11.4-6.4,67.3-54,66.4-50.3c1.2,3.4-40.5,63.6-26.1,57.7
                                                c5.6,1.4,65.2-40.7,66.9-42.2" />
                     </svg>
@@ -134,30 +139,30 @@
                 <h2 class="text-animation">Consept</h2>
                 <p>― コンセプト</p>
             </div>
-            <div class="concept-text fade-in">
-                <h1 class="concept-catchcopy1">わたしがつくる、<span class="break"></span>なりたいわたし</h1>
-                <h1 class="concept-catchcopy2">― I make Ideal self. ―</h1>
-                <p class="webfonts-jp">「わたし」を形成している、<br>
-                    これまで過ごしてきたすべての時間。<br>
+            <div class="concept-body">
+                <h1 class="concept-catchcopy1 txt">わたしがつくる、<span class="break"></span>なりたいわたし</h1>
+                <h1 class="concept-catchcopy2 txt">― I make Ideal self. ―</h1>
+                <div class="concept-text">
+                    <p class="txt">「わたし」を形成している、</p>
                     <br>
-                    たった今のこの瞬間だって、<br>
-                    たったひとりの「わたし」をつくる要素の一片になる。<br>
+                    <p class="txt">たった今のこの瞬間だって、</p>
+                    <p class="txt">たったひとりの「わたし」をつくる要素の一片になる。</p>
                     <br>
-                    もしそれが本当だとすれば、<br>
-                    この先の毎日は「なりたいわたし」を<br>
-                    つくる要素でいっぱいにしたい。<br>
+                    <p class="txt">もしそれが本当だとすれば、</p>
+                    <p class="txt">この先の毎日は「なりたいわたし」を</p>
+                    <p class="txt">つくる要素でいっぱいにしたい。</p>
                     <br>
-                    思い描いた想像の先。<br>
-                    どうせならその過程も彩って、<br>
-                    とびきり贅沢な手間を「わたし」に。
-                </p>
+                    <p class="txt">思い描いた想像の先。</p>
+                    <p class="txt">どうせならその過程も彩って、</p>
+                    <p class="txt">とびきり贅沢な手間を「わたし」に。</p>
+                </div>
             </div>
             <img class="concept-img object-fit-img parallax1" src="img/concept-img.jpg" alt="mellow">
             <img class="concept-img2 object-fit-img parallax2" src="img/concept-img2.jpg" alt="mellow">
         </div>
 
         <div class="mellow-movie">
-            <h2 class="movie-title fade-bottom" data-inverted="Brand movie for mellow">Brand movie for mellow</h2>
+            <h2 class="movie-title txt">Brand movie for mellow</h2>
             <a class="movie-link" href="https://www.youtube.com/embed/fUEW3bK6pdw" data-lity>
                 <span class="movie-btn">
                     <img class="movie-btn-box" src="img/movie_btn_box.png">
@@ -165,6 +170,7 @@
                 </span>
                 <video class="object-fit-img" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
             </a>
+            <h2 class="movie-subtitle txt">Press the play button</h2>
         </div>
 
         <div class="product-wrap">
@@ -177,9 +183,9 @@
                     <img src="img/product-img.jpg" alt="mellow">
                 </div>
                 <div class="set-text">
-                    <h1>Special set</h1>
-                    <h3>テキストテキストテキストテキスト</h3>
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <h1 class="txt-2">Special set</h1>
+                    <h3 class="txt-2">テキストテキストテキストテキスト</h3>
+                    <p class="txt-2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
             </div>
             <div class="product-body">
@@ -190,24 +196,24 @@
 
 <script type="text/javascript">
     //ローディング
-    $(function() {
-        $(".mainSite").css("display", "none");
-        setTimeout(function() {
-            $('.anime').fadeOut();
-        }, 2500);
-    });
+    //$(function() {
+    //    $(".mainSite").css("display", "none");
+    //    setTimeout(function() {
+    //        $('.anime').fadeOut();
+    //    }, 2500);
+    //});
 
-    $(function() {
-        $(".mainSite").css({
-            opacity: '0'
-        });
-        setTimeout(function() {
-            $(".mainSite").css("display", "block");
-            $(".mainSite").stop().animate({
-                opacity: '1'
-            }, 1000);
-        }, 2500);
-    });
+    //$(function() {
+    //    $(".mainSite").css({
+    //        opacity: '0'
+    //    });
+    //    setTimeout(function() {
+    //        $(".mainSite").css("display", "block");
+    //        $(".mainSite").stop().animate({
+    //            opacity: '1'
+    //        }, 1000);
+    //    }, 2500);
+    //});
 
     //上部メニュー
     $(function() {
@@ -280,6 +286,43 @@
         });
     });
 
+    //テキストアニメーション
+    $(function() {
+        $(window).scroll(function() {
+            $('.txt').each(function() {
+                var windowHeight = $(window).height();
+                var scroll = $(window).scrollTop();
+                var hogePoint = $(this).offset().top;
+                if (scroll > hogePoint - windowHeight) {
+                    $(this).css('opacity', 1).textillate({
+                        in: {
+                            effect: 'fadeInUp',
+                            shuffle: false,
+                            delay: 20,
+                            delayScale: 1,
+                        }
+                    });
+                }
+            });
+            $('.txt-2').each(function() {
+                var windowHeight = $(window).height();
+                var scroll = $(window).scrollTop();
+                var hogePoint = $(this).offset().top;
+                if (scroll > hogePoint - windowHeight) {
+                    $(this).css('opacity', 1).textillate({
+                        in: {
+                            effect: 'fadeInUp',
+                            shuffle: false,
+                            delay: 10,
+                            delayScale: 1,
+                        }
+                    });
+                }
+            });
+        });
+    });
+    
+
     //imgトリミングjs
     objectFitImages();
 
@@ -292,4 +335,7 @@
         jQuery('.parallax2').css('top', 1500 - scrolled * weight2 + 'px');
         jQuery('.parallax3').css('top', 1200 - scrolled * weight2 + 'px');
     });
-</script></html>
+
+</script>
+
+</html>
