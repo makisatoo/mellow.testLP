@@ -3,6 +3,14 @@
         width: 100px;
         padding: 0 20px;
     }
+    
+    .movie-title-top h2 {
+        left: 5%;
+    }
+    
+    .movie-title-bottom h2 {
+        right: 5%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -18,7 +26,7 @@
         top: 55%;
     }
 
-    #svganimation {
+   #svganimation {
         width: 15%;
     }
 
@@ -40,16 +48,39 @@
         font-size: 0.3rem;
     }
     
-    .mellow-movie {
-        height: 800px;
+    .movie-title-top h2 {
+        left: 1%;
+    }
+
+    .movie-title-bottom h2 {
+        right: 1%;
     }
     
-    .mellow-movie video {
-        width: 100%;
+    .product-title  {
+        left: 10%;
     }
     
-    .movie-box {
-        height: 800px;
+    .product-name {
+        left: 15%;
+        padding: 5% 0;
+    }
+    
+    .product-01-body {
+        justify-content: space-around;
+    }
+    
+    .product-01-text {
+        margin-left: 0;
+    }
+
+    .price-box {
+        right: 50%;
+    }
+
+    .product-01-textbox {
+        
+    }
+    
 }
 
 @media screen and (max-width: 896px) {
@@ -61,7 +92,10 @@
         content: "\A";
         white-space: pre; /* あわせてこれを指定しないと改行しない */
     }
-
+    
+    .product-01-body {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 480px) {
