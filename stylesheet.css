@@ -5,6 +5,7 @@ img,
 h1,
 h2,
 h3,
+h4,
 p,
 video,
 a,
@@ -14,6 +15,10 @@ div,
 nav {
     margin: 0;
     padding: 0;
+}
+
+h1,h2,h3,h4,p {
+    font-weight: normal;
 }
 
 html {
@@ -603,7 +608,6 @@ body {
 .header-wrapper {
     width: 100%;
     height: 100vh;
-    width: auto;
     position: relative;
     background-color: #fff;
     overflow: hidden;
@@ -616,6 +620,7 @@ body {
 .headerimg-wrap img {
     width: 80%;
     height: 80%;
+    border-radius: 80px 0 0 0;
     position: absolute;
     right: 0;
     top: 50px;
@@ -627,6 +632,7 @@ body {
 .headerimg-wrap video {
     width: 65%;
     height: 80%;
+    border-radius: 80px 0 0 0;
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -658,13 +664,11 @@ body {
 .top-catchcopy1 {
     font-size: 0.4rem;
     color: #595754;
-    font-weight: normal;
     padding: 20px 0;
 }
 
 .top-catchcopy2 {
     font-size: 0.18rem;
-    font-weight: normal;
     color: #595754;
     padding: 10px 0;
 }
@@ -705,7 +709,6 @@ body {
 
 .concept-title h2 {
     font-size: 0.45rem;
-    font-weight: normal;
     color: #595754;
     margin: 0 auto;
 }
@@ -729,6 +732,7 @@ body {
 parallax1 {
     width: 50vw;
     height: 80vh;
+    border-radius: 0 80px 0 0;
     object-fit: cover;
     object-position: 100% 0;
     position: absolute;
@@ -741,6 +745,7 @@ parallax1 {
 parallax2 {
     width: 25vw;
     height: 40vh;
+    border-radius: 80px 0 0 0;
     object-fit: cover;
     object-position: 0 140%;
     position: absolute;
@@ -762,13 +767,11 @@ parallax2 {
 .concept-catchcopy1 {
     font-size: 0.4rem;
     color: #595754;
-    font-weight: normal;
     padding: 5% 0;
 }
 
 .concept-catchcopy2 {
     font-size: 0.18rem;
-    font-weight: normal;
     color: #595754;
     padding: 2% 0;
 }
@@ -798,7 +801,6 @@ parallax2 {
     left: 10%;
     top: 0;
     font-size: 0.2rem;
-    font-weight: normal;
     color: #595754;
 }
 
@@ -835,7 +837,6 @@ parallax2 {
     right: 10%;
     bottom: 0;
     font-size: 0.2rem;
-    font-weight: normal;
     color: #595754;
 }
 
@@ -855,6 +856,7 @@ parallax2 {
     position: relative;
     display: block;
     width: 100%;
+    border-radius:0 80px 0;
     overflow: hidden;
 }
 
@@ -943,7 +945,6 @@ parallax2 {
 
 .product-title h2 {
     font-size: 0.45rem;
-    font-weight: normal;
     color: #595754;
     z-index: 2;
 }
@@ -963,100 +964,64 @@ parallax2 {
 /* オイル */
 .product-01 {
     width: 100%;
+    height: 500px;
     padding-top: 200px;
     position: relative;
 }
 
-.product-name {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 5%;
-    left: 45%;
-    z-index: 3;
-}
-
-.product-name img {
-    width: 500px;
-    height: 45px;
-    padding: 20px 0;
-}
-
-.product-name h1 {
-    font-size: 0.28rem;
-    font-weight: normal;
-}
-
-.product-01-body {
-    display: flex;
-    position: relative;
-}
-
-.product-01-img {
-    width: 40%;
-    float: left;
-}
-
-.product-01-img img {
-    width:100%;
-    height: 800px;
+.product-01-back {
+    width: 80%;
+    height: 300px;
+    border-radius: 0 80px 0 0;
     object-fit: cover;
-    object-position: 100% 100%;
-    vertical-align: top;
+    object-position: 100%;
+    position: absolute;
     z-index: 1;
 }
 
+.product-01-oil {
+    width: 20%;
+    position: absolute;
+    left: 15%;
+    z-index: 2;
+}
+
+.product-01-wrap {
+    position: absolute;
+    left: 30%;
+    z-index: 3;
+}
+
+.name-01-text {
+    font-size: 0.25rem;
+    letter-spacing: 3px;
+}
+
+.product-body {
+    padding-left: 50px;
+}
+
+.product-01-price {
+    font-size: 0.35rem;
+    padding-top: 30px;
+}
+
+.product-01-pricetext {
+    font-size: 0.16rem;   
+}
+
 .product-01-text {
-    width: 30%;
-    height: 800px;
-    margin-left: 50px;
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    z-index: 3;
     font-size: 0.16rem;
-    font-weight: normal;
-    line-height: 2.5;
-    position: relative;
+    line-height: 1.8;
+    letter-spacing: 5px;
+    padding: 50px;
+    border-radius: 80px 0 0 0;
+    background-color: rgba(255,255,255,0.7);
 }
-
-.price-box {
-    width: 200px;
-    height: 200px;
-    box-sizing: border-box;
-    border: 1px solid #595754;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 10%;
-    right: 10%;
-}
-
-.price-box h3 {
-    padding-bottom: 10px;
-    font-size: 0.24rem;
-    font-weight: normal;
-}
-
-.price-box p {
-    width: 60%;
-    font-size: 0.13rem;
-    font-weight: normal;
-}
-
-.product-01-textbox {
-    padding-top: 300px;
-}
-
-.text-box {
-    width: 450px;
-    height: 300px;
-    background-color: #f4f0f2;
-    position: absolute;
-    bottom: 100px;
-    right: 0;
-    z-index: -1;
-}
-
 /* セット */
 .specialset-body {
     margin-top: 100px; 
@@ -1105,20 +1070,17 @@ parallax2 {
 
 .set-text h1 {
     font-size: 0.4rem;
-    font-weight: normal;
     color: #595754;
     padding: 30px 0;
 }
 
 .set-text h3 {
     font-size: 0.2rem;
-    font-weight: normal;
     color: #595754;
 }
 
 .set-text p {
     font-size: 0.16rem;
-    font-weight: normal;
     color: #595754;
     padding: 30px 0;
 }
