@@ -792,28 +792,16 @@ parallax2 {
 /* 動画 */
 .movie-title-top {
     width: 100%;
-    height: 150px;
+    height: 100px;
     position: relative;
 }
 
 .movie-title-top h2 {
     position: absolute;
-    left: 10%;
+    left: 20%;
     top: 0;
     font-size: 0.2rem;
     color: #595754;
-}
-
-.movie-title-top h2:before {
-    content: '';
-    width: 400px;
-    height: 100px;
-    position: absolute;
-    border-left: solid 1px #ac6f8e;
-    border-top: solid 1px #ac6f8e;
-    border-radius: 20px 0 0 0;
-    bottom: -150px;
-    left: 0;
 }
 
 .mellow-movie {
@@ -828,28 +816,16 @@ parallax2 {
 
 .movie-title-bottom {
     width: 100%;
-    height: 150px;
+    height: 100px;
     position: relative;
 }
 
 .movie-title-bottom h2 {
     position: absolute;
-    right: 10%;
+    right: 20%;
     bottom: 0;
     font-size: 0.2rem;
     color: #595754;
-}
-
-.movie-title-bottom h2:after {
-    content: '';
-    width: 400px;
-    height: 100px;
-    position: absolute;
-    border-right: solid 1px #ac6f8e;
-    border-bottom: solid 1px #ac6f8e;
-    border-radius: 0 0 20px 0;
-    top: -150px;
-    right: 0;
 }
 
 .movie-link {
