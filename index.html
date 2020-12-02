@@ -51,13 +51,13 @@
 </head>
 
 <body>
-    <!--
+    
     <div id="logo_loader" class="anime">
         <div class="f_logo">
             <img src="img/mellow_logo.svg" alt="logo">
         </div>
     </div>
--->
+
     <div class="mainSite">
         <div class="icons">
             <a href="#"><i class="fab fa-instagram fa-fw fa-1x icon-shake"></i></a>
@@ -302,24 +302,24 @@
 
 <script type="text/javascript">
     //ローディング
-    //$(function() {
-    //    $(".mainSite").css("display", "none");
-    //    setTimeout(function() {
-    //        $('.anime').fadeOut();
-    //    }, 2500);
-    //});
+    $(function() {
+        $(".mainSite").css("display", "none");
+        setTimeout(function() {
+            $('.anime').fadeOut();
+        }, 2500);
+    });
 
-    //$(function() {
-    //    $(".mainSite").css({
-    //        opacity: '0'
-    //    });
-    //    setTimeout(function() {
-    //        $(".mainSite").css("display", "block");
-    //        $(".mainSite").stop().animate({
-    //            opacity: '1'
-    //        }, 1000);
-    //    }, 2500);
-    //});
+    $(function() {
+        $(".mainSite").css({
+            opacity: '0'
+        });
+        setTimeout(function() {
+            $(".mainSite").css("display", "block");
+            $(".mainSite").stop().animate({
+                opacity: '1'
+            }, 1000);
+        }, 2500);
+    });
 
     //上部メニュー
     $(function() {
