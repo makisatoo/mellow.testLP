@@ -51,13 +51,13 @@
 </head>
 
 <body>
-    
+    <!--
     <div id="logo_loader" class="anime">
         <div class="f_logo">
             <img src="img/mellow_logo.svg" alt="logo">
         </div>
     </div>
-
+-->
     <div class="mainSite">
         <div class="icons">
             <a href="#"><i class="fab fa-instagram fa-fw fa-1x icon-shake"></i></a>
@@ -112,10 +112,12 @@
                         </ul>
                     </nav>
                 </div>
+                
+                <h1 class="catchcopy2-fixed">― I make Ideal self. ―</h1>
 
                 <div class="top-catchcopy">
-                    <h1 class="top-catchcopy1 fade late1">わたしがつくる、<br>なりたいわたし</h1>
-                    <h1 class="top-catchcopy2 fade late2">― I make Ideal self. ―</h1>
+                    <h1 class="top-catchcopy1 fade late1">わたしがつくる、</h1>
+                    <h1 class="top-catchcopy2">なりたいわたし</h1>
                     <!-- サインSVG -->
                     <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
                         <path class="cls-1 fade late3" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
@@ -143,8 +145,6 @@
                 <p>― コンセプト</p>
             </div>
             <div class="concept-body">
-                <h1 class="concept-catchcopy1 txt">わたしがつくる、<span class="break"></span>なりたいわたし</h1>
-                <h1 class="concept-catchcopy2 txt">― I make Ideal self. ―</h1>
                 <div class="concept-text">
                     <p class="txt">「わたし」を形成している、</p>
                     <p class="txt">これまで過ごしてきたすべての時間。</p>
@@ -302,24 +302,24 @@
 
 <script type="text/javascript">
     //ローディング
-    $(function() {
-        $(".mainSite").css("display", "none");
-        setTimeout(function() {
-            $('.anime').fadeOut();
-        }, 2500);
-    });
+    //$(function() {
+    //    $(".mainSite").css("display", "none");
+    //    setTimeout(function() {
+    //        $('.anime').fadeOut();
+    //    }, 2500);
+    //});
 
-    $(function() {
-        $(".mainSite").css({
-            opacity: '0'
-        });
-        setTimeout(function() {
-            $(".mainSite").css("display", "block");
-            $(".mainSite").stop().animate({
-                opacity: '1'
-            }, 1000);
-        }, 2500);
-    });
+    //$(function() {
+    //    $(".mainSite").css({
+    //        opacity: '0'
+    //    });
+    //    setTimeout(function() {
+    //        $(".mainSite").css("display", "block");
+    //        $(".mainSite").stop().animate({
+    //            opacity: '1'
+    //        }, 1000);
+    //    }, 2500);
+    //});
 
     //上部メニュー
     $(function() {

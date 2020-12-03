@@ -338,7 +338,6 @@ body {
     z-index: 999;
     color: #595754;
     font-family: "Noto Serif JP", serif;
-    text-orientation: upright;
 }
 
 .scroll::after {
@@ -668,7 +667,6 @@ body {
 .headerimg-wrap img {
     width: 80%;
     height: 80%;
-    border-radius: 80px 0 0 0;
     position: absolute;
     right: 0;
     top: 50px;
@@ -680,7 +678,6 @@ body {
 .headerimg-wrap video {
     width: 65%;
     height: 80%;
-    border-radius: 80px 0 0 0;
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -713,14 +710,14 @@ body {
     font-size: 0.4rem;
     letter-spacing: 5px;
     color: #595754;
-    padding: 20px 0;
 }
 
 .top-catchcopy2 {
-    font-size: 0.18rem;
-    letter-spacing: 2px;
+    font-size: 0.4rem;
+    letter-spacing: 5px;
     color: #595754;
-    padding: 10px 0;
+    padding-bottom: 20px;
+    margin-left: 80px;
 }
 
 /* サイン アニメーション */
@@ -734,7 +731,7 @@ body {
 
 #svganimation {
     max-width: 180px;
-    margin-left: 180px;
+    margin-left: 200px;
 }
 
 /* コンセプト コンテンツ */
@@ -778,11 +775,21 @@ body {
     -ms-transform: translateX(-50%);
 }
 
+.catchcopy2-fixed{
+    position: fixed;
+    top: 100px;
+    left: 40px;
+    writing-mode: vertical-lr;
+    font-size: 0.13rem;
+    letter-spacing: 2px;
+    color: #595754;
+    z-index: 2;
+}
+
 .concept-img,
 parallax1 {
     width: 50vw;
     height: 80vh;
-    border-radius: 0 80px 0 0;
     object-fit: cover;
     object-position: 100% 0;
     position: absolute;
@@ -795,7 +802,6 @@ parallax1 {
 parallax2 {
     width: 25vw;
     height: 40vh;
-    border-radius: 80px 0 0 0;
     object-fit: cover;
     object-position: 0 140%;
     position: absolute;
@@ -809,23 +815,9 @@ parallax2 {
     position: absolute;
     top: 300px;
     left: 40%;
-    [] display: flex;
+    display: flex;
     flex-direction: column;
     z-index: 3;
-}
-
-.concept-catchcopy1 {
-    font-size: 0.4rem;
-    letter-spacing: 5px;
-    color: #595754;
-    padding: 5% 0;
-}
-
-.concept-catchcopy2 {
-    font-size: 0.18rem;
-    letter-spacing: 2px;
-    color: #595754;
-    padding: 2% 0;
 }
 
 .concept-text {
@@ -886,7 +878,6 @@ parallax2 {
     position: relative;
     display: block;
     width: 100%;
-    border-radius:0 80px 0;
     overflow: hidden;
 }
 
@@ -1002,7 +993,6 @@ parallax2 {
 .product01-back {
     width: 80%;
     height: 300px;
-    border-radius: 0 80px 0 0;
     object-fit: cover;
     object-position: 50% 60%;
     position: absolute;
@@ -1049,7 +1039,6 @@ parallax2 {
     line-height: 1.8;
     letter-spacing: 3px;
     padding: 100px;
-    border-radius: 80px 0 0 0;
     background-color: rgba(255,255,255,0.7);
 }
 
@@ -1158,7 +1147,6 @@ parallax2 {
     width: 100%;
     height: 100%;
     background-color: #e3e0da;
-    border-radius: 80px 0 0 0;
     z-index: -1;
 }
 
@@ -1170,7 +1158,6 @@ parallax2 {
     width: 100%;
     height: 100%;
     background-color: #beb2b7;
-    border-radius: 0 0 80px 0;
     z-index: -1;
 }
 
