@@ -698,6 +698,7 @@ body {
     object-position: 0 100%;
 }
 
+/*
 .headerimg-movie {
     width: 65%;
     height: 80%;
@@ -709,21 +710,12 @@ body {
     object-fit: cover;
     object-position: 0 100%;
 }
+*/
 
 .object-fit-img {
     object-fit: cover;
     object-position: bottom;
     font-family: 'object-fit: cover; object-position: bottom;'
-}
-
-.headerimg-shadow{
-    width: 30%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    opacity: 0.4;
-    transform:rotate(-90deg); 
 }
 
 .top-catchcopy {
@@ -825,7 +817,6 @@ parallax1 {
     height: 80vh;
     object-fit: cover;
     object-position: 50% 0;
-    transform: scale(-1, 1);
     position: absolute;
     left: 0;
     z-index: 1;
@@ -836,10 +827,20 @@ parallax2 {
     width: 25vw;
     height: 40vh;
     object-fit: cover;
-    object-position: 100% 0;
+    object-position: 0 0;
     position: absolute;
     right: 0;
     z-index: 1;
+}
+
+.img-shadow{
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    transform: scale(-1, 1);
 }
 
 .concept-body {
@@ -858,9 +859,7 @@ parallax2 {
     color: #595754;
     line-height: 2.5;
     letter-spacing: 5px;
-    padding: 100px;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 80px;
+    padding-top: 100px;
 }
 
 .txt {
