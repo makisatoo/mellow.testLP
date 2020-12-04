@@ -1041,9 +1041,9 @@ parallax2 {
 
 .product01-back {
     width: 80%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
-    object-position: 50% 0;
+    object-position: 100% 50%;
     position: absolute;
     z-index: 1;
 }
@@ -1051,13 +1051,13 @@ parallax2 {
 .product01-oil {
     width: 20%;
     position: absolute;
-    left: 15%;
+    left: 30%;
     z-index: 2;
 }
 
 .product01-wrap {
     position: absolute;
-    left: 30%;
+    left: 10%;
     top: 100px;
     z-index: 3;
 }
@@ -1077,6 +1077,7 @@ parallax2 {
 }
 
 .product01-pricetext {
+    color: #595754;
     font-size: 0.16rem;   
 }
 
