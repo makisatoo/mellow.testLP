@@ -16,11 +16,11 @@
     <!-- サインアニメーション -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
     <!-- imgトリミングjs -->
-    <script src="object-fit-images-master/dist/ofi.min.js"></script>
+    <script src="js/ofi.min.js"></script>
     <!-- テキストアニメーション -->
-    <script src="textillate-master/jquery.textillate.js"></script>
-    <script src="textillate-master/jquery.lettering.js"></script>
-    <link rel="stylesheet" type="text/css" href="textillate-master/animate.css">
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/animate.css">
     <!-- 動画ポップアップ表示 -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.css' />
     <style>
@@ -48,6 +48,8 @@
             font-family: serif;
     </style>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.js'></script>
+    <!-- 白黒からカラー -->
+    <script src="js/jquery.BlackAndWhite.js"></script>
 </head>
 
 <body>
@@ -113,11 +115,10 @@
                     </nav>
                 </div>
 
-                <h1 class="catchcopy2-fixed">― I make Ideal self. ―</h1>
-
                 <div class="top-catchcopy">
                     <h1 class="top-catchcopy1 fade late1">わたしがつくる、</h1>
-                    <h1 class="top-catchcopy2 fade late2">なりたいわたし</h1>
+                    <h1 class="top-catchcopy1 fade late1">なりたいわたし</h1>
+                    <h1 class="top-catchcopy2 fade late2">― I make Ideal self. ―</h1>
                     <!-- サインSVG -->
                     <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
                         <path class="cls-1 fade late3" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
@@ -131,8 +132,8 @@
                 </div>
 
                 <div class="headerimg-wrap">
-                    <img class="headerimg-background object-fit-img" src="img/headerimg-right.jpg" alt="">
-                    <img class="headerimg-main object-fit-img" src="img/headerimg-main.png" alt="">
+                    <img class="headerimg-background object-fit-img" src="img/headerimg-background.jpg" alt="">
+                    <img class="headerimg-main object-fit-img" src="img/headerimg-main.jpg" alt="">
                     <!--<video class="headerimg-movie object-fit-img" src="img/header-movie2.mp4" autoplay muted loop autoplay muted alt=""></video>-->
                 </div>
             </div>
@@ -141,6 +142,7 @@
         <span class="space"></span>
 
         <div class="concept-wrap">
+            <h1 class="catchcopy2-fixed">― I make Ideal self. ―</h1>
             <div class="concept-title">
                 <h2 class="text-animation">Consept</h2>
                 <p>― コンセプト</p>
@@ -162,7 +164,7 @@
                     <p class="txt">とびきり贅沢な手間を「わたし」に。</p>
                 </div>
             </div>
-            <img class="concept-img object-fit-img parallax1" src="img/concept-img.png" alt="mellow">
+            <img class="concept-img object-fit-img parallax1" src="img/concept-img.jpg" alt="mellow">
             <img class="concept-img2 object-fit-img parallax2" src="img/concept-img2.png" alt="mellow">
             <img class="img-shadow" src="img/shadow-img1.png">
         </div>
@@ -233,8 +235,7 @@
                                 <p>＃ テキスト</p>
                             </div>
                             <div class="imgwrap01">
-                                <img class="imgwrap01-background" src="">
-                                <img class="imgwrap01-body" src="">
+                                <img class="imgwrap01-body" src="img/imgwrap01-01.png">
                             </div>
                         </div>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -247,8 +248,7 @@
                                 <p>＃ テキスト</p>
                             </div>
                             <div class="imgwrap01">
-                                <img class="imgwrap01-background" src="">
-                                <img class="imgwrap01-body" src="">
+                                <img class="imgwrap01-body" src="img/imgwrap01-02.png">
                             </div>
                         </div>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -261,8 +261,7 @@
                                 <p>＃ テキスト</p>
                             </div>
                             <div class="imgwrap01">
-                                <img class="imgwrap01-background" src="">
-                                <img class="imgwrap01-body" src="">
+                                <img class="imgwrap01-body" src="img/imgwrap01-03.png">
                             </div>
                         </div>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -275,8 +274,7 @@
                                 <p>＃ テキスト</p>
                             </div>
                             <div class="imgwrap01">
-                                <img class="imgwrap01-background" src="">
-                                <img class="imgwrap01-body" src="">
+                                <img class="imgwrap01-body" src="img/imgwrap01-04.png">
                             </div>
                         </div>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -454,6 +452,22 @@
             });
         });
     });
+    
+    //text固定
+    $(function(){
+        var scrollStart = $('.catchcopy2-fixed').offset().top; //ページ上部からの距離を取得
+        var distance = 0;
+
+        $(document).scroll(function(){
+            distance = $(this).scrollTop(); //スクロールした距離を取得
+
+            if (scrollStart <= distance) { //スクロール距離が『.sikaku_box』の位置を超えたら
+                $('.catchcopy2-fixed').addClass('text-fixed'); //class『fixed』を追加
+            } else if (scrollStart >= distance) { //スクロールがページ上部まで戻ったら
+                $('.catchcopy2-fixed').removeClass('text-fixed'); //class『fixed』を削除
+            }
+        });      
+    });
 
     //imgトリミングjs
     objectFitImages();
@@ -466,5 +480,21 @@
         jQuery('.parallax1').css('top', 800 - scrolled * weight1 + 'px');
         jQuery('.parallax2').css('top', 1500 - scrolled * weight2 + 'px');
         jQuery('.parallax3').css('top', 1200 - scrolled * weight2 + 'px');
+    });
+    
+    //画像白黒→カラー
+    $(function(){
+        $('.imgwrap01').BlackAndWhite({
+            hoverEffect : true,
+            webworkerPath : false,
+            invertHoverEffect: false, //白黒→カラー（trueにするとカラー→白黒）
+            intensity:1,
+            speed: {
+                fadeIn: 200, //フェードインのスピード
+                fadeOut: 800 //フェードアウトのスピード
+            },
+            onImageReady:function(img) {
+            }
+        });
     });
 </script></html>

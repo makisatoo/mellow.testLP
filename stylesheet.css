@@ -676,8 +676,8 @@ body {
 }
 
 .headerimg-background {
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     position: absolute;
     right: 0;
     top: 50px;
@@ -687,8 +687,8 @@ body {
 }
 
 .headerimg-main {
-    width: 65%;
-    height: 80%;
+    width: 80%;
+    height: 85%;
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -738,11 +738,10 @@ body {
 }
 
 .top-catchcopy2 {
-    font-size: 0.4rem;
-    letter-spacing: 5px;
+    font-size: 0.18rem;
+    letter-spacing: 2px;
     color: #595754;
-    padding-bottom: 20px;
-    margin-left: 80px;
+    padding: 10px 0;
 }
 
 /* サイン アニメーション */
@@ -801,13 +800,21 @@ body {
 }
 
 .catchcopy2-fixed{
-    position: fixed;
-    top: 100px;
+    position: absolute;
+    top: 0;
     left: 40px;
     writing-mode: vertical-lr;
     font-size: 0.13rem;
     letter-spacing: 2px;
     color: #595754;
+    z-index: 2;
+    padding-top: 150px;
+}
+
+.catchcopy2-fixed.text-fixed {
+    position: fixed;
+    top: 0;
+    left: 40px;
     z-index: 2;
 }
 
@@ -1115,7 +1122,7 @@ parallax2 {
 }
 
 .product01-pointlist li {
-    width: 250px;
+    width: 300px;
     margin: 0 auto;
 }
 
@@ -1150,6 +1157,11 @@ parallax2 {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.imgwrap01 {
+    position:relative;
+    display:block;
 }
 
 .point01-textwrap {
