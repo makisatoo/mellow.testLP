@@ -132,7 +132,6 @@
                 </div>
 
                 <div class="headerimg-wrap">
-                    <img class="headerimg-background object-fit-img" src="img/headerimg-background.jpg" alt="">
                     <img class="headerimg-main object-fit-img" src="img/headerimg-main.jpg" alt="">
                     <!--<video class="headerimg-movie object-fit-img" src="img/header-movie2.mp4" autoplay muted loop autoplay muted alt=""></video>-->
                 </div>
@@ -142,6 +141,8 @@
         <span class="space"></span>
 
         <div class="concept-wrap">
+            <img class="img-shadow1" src="img/shadow-img1-left.png" alt="">
+            <img class="img-shadow2" src="img/shadow-img2-right.png" alt="">
             <h1 class="catchcopy2-fixed">― I make Ideal self. ―</h1>
             <div class="concept-title">
                 <h2 class="text-animation">Consept</h2>
@@ -164,15 +165,14 @@
                     <p class="txt">とびきり贅沢な手間を「わたし」に。</p>
                 </div>
             </div>
+            
             <img class="concept-img object-fit-img parallax1" src="img/concept-img.jpg" alt="mellow">
             <img class="concept-img2 object-fit-img parallax2" src="img/concept-img2.jpg" alt="mellow">
-            <!--<img class="img-shadow" src="img/shadow-img1.png">-->
         </div>
 
         <span class="space-movietop">
-            <!--<img class="img-shadow2" src="img/shadow-img1-left.png">-->
         </span>
-        
+
         <div class="movie-title-top">
             <h2 class="txt">Brand movie for mellow</h2>
         </div>
@@ -191,7 +191,6 @@
         </div>
 
         <span class="space-moviebottom">
-            <!--<img class="img-shadow3" src="img/shadow-img1-right.png">-->
         </span>
 
         <div class="product-wrap">
@@ -202,7 +201,7 @@
             <div class="product01">
                 <div class="product01-img">
                     <img class="product01-back object-fit-img fade-left" src="img/product-01-back.jpg" alt="">
-                    <img class="product01-oil" src="img/oil-img.png" alt="">
+                    <!--<img class="product01-oil" src="img/oil-img.png" alt="">-->
                 </div>
                 <div class="product01-wrap">
                     <div class="product01-name fade-left">
@@ -455,13 +454,13 @@
             });
         });
     });
-    
+
     //text固定
-    $(function(){
+    $(function() {
         var scrollStart = $('.catchcopy2-fixed').offset().top; //ページ上部からの距離を取得
         var distance = 0;
 
-        $(document).scroll(function(){
+        $(document).scroll(function() {
             distance = $(this).scrollTop(); //スクロールした距離を取得
 
             if (scrollStart <= distance) { //スクロール距離が『.sikaku_box』の位置を超えたら
@@ -469,7 +468,7 @@
             } else if (scrollStart >= distance) { //スクロールがページ上部まで戻ったら
                 $('.catchcopy2-fixed').removeClass('text-fixed'); //class『fixed』を削除
             }
-        });      
+        });
     });
 
     //imgトリミングjs
@@ -484,20 +483,19 @@
         jQuery('.parallax2').css('top', 1500 - scrolled * weight2 + 'px');
         jQuery('.parallax3').css('top', 1200 - scrolled * weight2 + 'px');
     });
-    
+
     //画像白黒→カラー
-    $(function(){
+    $(function() {
         $('.imgwrap01').BlackAndWhite({
-            hoverEffect : true,
-            webworkerPath : false,
+            hoverEffect: true,
+            webworkerPath: false,
             invertHoverEffect: false, //白黒→カラー（trueにするとカラー→白黒）
-            intensity:1,
+            intensity: 1,
             speed: {
                 fadeIn: 200, //フェードインのスピード
                 fadeOut: 800 //フェードアウトのスピード
             },
-            onImageReady:function(img) {
-            }
+            onImageReady: function(img) {}
         });
     });
 </script></html>
