@@ -25,10 +25,6 @@ p {
     font-weight: normal;
 }
 
-h1 {
-    
-}
-
 html {
     width: 100%;
     height: 100%;
@@ -859,7 +855,6 @@ parallax2 {
     color: #595754;
     line-height: 2.5;
     letter-spacing: 5px;
-    border-radius: 80px;
     padding: 100px;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -1009,7 +1004,6 @@ parallax2 {
     font-family: "Noto Serif JP", serif;
     color: #595754;
     width: 100%;
-    height: 2000px;
     position: relative;
 }
 
@@ -1113,9 +1107,6 @@ parallax2 {
     line-height: 1.8;
     letter-spacing: 3px;
     padding: 100px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-    /*background-color: rgba(37, 37, 37, 0.1);*/
-    border-radius: 80px;
     box-sizing: border-box;
 }
 
@@ -1145,7 +1136,7 @@ parallax2 {
     font-family: "Noto Serif JP", serif;
     color: #595754;
     width: 100%;
-    height: 900px;
+    height: 700px;
     position: relative;
     padding-top: 100px;
 }
@@ -1274,7 +1265,6 @@ parallax2 {
 .specialset-body {
     margin-top: 100px;
     width: 100%;
-    height: 1200px;
     display: flex;
     flex-direction: column;
 }
@@ -1334,4 +1324,112 @@ parallax2 {
     font-size: 0.16rem;
     color: #595754;
     padding: 30px 0;
+}
+
+.set-contents {
+    width: 100%;
+    background-color: #e5dee1;
+}
+
+.set-contents h1 {
+    text-align: center;
+    line-height: 500px;
+    font-size: 0.2rem;
+}
+
+/* How to動画 */
+.howto-wrap{
+    width: 100%;
+    position: relative;
+}
+
+.howto-movie-list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.movie-list {
+    display: flex;
+}
+
+.howto-movie-contents {
+    width: 30%;
+}
+
+.howto-movie-contents video {
+    width: 400px;
+}
+
+.howto-movie-textbody {
+    width: 60%;
+    margin: 5%;
+}
+
+.howto-movie-textbody h2 {
+    padding: 15px 0;
+    font-size: 0.25rem;
+}
+
+.howto-movie-textbody p {
+    font-size: 0.16rem;
+}
+
+ /* メッセージ */
+.bottom-message {
+    width: 100%;
+    height: 300px;
+    background-color: #e5dee1;
+    position: relative;
+    text-align: center;
+}
+.message-text {
+    width: 500px;
+    font-size: 0.16rem;
+    color: #595754;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* SNS */
+.sns-wrap {
+    width: 100%;
+    height: 300px;
+    background-color: #e5dee1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sns-boxs {
+    margin: 0 auto;
+}
+
+.inst-box {
+    display: inline-block;
+    width: 500px;
+    height: 100%;
+    font-size: 0.4rem;
+    background-color: #b27293;
+    margin-right: 30px;
+}
+
+.twit-box {
+    display: inline-block;
+    width: 500px;
+    height: 100%;
+    font-size: 0.4rem;
+    background-color: #b27293;
+    margin-left: 30px;
+}
+
+/* フッター */
+.footer-wrap {
+    width: 100%;
+    height: 300px;
+    background-color: #e5dee1;
 }
