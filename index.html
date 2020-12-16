@@ -21,6 +21,8 @@
     <script src="js/jquery.lettering.js"></script>
     <script src="js/jquery.textillate.js"></script>
     <link rel="stylesheet" type="text/css" href="js/animate.css">
+    <!-- readmore -->
+    <script src="js/readmore.min.js"></script>
     <!-- 動画ポップアップ表示 -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.css' />
     <style>
@@ -48,24 +50,19 @@
             font-family: serif;
     </style>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.js'></script>
-    <!-- 白黒からカラー 
-    <script src="js/jquery.BlackAndWhite.js"></script>
--->
 </head>
 
 <body>
-    <!--
     <div id="logo_loader" class="anime">
         <div class="f_logo">
-            <img src="img/mellow_logo.svg" alt="logo">
+            <img src="img/mellow_logo.svg" alt="mellow">
         </div>
     </div>
--->
     <div class="mainSite">
         <div class="icons">
-            <a href="#"><i class="fab fa-instagram fa-fw fa-1x icon-shake"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-fw fa-1x icon-shake"></i></a>
-            <a href="#"><i class="fab fa-facebook-f fa-fw fa-1x icon-shake"></i></a>
+            <a href="https://www.instagram.com/mellow_022/" target=”_blank”><i class="fab fa-instagram fa-fw fa-1x icon-shake"></i></a>
+            <a href="https://twitter.com/mellow_022" target=”_blank”><i class="fab fa-twitter fa-fw fa-1x icon-shake"></i></a>
+            <a href="https://www.facebook.com/mellow022/?view_public_for=104970138105512" target=”_blank”><i class="fab fa-facebook-f fa-fw fa-1x icon-shake"></i></a>
         </div>
         <div class="scroll">Scroll</div>
 
@@ -75,16 +72,17 @@
                 <!-- 上部メニュー部分 -->
                 <nav id="menu-bar" class="g-nav">
                     <img class="logo-mellow" src="img/mellow_logo.svg" alt="mellow">
-                    <a class="shop-icon" href="#">Online Shop<i class="fas fa-shopping-cart fa-fw fa-1x"></i></a>
+                    <a class="shop-icon" href="https://www.me-ll-ow.jp" target=”_blank”>Online Shop<i class="fas fa-shopping-cart fa-fw fa-1x"></i></a>
                     <ul class="g-nav-menu">
-                        <li><a class="btn btn-action" href="#">Concept</a></li>
-                        <li><a class="btn btn-action" href="#">Product</a></li>
-                        <li><a class="btn btn-action" href="#">How TO</a></li>
+                        <li><a class="btn btn-action" href="#concept-wrap">Concept</a></li>
+                        <li><a class="btn btn-action" href="#product-wrap">Product</a></li>
+                        <li><a class="btn btn-action" href="#howto-wrap">How TO</a></li>
                         <li><a class="btn btn-action" href="#">Buy</a></li>
                     </ul>
                 </nav>
                 <!-- ハンバーガーメニュー部分 -->
                 <div class="drawer">
+                    <img class="logo-mellow" src="img/mellow_logo.svg" alt="mellow">
                     <!-- ハンバーガーメニューの表示・s非表示を切り替えるチェックボックス -->
                     <input type="checkbox" id="drawer-check" class="drawer-hidden">
                     <!-- ハンバーガーアイコン -->
@@ -105,23 +103,34 @@
                                 <a href="#">Buy</a>
                             </li>
                             <li class="drawer-item">
-                                <a class="shop-icon-drawer icons-m" href="#">Online Shop<i class="fas fa-shopping-cart fa-fw icons-m"></i></a>
+                                <a class="shop-icon-drawer icons-m" href="https://www.me-ll-ow.jp" target=”_blank”>Online Shop<i class="fas fa-shopping-cart fa-fw icons-m"></i></a>
                             </li>
                             <div class="ham-menu-icons">
-                                <a href="#"><i class="fab fa-instagram fa-fw icons-m"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-fw icons-m"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f fa-fw icons-m"></i></a>
+                                <a href="https://www.instagram.com/mellow_022/" target=”_blank”><i class="fab fa-instagram fa-fw icons-m"></i></a>
+                                <a href="https://twitter.com/mellow_022" target=”_blank”><i class="fab fa-twitter fa-fw icons-m"></i></a>
+                                <a href="https://www.facebook.com/mellow022/?view_public_for=104970138105512" target=”_blank”><i class="fab fa-facebook-f fa-fw icons-m"></i></a>
                             </div>
                         </ul>
                     </nav>
                 </div>
+                
+                <img class="catchcopy-img fade late1" src="img/catchcopy-img.png">
+                <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
+                    <path class="cls-1 fade late2" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
+                                                      c8.7-2.6-11.7,40.4-9.2,40.2c8.9-1.8,57.1-51.5,63.7-44.4c10.2,5.2-13.1,54.3-9.2,60.9c1.6,6.8,116.9-56.1,92.7-71.6
+                                                      c-29.7-4.4-57.8,66.9-29.5,71.8c62.4,0.4,290.8-199.2,259-229.6C515.7-5.8,355.8,251.5,402,247.2c91.5-25.1,291.5-205,271.9-239.7
+                                                      C660-12.2,499,259.4,543.1,248.4c22.9-5.9,68.7-41.2,68.7-41.2" />
+                    <path class="cls-1 fade late2" d="M634.6,180.1c-15.3,1.9-48.7,71.7-25.2,71.8c45.2-3.6,65.8-109.5,15.7-94c-25.8,13.1,20.4,72.7,63.6,59
+                                                      C740,203.3,769.2,134,806.5,147c31,9.1-62.4,110.7-43.7,100.2c11.4-6.4,67.3-54,66.4-50.3c1.2,3.4-40.5,63.6-26.1,57.7
+                                                      c5.6,1.4,65.2-40.7,66.9-42.2" />
+                </svg>
 
-                <div class="top-catchcopy">
+                <!--<div class="top-catchcopy">
                     <h1 class="top-catchcopy1 fade late1">わたしがつくる、</h1>
                     <h1 class="top-catchcopy1 fade late1">なりたいわたし</h1>
-                    <h1 class="top-catchcopy2 fade late2">― I make Ideal self. ―</h1>
+                    <h1 class="top-catchcopy2 fade late2">― I make Ideal self. ―</h1>-->
                     <!-- サインSVG -->
-                    <svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
+                    <!--<svg version="1.1" id="svganimation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 875.1 260" style="enable-background:new 0 0 875.1 260;" xml:space="preserve">
                         <path class="cls-1 fade late3" d="M5.2,214.7c-4.9-0.8,78.7-64.1,104-60.7c9.1,6.5-35.2,57.7-24.9,65.9c24.8,4,57-41.9,75.8-41.9
                                                c8.7-2.6-11.7,40.4-9.2,40.2c8.9-1.8,57.1-51.5,63.7-44.4c10.2,5.2-13.1,54.3-9.2,60.9c1.6,6.8,116.9-56.1,92.7-71.6
                                                c-29.7-4.4-57.8,66.9-29.5,71.8c62.4,0.4,290.8-199.2,259-229.6C515.7-5.8,355.8,251.5,402,247.2c91.5-25.1,291.5-205,271.9-239.7
@@ -130,11 +139,10 @@
                                                C740,203.3,769.2,134,806.5,147c31,9.1-62.4,110.7-43.7,100.2c11.4-6.4,67.3-54,66.4-50.3c1.2,3.4-40.5,63.6-26.1,57.7
                                                c5.6,1.4,65.2-40.7,66.9-42.2" />
                     </svg>
-                </div>
+</div>-->
 
                 <div class="headerimg-wrap">
-                    <img class="headerimg-main object-fit-img" src="img/headerimg-main.jpg" alt="">
-                    <!--<video class="headerimg-movie object-fit-img" src="img/header-movie2.mp4" autoplay muted loop autoplay muted alt=""></video>-->
+                    <img class="headerimg-main object-fit-img" src="img/headerimg-main1.jpg" alt="mellow">
                 </div>
             </div>
         </header>
@@ -144,7 +152,7 @@
         <div class="concept-wrap">
             <h1 class="catchcopy2-fixed">― I make Ideal self. ―</h1>
             <div class="concept-title">
-                <h2 class="text-animation">Consept</h2>
+                <h2>Consept</h2>
                 <p>― コンセプト</p>
             </div>
             <div class="concept-body">
@@ -172,312 +180,485 @@
         <span class="space-movietop">
         </span>
 
-        <div class="movie-title-top">
-            <h2 class="txt">Brand movie for mellow</h2>
-        </div>
         <div class="mellow-movie">
             <a class="movie-link" href="https://www.youtube.com/embed/fUEW3bK6pdw" data-lity>
                 <span class="movie-btn">
-                    <img class="movie-btn-box" src="img/movie_btn_box.png">
-                    <img class="movie-btn-center" src="img/movie_btn_center.png">
-                    <img class="movie-btn-text" src="img/movie_btn_text.png">
+                    <img class="movie-btn-box" src="img/movie_btn_box.png" alt="">
+                    <img class="movie-btn-center" src="img/movie_btn_center.png" alt="">
+                    <img class="movie-btn-text" src="img/movie_btn_text.png" alt="">
                 </span>
-                <video class="movie-box object-fit-img" src="img/concept-movie.mp4" alt="mellow" autoplay muted loop autoplay muted></video>
+                <video class="movie-box object-fit-img" src="img/concept-movie.mp4" alt="Brand movie for mellow" autoplay muted loop autoplay muted></video>
             </a>
-        </div>
-        <div class="movie-title-bottom">
-            <h2 class="txt">Press the play button</h2>
+            <div class="movie-title-bottom">
+                <h2 class="txt">Press the play button</h2>
+            </div>
         </div>
 
         <span class="space-moviebottom">
         </span>
 
-        <div class="product-wrap">
+        <div id="product-wrap" class="product-wrap">
             <div class="product-title">
                 <h2 class="text-animation">Product</h2>
                 <p>― 商品</p>
             </div>
-            <div class="product01">
-                <div class="product01-img">
-                    <img class="product01-left object-fit-img fade-left" src="img/product-01-back.jpg" alt="">
-                    <img class="product01-right object-fit-img fade-right" src="img/product-01-right.JPG">
+            <div class="product-setcontents">
+                <div class="product-set-imgbody fade-in">
+                    <img class="object-fit-img" src="img/product-set-mainimg.jpg" alt="">
                 </div>
-                <div class="product01-wrap">
-                    <div class="product01-name">
-                        <img class="name01-img fade-left" src="img/decolletecareoil_l1.png">
-                        <h1 class="name01-text txt">デコルテ ケア オイル / 50㎖</h1>
-                    </div>
-                    <div class="product01-pricebody">
-                        <h4 class="product01-pricetext txt">＜ 内容成分 ＞ オリーブスクワランオイル、ザクロ種子オイル、ヒト幹細胞培養液、ビタミンE、天然精油（ゼラニウム・ベルガモット）</h4>
-                        <p class="product01-pricetextbody txt">※美容成分が沈殿している場合がありますのでよく振ってからご使用ください。</p>
-                    </div>
-                </div>
-                <div class="product01-catch">
-                    <p class="txt">たっぷりと贅沢に、首、鎖骨、胸元へ。</p>
-                </div>
-                <div class="product01-text">
-                    <p class="txt">肌へなめらかに溶け込み、</p>
-                    <br>
-                    <p class="txt">潤いを保ちながら整え、翌朝のやわらかな質感を演出。</p>
-                    <br>
-                    <p class="txt">しっとりとした重めのテクスチャが筋肉を確実にとらえ</p>
-                    <p class="txt">マッサージの効果を存分に引き出します。</p>
-                </div>
-            </div>
-
-            <div class="product01-point">
-                <div class="productpoint-title">
-                    <h2>Point</h2>
-                    <p>― 商品の特徴</p>
-                </div>
-                <div class="product01point-wrap">
-                    <div class="product01point-left">
-                        <img class="" src="img/oil-img.png" alt="">
-                    </div>
-                    <div class="product01point-right">
-                        <ul class="product01point-list">
-                            <li>
-                                <div class="product01point-list-title">
-                                    <img class="product01point-number" src="" alt="">
-                                    <h3>オリーブスクワラン</h3>
-                                </div>
-                                <div class="product01point-body">
-                                    <h4>希少な成分から得る保湿効果と浸透作用※</h4>
-                                    <p>バージンオリーブオイルからわずかしか採取できない純植物性スクワランをベースにしています。
-                                        人間の皮脂にも約10％含まれている成分であるスクワレンを安定化したものが「スクワラン」。
-                                        その為、肌の浸透力※にとても優れ他の美容成分を届ける役割を果たし、高い保湿力で皮膚を柔らかく保ちます。
-                                        （※角質層まで</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product01point-list-title">
-                                    <img class="product01point-number" src="" alt="">
-                                    <h3>ザクロ種子オイル×ヒト幹細胞培養液</h3>
-                                </div>
-                                <div class="product01point-body">
-                                    <h4>内側からふっくらと弾力のあるハリ肌へと</h4>
-                                    <p>今注目のリッチな成分ザクロ種子オイルとヒト幹細胞培養液を贅沢に配合しています。
-                                        肌内部にあるコラーゲンの生成を助け、しなやかな弾力を保ち肌リズムを促進します。
-                                        また、活性酸素を除去する働きや豊富なビタミン成分により、年齢肌によるトラブルを遠ざけます。</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product01point-list-title">
-                                    <img class="product01point-number" src="" alt="">
-                                    <h3>ベルガモット×ゼラニウム</h3>
-                                </div>
-                                <div class="product01point-body">
-                                    <h4>天然精油の優しく上品な香りを纏う</h4>
-                                    <p>「ゼラニウム」と「ベルガモット」のアロマオイルを配合しています。
-                                        オイルを肌に乗せた瞬間にふわりと優しく香り、デコルテケアの時間をより豊かで贅沢なものへと導いてくれます。
-                                        就寝前のリラックス時間をまるごと包み込む上品で繊細な香りは、空間を楽しむ演出のひとつとなります。</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product01point-list-title">
-                                    <img class="product01point-number" src="" alt="">
-                                    <h3>使用頻度について</h3>
-                                </div>
-                                <div class="product01point-body">
-                                    <h4>一日のご褒美に、明日の下ごしらえに</h4>
-                                    <p>あまり時間をとれない毎日には保湿用ケアオイルとして、週末前にはゆっくりとホットマッサージ用オイルとしてなど
-                                        さまざまなライフスタイルに合わせて、週に1回ペースの頻度からでもナイトケアの一員として導入いただけます。
-                                        ※配合成分の「ベルガモット」には光毒性がありますので、夜専用ケアオイルとしてご使用ください。</p>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="product-set-textbody">
+                    <div class="product-set-text">
+                        <div class="product-set-name">
+                            <h1 class="name-main">SPECIAL NIGHTCARE SET</h1>
+                            <div class="name-sub">
+                                <h3>スペシャル ナイトケア セット</h3>
+                                <h2>19,800円 <span>(+TAX)</span></h2>
+                            </div>
+                        </div>
+                        <div class="set-catchcopy-main">
+                            <p class="txt">柔らかな手間で自分自身と向き合う</p>
+                            <p class="txt">ほっと息をついて、熱の深さに包まれる時間。</p>
+                        </div>
+                        <div class="set-catchcopy-sub">
+                            <p>なめらかなフォルムの温かいストーンをオイルで滑
+                                らせ、緊張した筋肉を優しく柔らかくほぐす。<br>
+                                身体をじんわりと芯からあたため、血液とリンパ
+                                の流れを促進。<br>
+                                より効果的で贅沢な「手間」をあなたに贈ります。</p>
+                        </div>
+                        <div class="set-bottom-contents">
+                            <div class="set-buy-button">
+                                <a href="https://www.me-ll-ow.jp" target="_blank">
+                                    <p>Buy</p>
+                                </a>
+                            </div>
+                            <div class="set-contentsbody">
+                                <h4>セット内容</h4>
+                                <p>デコルテケアオイル（50㎖）　1本<br>
+                                    ロシェストーン　2個<br>
+                                    オリジナルロゴタオル　1枚<br>
+                                    スペシャルルームキーカード　1枚</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!--
-            <div class="product01-point">
-                <ul class="product01-pointlist">
-                    <li class="product01-list fade-bottom">
-                        <h3>テキストテキスト</h3>
-                        <div class="point01-imgwrap">
-                            <div class="point01-textwrap">
-                                <p>＃ テキスト</p>
-                                <p>＃ テキスト</p>
+            <!-- セットコンテンツリスト -->
+            <div class="set-listcontents-title">
+                <div class="set-title-wrap">
+                    <h2>Set</h2>
+                    <p>セット内容</p>
+                </div>
+            </div>
+            <div class="product-set-contents2">
+                <ul class="set-contents-wrap">
+                    <li class="set-contents-list setlist-img1 fade-bottom">
+                        <div class="set-list-textwrap">
+                            <div class="list-title-wrap">
+                                <div class="list-title">
+                                    <h3>
+                                        <span>遠赤外線効果</span>で<br>
+                                        じんわりと芯から温める
+                                    </h3>
+                                    <img src="img/01_number.png">
+                                </div>
                             </div>
-                            <div class="imgwrap01">
-                                <img src="img/imgwrap01-01.png">
+                            <div class="list-textbody">
+                                <div class="list-text">
+                                    <p class="open">マッサージ時、温めて使用するロシェストーンは玄武岩という天然の火山岩を原料としています。
+                                        温められた玄武岩は遠赤外線効果により身体を深部まで温め、血行やリンパの流れを促進します。
+                                        温泉にはいったような感覚に、深いリラクゼーション効果を感じていただけます。</p>
+                                </div>
                             </div>
                         </div>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </li>
-                    <li class="product01-list fade-bottom-late1">
-                        <h3>テキストテキスト</h3>
-                        <div class="point01-imgwrap">
-                            <div class="point01-textwrap">
-                                <p>＃ テキスト</p>
-                                <p>＃ テキスト</p>
+                    <li class="set-contents-list setlist-img2 fade-top">
+                        <div class="set-list-textwrap">
+                            <div class="list-title-wrap">
+                                <div class="list-title">
+                                    <h3>
+                                        <span>遠赤外線効果</span>で<br>
+                                        じんわりと芯から温める
+                                    </h3>
+                                    <img src="img/02_number.png">
+                                </div>
                             </div>
-                            <div class="imgwrap01">
-                                <img src="img/imgwrap01-02.png">
+                            <div class="list-textbody">
+                                <div class="list-text">
+                                    <p class="open">マッサージ時、温めて使用するロシェストーンは玄武岩という天然の火山岩を原料としています。
+                                        温められた玄武岩は遠赤外線効果により身体を深部まで温め、血行やリンパの流れを促進します。
+                                        温泉にはいったような感覚に、深いリラクゼーション効果を感じていただけます。</p>
+                                </div>
                             </div>
                         </div>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </li>
-                    <li class="product01-list fade-bottom-late2">
-                        <h3>テキストテキスト</h3>
-                        <div class="point01-imgwrap">
-                            <div class="point01-textwrap">
-                                <p>＃ テキスト</p>
-                                <p>＃ テキスト</p>
+                    <li class="set-contents-list setlist-img3 fade-bottom">
+                        <div class="set-list-textwrap">
+                            <div class="list-title-wrap">
+                                <div class="list-title">
+                                    <h3>
+                                        <span>遠赤外線効果</span>で<br>
+                                        じんわりと芯から温める
+                                    </h3>
+                                    <img src="img/03_number.png">
+                                </div>
                             </div>
-                            <div class="imgwrap01">
-                                <img src="img/imgwrap01-03.png">
+                            <div class="list-textbody">
+                                <div class="list-text">
+                                    <p class="open">マッサージ時、温めて使用するロシェストーンは玄武岩という天然の火山岩を原料としています。
+                                        温められた玄武岩は遠赤外線効果により身体を深部まで温め、血行やリンパの流れを促進します。
+                                        温泉にはいったような感覚に、深いリラクゼーション効果を感じていただけます。</p>
+                                </div>
                             </div>
                         </div>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </li>
-                    <li class="product01-list fade-bottom-late3">
-                        <h3>テキストテキスト</h3>
-                        <div class="point01-imgwrap">
-                            <div class="point01-textwrap">
-                                <p>＃ テキスト</p>
-                                <p>＃ テキスト</p>
+                    <li class="set-contents-list setlist-img4 fade-top">
+                        <div class="set-list-textwrap">
+                            <div class="list-title-wrap">
+                                <div class="list-title">
+                                    <h3>
+                                        <span>遠赤外線効果</span>で<br>
+                                        じんわりと芯から温める
+                                    </h3>
+                                    <img src="img/04_number.png">
+                                </div>
                             </div>
-                            <div class="imgwrap01">
-                                <img src="img/imgwrap01-04.png">
+                            <div class="list-textbody">
+                                <div class="list-text">
+                                    <p class="open">マッサージ時、温めて使用するロシェストーンは玄武岩という天然の火山岩を原料としています。
+                                        温められた玄武岩は遠赤外線効果により身体を深部まで温め、血行やリンパの流れを促進します。
+                                        温泉にはいったような感覚に、深いリラクゼーション効果を感じていただけます。</p>
+                                </div>
                             </div>
                         </div>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </li>
                 </ul>
             </div>
--->
+
+
+            <div class="set-point">
+                <div class="setpoint-title">
+                    <h2>Pint</h2>
+                    <p>― 商品の特徴</p>
+                </div>
+                <div class="set-bodyimg">
+                    <img class="object-fit-img" src="img/setpoint-imgtop.jpg" alt="special nightcare setとは">
+                    <div class="set-img-text">
+                        <p class="txt">柔らかな手間で自分自身と向き合う</p>
+                        <p class="txt">ほっと息をついて、熱の深さに包まれる時間。</p>
+                    </div>
+                </div>
+                <div class="set-pointlist-wrap">
+                    <ul class="point-list-contents">
+                        <li class="point-list-left1 fade-in">
+                            <div class="point-list-title-wrap">
+                                <img src="img/01_number.png">
+                                <h3>
+                                    希少な成分から得る<br>
+                                    <span>保湿効果</span>と<span>浸透作用</span>
+                                </h3>
+                                <div class='readmore-button1'>
+                                    <input id='leer1' type="checkbox" />
+                                    <label for="leer1"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="point-list-right1 fade-right">
+                            <div class="point-list-text1">
+                                <p>バージンオリーブオイルからわずかしか採取できない純植物性スクワランをベースにしています。
+                                    人間の皮脂にも約10％含まれている成分であるスクワレンを安定化したものが「スクワラン」。
+                                    その為、肌の浸透力※にとても優れ他の美容成分を届ける役割を果たし、高い保湿力で皮膚を柔らかく保ちます。
+                                    （※角質層まで）</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="point-list-contents">
+                        <li class="point-list-left2 fade-left">
+                            <div class="point-list-text2">
+                                <p>今注目のリッチな成分ザクロ種子オイルとヒト幹細胞培養液を贅沢に配合しています。
+                                    肌内部にあるコラーゲンの生成を助け、しなやかな弾力を保ち肌リズムを促進します。
+                                    また、活性酸素を除去する働きや豊富なビタミン成分により、年齢肌によるトラブルを遠ざけます。</p>
+                            </div>
+                        </li>
+                        <li class="point-list-right2 fade-in">
+                            <div class="point-list-title-wrap">
+                                <img src="img/02_number.png">
+                                <h3>
+                                    内側からふっくらと<br>
+                                    <span>弾力のあるハリ肌</span>へと
+                                </h3>
+                                <div class='readmore-button2'>
+                                    <input id='leer2' type="checkbox" />
+                                    <label for="leer2"></label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="point-list-contents">
+                        <li class="point-list-left3 fade-in">
+                            <div class="point-list-title-wrap">
+                                <img src="img/03_number.png">
+                                <h3>
+                                    天然精油の<br>
+                                    <span>優しく上品な香り</span>を纏う
+                                </h3>
+                                <div class='readmore-button3'>
+                                    <input id='leer3' type="checkbox" />
+                                    <label for="leer3"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="point-list-right3 fade-right">
+                            <div class="point-list-text3">
+                                <p>「ゼラニウム」と「ベルガモット」のアロマオイルを配合しています。
+                                    オイルを肌に乗せた瞬間にふわりと優しく香り、デコルテケアの時間をより豊かで贅沢なものへと導いてくれます。
+                                    就寝前のリラックス時間をまるごと包み込む上品で繊細な香りは、空間を楽しむ演出のひとつとなります。</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="point-list-contents">
+                        <li class="point-list-left4 fade-left">
+                            <div class="point-list-text4">
+                                <p>あまり時間をとれない毎日には保湿用ケアオイルとして、週末前にはゆっくりとホットマッサージ用オイルとしてなど
+                                    さまざまなライフスタイルに合わせて、週に1回ペースの頻度からでもナイトケアの一員として導入いただけます。
+                                    ※配合成分の「ベルガモット」には光毒性がありますので、夜専用ケアオイルとしてご使用ください。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="point-list-right4 fade-in">
+                            <div class="point-list-title-wrap">
+                                <img src="img/04_number.png">
+                                <h3>
+                                    一日の<span>ご褒美</span>に、<br>
+                                    明日の<span>下ごしらえ</span>に
+                                </h3>
+                                <div class='readmore-button4'>
+                                    <input id='leer4' type="checkbox" />
+                                    <label for="leer4"></label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- オンラインショップ -->
+            <div class="onlineshop-wrap">
+                <div class="onlineshop-title">
+                    <h2>Online shop</h2>
+                    <p>― 購入方法</p>
+                </div>
+                <div class="onlineshop-contents-wrap">
+                    <ul class="shop-contents-list">
+                        <li class="shop-list1-left fade-top">
+                            <img class="object-fit-img" src="img/shop-list-main.jpg">
+                        </li>
+                        <li class="shop-list1-right">
+                            <img class="shop-background" src="img/shop-background.png">
+                            <div class="shop-list1-name">
+                                <h1 class="txt">SPECIAL NIGHTCARE SET</h1>
+                                <h3 class="txt">スペシャル ナイトケア セット</h3>
+                            </div>
+                            <div class="shop-list1-price">
+                                <h3>19,800円<span>(+TAX)</span></h3>
+                            </div>
+                            <div class="shoplist1-buy-button">
+                                <a href="https://www.me-ll-ow.jp" target="_blank">
+                                    <p>Buy</p>
+                                </a>
+                            </div>
+                            <img class="shop-contentsback" src="">
+                        </li>
+                    </ul>
+                    <ul class="shop-contents-list">
+                        <li class="shop-list2-left">
+                            <img class="shop-background" src="img/shop-background.png">
+                            <div class="shop-list2-name">
+                                <h1 class="txt">DECOLLETE CARE OIL</h1>
+                                <h3 class="txt">デコルテ ケア オイル</h3>
+                                <p class="txt">50ml</p>
+                            </div>
+                            <div class="shop-list2-price">
+                                <h3>9,800円<span>(+TAX)</span></h3>
+                            </div>
+                            <div class="shoplist2-buy-button">
+                                <a href="https://www.me-ll-ow.jp" target="_blank">
+                                    <p>Buy</p>
+                                </a>
+                            </div>
+                            <img class="shop-contentsback" src="">
+                        </li>
+                        <li class="shop-list2-right fade-bottom">
+                            <img class="object-fit-img" src="img/shop-list-main.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="space"></span>
+            <!-- how to動画 -->
+            <div id="howto-wrap" class="howto-wrap">
+                <div class="howto-title">
+                    <h2 class="">How TO</h2>
+                    <p>― 使い方</p>
+                </div>
+                <ul class="howto-movie-list">
+                    <li class="movie-list fade-bottom">
+                        <div class="howto-movie-contents">
+                            <!--<video class="v" poster="img/massage-img1_poster.jpg" loop muted>
+                                <source src="img/massage-img1.mp4" alt="マッサージ動画、ステップ1">
+                            </video>-->
+                            <video src="img/massage-img1.mp4" autoplay muted loop autoplay muted></video>
+                        </div>
+                        <div class="howto-movie-textbody">
+                            <img src="img/01_number.png">
+                            <h3>「カラダをしっかりと温める」</h3>
+                            <p>まず、下準備としてお風呂に浸かり、しっかりとカラダの芯から温めます。<br>
+                                カラダを充分に温めるとわばった筋肉や関節などを十分にほぐすことができ、つまったリンパが流れやすくなります</p>
+                        </div>
+                    </li>
+                    <li class="movie-list fade-bottom">
+                        <div class="howto-movie-contents">
+                            <!--<video class="v" poster="img/massage-img1_poster.jpg" loop muted>
+                                <source src="img/massage-img1.mp4" 　alt="マッサージ動画、ステップ2">
+</video>-->
+                            <video src="img/massage-img1.mp4" autoplay muted loop autoplay muted></video>
+                        </div>
+                        <div class="howto-movie-textbody">
+                            <img src="img/02_number.png">
+                            <h3>「ロシェストーンを温める」</h3>
+                            <p>土鍋などの容器に張った50度のお湯で、ロシェストーンを2個とも入れて温めます。<br>
+                                やけど防止のため、マッサージする前には必ず皮膚の薄い手首の内側に当て、温度確認※をしてからご使用ください。<br>
+                                ※じんわり「温かい」と感じるくらいでOKです。</p>
+                        </div>
+                    </li>
+                    <li class="movie-list fade-bottom">
+                        <div class="howto-movie-contents">
+                            <!--<video class="v" poster="img/massage-img1_poster.jpg" loop muted>
+                                <source src="img/massage-img1.mp4" 　alt="マッサージ動画、ステップ3">
+</video>-->
+                            <video src="img/massage-img1.mp4" autoplay muted loop autoplay muted></video>
+                        </div>
+                        <div class="howto-movie-textbody">
+                            <img src="img/03_number.png">
+                            <h3>「たっぷりオイルを塗る」</h3>
+                            <p>首から鎖骨、肩から胸元へと、リンパを流しながら塗り込むイメージで贅沢にたっぷりとオイルを塗っていきます。<br>
+                                オイルが足りていない場合、ストーンの滑りが悪く摩擦が生じやすくなりマッサージの効果を得にくくなる場合があります。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="movie-list fade-bottom">
+                        <div class="howto-movie-contents">
+                            <!--<video class="v" poster="img/massage-img1_poster.jpg" loop muted>
+                                <source src="img/massage-img1.mp4" 　alt="マッサージ動画、ステップ4">
+</video>-->
+                            <video src="img/massage-img1.mp4" autoplay muted loop autoplay muted></video>
+                        </div>
+                        <div class="howto-movie-textbody">
+                            <img src="img/04_number.png">
+                            <h3>「デコルテを優しくマッサージ」</h3>
+                            <p>温めたロシェストーンで首⇒鎖骨⇒肩⇒胸元を優しくゆっくりとマッサージしていきます。<br>
+                                力を入れるのは厳禁です。優しく優しく、ストーンを肌に滑らせて行います。肌がオイルを吸収し滑りが悪いと感じた場合は、必ずオイルを足します。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
             <span class="space"></span>
 
-            <div class="specialset-body">
-                <div class="set-img fade-in">
-                    <img src="img/product-img.jpg" alt="mellow">
+            <!-- メッセージ -->
+            <div class="bottom-message-wrap">
+                <div class="bottom-message-left">
+                    <img class="object-fit-img message-rose" src="img/contentsback-rose.png">
+                    <div class="bottom-message-left-textbody">
+                        <p class="txt">もっと思うままに</p>
+                        <p class="txt message-space">「なりたいわたし」を想像して</p>
+                        <p class="txt">伸ばした手の行き先も、</p>
+                        <p class="txt">踏み出す一歩が向かう先も</p>
+                        <p class="txt message-space">ほかの誰かじゃなくて</p>
+                        <p class="txt message-point">「わたしがつくる」</p>
+                    </div>
                 </div>
-                <div class="set-text">
-                    <h1 class="txt">Special nightcare set</h1>
-                    <h3 class="txt">柔らかな手間で自分自身と向き合う。ほっと息をついて、熱の深さに包まれる時間。</h3>
-                    <p class="txt-2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <div class="bottom-message-right fade-in">
+                    <div class="bottom-sns-topimg">
+                        <img class="object-fit-img" src="img/bottom-sns-topimg.jpg">
+                    </div>
+                    <div class="bottom-sns-contents">
+                        <div class="sns-title-wrap">
+                            <h3>たすけて！ケイコ先生</h3>
+                            <img class="object-fit-img" src="img/sns-keiko-imgicon.png">
+                        </div>
+                        <div class="sns-textbody">
+                            <p>バストケア、肌ケア、妊活、産後ダイエット、はたまた恋愛まで。<br>
+                                悩める女性の駆け込み寺！ケイコ先生に相談してみませんか？</p>
+                        </div>
+                            <p class="check-text">check!</p>
+                            <span class="check-box"></span>
+                        <a class="sns-keiko-icon" href="https://twitter.com/____okeikokeiko" target=”_blank”><i class="fab fa-twitter sns-btn-twitter"></i>
+                        </a>
+                    </div>
                 </div>
+            </div>
+            <div class="message-body fade-in">
+                <p>メロウはバストケアサロン監修のもと、たくさんの想いを<br>詰め込んで誕生しました。<br>
+                    これからも「昨日の自分より今日の自分が好き」<br>そんな毎日の積み重ねをあなたに贈ります。</p>
+                <img class="message-signe" src="img/mellow_signfonts.svg">
+            </div>
 
-                <div class="set-contents">
-                    <h1>
-                        セット説明
-                    </h1>
+            <!-- フッター -->
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <div class="footer-contents-flex">
+                        <img src="img/mellow_logo.svg" alt="mellow">
+                        <div class="footer-menu-icons">
+                            <a href="https://www.instagram.com/mellow_022/" target=”_blank”><i class="fab fa-instagram fa-fw icons-m"></i></a>
+                            <a href="https://twitter.com/mellow_022" target=”_blank”><i class="fab fa-twitter fa-fw icons-m"></i></a>
+                            <a href="https://www.facebook.com/mellow022/?view_public_for=104970138105512" target=”_blank”><i class="fab fa-facebook-f fa-fw icons-m"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <ul class="footer-menu">
+                        <li><a href="#">
+                                <p>お問い合わせ</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p>個人情報の取り扱いについて</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p>特定商取引法に基づく表記</p>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-
-        <span class="space"></span>
-
-        <!-- how to動画 -->
-        <div class="howto-wrap">
-            <ul class="howto-movie-list">
-                <li class="movie-list">
-                    <div class="howto-movie-contents">
-                        <video class="v" poster="img/massage-img1_poster.jpg" loop muted>
-                            <source src="img/massage-img1.mp4">
-                        </video>
-                    </div>
-                    <div class="howto-movie-textbody">
-                        <h2>ステップ1</h2>
-                        <p>まず、下準備としてお風呂に浸かり、しっかりとカラダの芯から温めます。
-                            カラダを充分に温めるとわばった筋肉や関節などを十分にほぐすことができ、つまったリンパが流れやすくなります</p>
-                    </div>
-                </li>
-                <li class="movie-list">
-                    <div class="howto-movie-contents">
-                        <video class="v" poster="img/massage-img1_poster.jpg" loop muted>
-                            <source src="img/massage-img1.mp4">
-                        </video>
-                    </div>
-                    <div class="howto-movie-textbody">
-                        <h2>ステップ1</h2>
-                        <p>まず、下準備としてお風呂に浸かり、しっかりとカラダの芯から温めます。
-                            カラダを充分に温めるとわばった筋肉や関節などを十分にほぐすことができ、つまったリンパが流れやすくなります</p>
-                    </div>
-                </li>
-                <li class="movie-list">
-                    <div class="howto-movie-contents">
-                        <video class="v" poster="img/massage-img1_poster.jpg" loop muted>
-                            <source src="img/massage-img1.mp4">
-                        </video>
-                    </div>
-                    <div class="howto-movie-textbody">
-                        <h2>ステップ1</h2>
-                        <p>まず、下準備としてお風呂に浸かり、しっかりとカラダの芯から温めます。
-                            カラダを充分に温めるとわばった筋肉や関節などを十分にほぐすことができ、つまったリンパが流れやすくなります</p>
-                    </div>
-                </li>
-                <li class="movie-list">
-                    <div class="howto-movie-contents">
-                        <video class="v" poster="img/massage-img1_poster.jpg" loop muted>
-                            <source src="img/massage-img1.mp4">
-                        </video>
-                    </div>
-                    <div class="howto-movie-textbody">
-                        <h2>ステップ1</h2>
-                        <p>まず、下準備としてお風呂に浸かり、しっかりとカラダの芯から温めます。
-                            カラダを充分に温めるとわばった筋肉や関節などを十分にほぐすことができ、つまったリンパが流れやすくなります</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <span class="space"></span>
-
-        <!-- メッセージ -->
-        <div class="bottom-message">
-            <p class="message-text">もっと思うままに「なりたいわたし」を想像して<br>
-                伸ばした手の行き先も、踏み出す一歩が向かう先も<br>
-                ほかの誰かじゃなくて「わたしがつくる」
-            </p>
-        </div>
-
-        <span class="space"></span>
-
-        <!-- SNS -->
-        <div class="sns-wrap">
-            <div class="inst-box">
-                <p>instagram</p>
-            </div>
-            <div class="twit-box">
-                <p>twitter</p>
+            <div class="footer-bottom">
+                <p>© 2021 mellow</p>
             </div>
         </div>
-
-        <span class="space"></span>
-
-        <!-- フッター -->
-        <div class="footer-wrap">
-            <div class="footer-box">
-            </div>
-        </div>
-
     </div>
 </body>
 
 <script type="text/javascript">
     //ローディング
-    //$(function() {
-    //    $(".mainSite").css("display", "none");
-    //    setTimeout(function() {
-    //        $('.anime').fadeOut();
-    //    }, 2500);
-    //});
+    $(function() {
+        $(".mainSite").css("display", "none");
+        setTimeout(function() {
+            $('.anime').fadeOut();
+        }, 2500);
+    });
 
-    //$(function() {
-    //    $(".mainSite").css({
-    //        opacity: '0'
-    //    });
-    //    setTimeout(function() {
-    //        $(".mainSite").css("display", "block");
-    //        $(".mainSite").stop().animate({
-    //            opacity: '1'
-    //        }, 1000);
-    //    }, 2500);
-    //});
+    $(function() {
+        $(".mainSite").css({
+            opacity: '0'
+        });
+        setTimeout(function() {
+            $(".mainSite").css("display", "block");
+            $(".mainSite").stop().animate({
+                opacity: '1'
+            }, 1000);
+        }, 2500);
+    });
 
     //上部メニュー
     $(function() {
@@ -524,30 +705,6 @@
                 }
             });
             $('.fade-bottom').each(function() {
-                var position = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                if (scroll > position - windowHeight + 200) {
-                    $(this).addClass('active');
-                }
-            });
-            $('.fade-bottom-late1').each(function() {
-                var position = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                if (scroll > position - windowHeight + 200) {
-                    $(this).addClass('active');
-                }
-            });
-            $('.fade-bottom-late2').each(function() {
-                var position = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                if (scroll > position - windowHeight + 200) {
-                    $(this).addClass('active');
-                }
-            });
-            $('.fade-bottom-late3').each(function() {
                 var position = $(this).offset().top;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height();
@@ -640,31 +797,60 @@
     });
 
     //動画再生
-    $(document).on({
-        mouseenter: function() {
-            $(this).addClass('on');
-            $(this).find('.v')[0].currentTime = $(this).find('.v')[0].initialTime || 0;
-            $(this).find('.v')[0].play();
-        },
-        mouseleave: function() {
-            $(this).removeClass('on');
-            // $(this).find('.v')[0].pause();
-            $(this).find('.v')[0].load(); // <= !!
-        }
-    }, '.howto-movie-contents');
-
-    //画像白黒→カラー
-    //$(function() {
-    //$('.imgwrap01').BlackAndWhite({
-    //hoverEffect: true,
-    //webworkerPath: false,
-    //invertHoverEffect: false, //白黒→カラー（trueにするとカラー→白黒）
-    //intensity: 1,
-    //speed: {
-    //fadeIn: 200, //フェードインのスピード
-    //fadeOut: 800 //フェードアウトのスピード
+    //$(document).on({
+    //mouseenter: function() {
+    //$(this).addClass('on');
+    //$(this).find('.v')[0].currentTime = $(this).find('.v')[0].initialTime || 0;
+    //$(this).find('.v')[0].play();
     //},
-    //onImageReady: function(img) {}
-    //});
-    //});
+    //mouseleave: function() {
+    //$(this).removeClass('on');
+    // $(this).find('.v')[0].pause();
+    //$(this).find('.v')[0].load(); // <= !!
+    //}
+    //}, '.howto-movie-contents');
+
+    //ページ内リンクスムーススクロール
+    $('a[href^="#"]').on('click', function() {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({
+            scrollTop: position
+        }, 550, "swing");
+        return false;
+    });
+
+    //readmore
+    jQuery(function() {
+        $('.open').readmore({
+            speed: 100,
+            collapsedHeight: 0,
+            heightMargin: 16,
+            moreLink: '<a class="btn-open" href="#"><span>More</span></a>', //続きを読むボタンタグ
+            lessLink: '<a class="btn-close" href="#"><span>Close</span></a>' //閉じるボタンタグ
+        });
+    });
+
+    //表示、非表示
+    $(function() {
+        $('.readmore-button1 label').click(function() {
+            $('.point-list-text1').toggle('slow');
+        });
+    });
+    $(function() {
+        $('.readmore-button2 label').click(function() {
+            $('.point-list-text2').toggle('slow');
+        });
+    });
+    $(function() {
+        $('.readmore-button3 label').click(function() {
+            $('.point-list-text3').toggle('slow');
+        });
+    });
+    $(function() {
+        $('.readmore-button4 label').click(function() {
+            $('.point-list-text4').toggle('slow');
+        });
+    });
 </script></html>

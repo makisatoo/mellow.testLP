@@ -1,105 +1,325 @@
 @media screen and (max-width: 1260px) {
-    .g-nav-menu li{
+    html {
+        font-size: 90px;
+        !important;
+    }
+    
+    /* トップメニュー */
+    .g-nav-menu li {
         width: 100px;
         padding: 0 20px;
     }
     
-    .movie-title-top h2 {
+    /* ヘッダー */
+    .catchcopy-img {
+        bottom: 15%;
         left: 5%;
     }
-    
-    .movie-title-bottom h2 {
-        right: 5%;
+    #svganimation {
+        position: absolute;
+        bottom: 10%;
+        left: 35%;
     }
+    
+    /* howto動画 */
+    .movie-list {
+        text-align: center;
+    }
+
+    .howto-movie-contents,
+    .howto-movie-textbody {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .howto-movie-textbody p {
+        text-align: left;
+        padding-left: 0;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
-    .html, body {
-        font-size: 80px;!important;
+    /* スペース */
+    .space {
+        height: 150px;
     }
     
-    .top-catchcopy1, .concept-catchcopy1 {
-        font-size: 0.35rem;
-    }
-    
-    .top-catchcopy2, concept-catchcopy2{
-        top: 55%;
-    }
-
-   #svganimation {
-        width: 15%;
-    }
-
+    /* メニュー */
     .g-nav {
         display: none;
     }
 
     .drawer {
         display: block;
-        position: fixed!important;
+        position: fixed !important;
         z-index: 9999;
     }
-    
+
     .drawer-item {
         font-size: 0.25rem;
     }
     
-    .icons-m {
-        font-size: 0.25rem;
+    /* コンテンツ内容 */
+    .set-contents-wrap {
+        height: 1500px;
     }
     
-    .movie-title-top h2 {
-        left: 1%;
-    }
-
-    .movie-title-bottom h2 {
-        right: 1%;
+    .set-contents-wrap {
+        flex-wrap: wrap;
     }
     
-    .product-title  {
-        left: 10%;
+    .set-contents-list {
+        width: 50%;
     }
     
-    .product-name {
-        left: 15%;
-        padding: 5% 0;
+    /* ポイント */
+    .point-list-contents {
+        height: 500px;
     }
     
-    .product-01-body {
-        justify-content: space-around;
+    /* オンラインショップ */
+    .onlineshop-contents-wrap {
+        margin: 0 10%;
     }
     
-    .product-01-text {
-        margin-left: 0;
+    .shop-contents-list {
+        height: 500px;
     }
-
-    .price-box {
-        right: 50%;
+    
+    /* 下部メッセージ */
+    .bottom-message-wrap {
+        height: 600px;
     }
-
-    .product-01-textbox {
-        
+    
+    /* フッター */
+    .footer-wrap {
+        height: 200px;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .footer-left {
+        position: relative;
+        width: 100%;
+        height: 60%;
+    }
+    
+    .footer-right {
+        position: relative;
+        width: 100%;
+        height: 40%;
+    }
+    
+    .footer-menu p{
+        padding-right: 0;
+        padding: 20px;
     }
     
 }
 
 @media screen and (max-width: 896px) {
-    .top-catchcopy1, .top-catchcopy2 {
+    .top-catchcopy1,
+    .top-catchcopy2 {
         left: 4%;
     }
-    
-    .break:before {
-        content: "\A";
-        white-space: pre; /* あわせてこれを指定しないと改行しない */
+
+    .textbox-topimg,
+    .textbox-bottomimg {
+        width: 100%;
+        margin: 0 auto;
     }
     
     .product-01-body {
         display: block;
     }
+
+    .set-body {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .set-bodytext {
+        width: 70%;
+    }
+
+    .name01-img {
+        width: 80%;
+    }
+
+    .set-price {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        position: static;
+        margin: 20px 0;
+    }
+
+    .set-buy-button {
+        display: block;
+        float: none;
+    }
+    
+    .set-point {
+        margin-top: 100px;
+    }
+
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {    
+    /* SNSアイコン スクロール*/
+    .icons {
+        display: none;
+    }
     
+    .scroll {
+        right: 0;
+    }
+    
+    /* ヘッタ― */
+    .top-catchcopy {
+        top: 30%;
+    }
+    
+    .cls-1 {
+        stroke: #ac6f8e;
+    }
+    
+    /* コンセプト */
+    .catchcopy2-fixed {
+        display: none;
+    }
+    
+    .concept-body {
+        width: 100%;
+    }
+    
+    .concept-text {
+        font-size: 0.13rem;
+    }
+    
+    .textbox-topimg, .textbox-bottomimg {
+        width: 80%;
+    }
+    
+    /* 右メニュー */
+    .drawer-content {
+        background: #e3e0da;
+    }
+    
+    .drawer-list {
+        height: 100vh;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+    }
+    
+    .drawer-item {
+        font-size: 0.18rem;
+    }
+    
+    .shop-icon-drawer {
+        padding: 8px 20px;
+        font-size: 0.18rem;
+    }
+    
+    /* セット */
+    .product01-wrap {
+        width: 80%;
+    }
+    
+    .product01-main {
+        width: 100%;
+    }
+    
+    .name01-text {
+        padding: 0;
+        font-size: 0.16rem;
+    }
+    
+    .product01-text {
+        font-size: 0.13rem;
+    }
+    
+    .set-body {
+        margin-top: 30px;
+    }
+    
+    .set-bodytext {
+        margin: 0 auto;
+        font-size: 0.13rem;
+    }
+    
+    .set-price {
+        padding-top: 30px;
+        margin: 0 auto;
+        font-size: 0.23rem;
+        text-align: center;
+    }
+    
+    .set-buy-button {
+        height: 80px;
+        margin: 0 auto;
+        font-size: 0.13rem;
+    }
+    
+    .space-setbottom {
+        display: none;
+    }
+    
+    /* セット内容説明 */
+    .set-point {
+        padding-top: 0;
+    }
+    
+    .set-bodyimg img  {
+        width: 80%;
+    }
+    
+    .set-oil-img, .set-stone-img, .set-towel-img, .set-card-img {
+        width: 350px;
+    }
+    
+    .set-oil-wrap, .set-stone-wrap, .set-towel-wrap, .set-card-wrap {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    
+    .set-oil-textbody, .set-stone-textbody, .set-towel-textbody, .set-card-textbody {
+        width: 350px;
+        margin: 0 auto;
+        font-size: 0.13rem;
+    }
+    
+    .set-oil-textbody h4, .set-stone-textbody h4, .set-towel-textbody h4, .set-card-textbody h4 {
+        text-align: center;
+        font-size: 0.23rem;
+    }
+    
+    .set-oil-textbody p, .set-stone-textbody p, .set-towel-textbody p, .set-card-textbody p {
+        font-size: 0.13rem;
+    }
+    
+    
+    /* マッサージ動画 */
+    .howto-movie-list {
+        width: 90%;
+    }
+    
+    .howto-movie-contents video {
+        width: 100%;
+    }
+    
+    .howto-movie-textbody h2, .howto-movie-textbody h3 {
+        font-size: 0.2rem;
+    }
+    
+    .howto-movie-textbody p {
+        font-size: 0.13rem;
+    }
     
     
 }
