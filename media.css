@@ -40,6 +40,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+    html {
+        font-size: 85px;
+        !important;
+    }
+    
     /* スペース */
     .space {
         height: 150px;
@@ -62,20 +67,50 @@
     
     /* コンテンツ内容 */
     .set-contents-wrap {
-        height: 1500px;
-    }
-    
-    .set-contents-wrap {
+        height: 1000px;
         flex-wrap: wrap;
     }
     
     .set-contents-list {
         width: 50%;
+        height: 500px;
+    }
+    
+    .list-title-wrap {
+        height: 50%;
+    }
+    
+    .list-textbody {
+        height: 50%;
+    }
+    
+    .set-contents-list {
+        position: relative;
+    }
+    
+    .absolute-top {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .absolute-bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
     
     /* ポイント */
     .point-list-contents {
-        height: 500px;
+        height: 400px;
+        position: relative;
+    }
+    
+    .readmore-button1,
+    .readmore-button2,
+    .readmore-button3,
+    .readmore-button4 {
+        right: 10%;
     }
     
     /* オンラインショップ */
@@ -85,6 +120,27 @@
     
     .shop-contents-list {
         height: 500px;
+    }
+    
+    /* howto動画 */
+    .movie-list {
+        display: block;
+        margin: % 0;
+    }
+    
+    .howto-movie-contents {
+        padding: 3% 0;
+        border-top: 1px solid #b27293;
+        border-bottom: 1px solid #b27293;
+    }
+    
+    .howto-movie-textbody {
+        padding-left: 0;
+        padding-top: 3%;
+    }
+    
+    .howto-movie-textbody img {
+        padding-left: 15%;
     }
     
     /* 下部メッセージ */
@@ -119,52 +175,23 @@
 }
 
 @media screen and (max-width: 896px) {
-    .top-catchcopy1,
-    .top-catchcopy2 {
-        left: 4%;
-    }
-
-    .textbox-topimg,
-    .textbox-bottomimg {
-        width: 100%;
-        margin: 0 auto;
+    html {
+        font-size: 80px;
+        !important;
     }
     
-    .product-01-body {
-        display: block;
-    }
-
-    .set-body {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .set-bodytext {
-        width: 70%;
-    }
-
-    .name01-img {
-        width: 80%;
-    }
-
-    .set-price {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        position: static;
-        margin: 20px 0;
-    }
-
-    .set-buy-button {
-        display: block;
-        float: none;
+    /* 商品欄 */
+    .product-set-imgbody, .product-set-textbody {
+        height: 1000px;
     }
     
-    .set-point {
-        margin-top: 100px;
+    .name-sub {
+        flex-direction: column;
     }
-
+    
+    .name-sub h2 {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {    
@@ -178,29 +205,49 @@
     }
     
     /* ヘッタ― */
-    .top-catchcopy {
-        top: 30%;
+    .catchcopy-img {
+        width: 350px;
+        bottom: 10%;
     }
     
-    .cls-1 {
-        stroke: #ac6f8e;
+    #svganimation {
+        max-width: 130px;
+        left: 65%;
+        bottom: 5%;
     }
     
     /* コンセプト */
+    .concept-wrap {
+        height: 1300px;
+    }
+    
     .catchcopy2-fixed {
         display: none;
     }
     
+    .concept-img {
+        width: 70%;
+    }
+    
+    .concept-img2 {
+        width: 50%;
+        margin-top: 80px;
+    }
+    
     .concept-body {
-        width: 100%;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
     }
     
     .concept-text {
-        font-size: 0.13rem;
-    }
-    
-    .textbox-topimg, .textbox-bottomimg {
-        width: 80%;
+        padding: 50px;
     }
     
     /* 右メニュー */
@@ -225,100 +272,91 @@
         font-size: 0.18rem;
     }
     
+    /* コンセプト動画 */
+
+    
+    
     /* セット */
-    .product01-wrap {
-        width: 80%;
-    }
-    
-    .product01-main {
-        width: 100%;
-    }
-    
-    .name01-text {
-        padding: 0;
-        font-size: 0.16rem;
-    }
-    
-    .product01-text {
-        font-size: 0.13rem;
-    }
-    
-    .set-body {
-        margin-top: 30px;
-    }
-    
-    .set-bodytext {
-        margin: 0 auto;
-        font-size: 0.13rem;
-    }
-    
-    .set-price {
-        padding-top: 30px;
-        margin: 0 auto;
-        font-size: 0.23rem;
-        text-align: center;
-    }
-    
-    .set-buy-button {
-        height: 80px;
-        margin: 0 auto;
-        font-size: 0.13rem;
-    }
-    
-    .space-setbottom {
-        display: none;
-    }
-    
-    /* セット内容説明 */
-    .set-point {
-        padding-top: 0;
-    }
-    
-    .set-bodyimg img  {
-        width: 80%;
-    }
-    
-    .set-oil-img, .set-stone-img, .set-towel-img, .set-card-img {
-        width: 350px;
-    }
-    
-    .set-oil-wrap, .set-stone-wrap, .set-towel-wrap, .set-card-wrap {
+    .product-setcontents {
         flex-direction: column;
+    }
+    
+    .product-set-imgbody {
         width: 100%;
-        padding-bottom: 30px;
+        height: 600px;
     }
     
-    .set-oil-textbody, .set-stone-textbody, .set-towel-textbody, .set-card-textbody {
-        width: 350px;
-        margin: 0 auto;
-        font-size: 0.13rem;
+    .product-set-textbody {
+        width: 100%;
+        height: 1000px;
+        position: relative;
     }
     
-    .set-oil-textbody h4, .set-stone-textbody h4, .set-towel-textbody h4, .set-card-textbody h4 {
-        text-align: center;
-        font-size: 0.23rem;
+    .product-set-text {
+        padding: 0;
+        padding: 30px;
     }
     
-    .set-oil-textbody p, .set-stone-textbody p, .set-towel-textbody p, .set-card-textbody p {
-        font-size: 0.13rem;
+    .set-catchcopy-main {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .set-bottom-contents {
+        width: 100%;
     }
     
+    /* コンテンツ内容 */
+    .set-contents-wrap {
+        height: 2000px;
+        flex-direction: column;
+    }
+    
+    .set-contents-list {
+        width: 100%;
+    }
+    
+    /* ポイント */
+    .set-bodyimg img {
+        object-position: center;
+    }
+    
+    .set-img-text {
+        top: 80%;
+        right: 3%;
+    }
+    
+    /* ポイントコンテンツ */
+    .point-list-contents {
+        height: 600px;
+        flex-direction: column;
+    }
+    
+    .point-list-left1,
+    .point-list-left2,
+    .point-list-left3,
+    .point-list-left4,
+    .point-list-right1,
+    .point-list-right2,
+    .point-list-right3,
+    .point-list-right4 {
+        width: 100%;
+        height: 300px;
+    }
+    
+   
+    /* オンラインショップ */
+    .onlineshop-contents-wrap {
+        margin: 0;
+    }
     
     /* マッサージ動画 */
     .howto-movie-list {
-        width: 90%;
+        width: 100%;
     }
     
     .howto-movie-contents video {
         width: 100%;
-    }
-    
-    .howto-movie-textbody h2, .howto-movie-textbody h3 {
-        font-size: 0.2rem;
-    }
-    
-    .howto-movie-textbody p {
-        font-size: 0.13rem;
     }
     
     

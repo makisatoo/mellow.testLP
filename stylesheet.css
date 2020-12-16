@@ -714,13 +714,6 @@ body {
     font-family: "Noto Serif JP", serif;
 }
 
-.img-shadow1 {
-    position: absolute;
-    top: -500px;
-    z-index: 3;
-    opacity: 0.5;
-}
-
 .concept-title {
     position: absolute;
     top: 0;
@@ -913,7 +906,7 @@ parallax2 {
 }
 
 .movie-btn-center {
-    padding: 150px 300px;
+    padding: 8% 18%;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1035,7 +1028,7 @@ parallax2 {
 }
 
 .name-sub {
-    line-height: 40px;
+    line-height: 50px;
     display: flex;
     padding: 5px 0;
 }
@@ -1045,7 +1038,7 @@ parallax2 {
 }
 
 .name-sub h2 {
-    font-size: 0.2rem;
+    font-size: 0.3rem;
     padding-left: 50px;
 }
 
@@ -1076,6 +1069,7 @@ parallax2 {
     flex-direction: column;
     position: relative;
 }
+
 
 .set-buy-button {
     margin-top: 100px;
@@ -1181,6 +1175,7 @@ parallax2 {
     width: 25%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .setlist-img1 {
@@ -1211,22 +1206,13 @@ parallax2 {
     background-position: center;
 }
 
-.set-list-textwrap {
-    padding: 10%;
-    margin-bottom: 60px;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-}
-
 .list-title-wrap {
-    height: 200px;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.8);
     position: relative;
 }
 
-.list-title h3 {
-    width: 60%;
+.list-title-wrap h3 {
     font-size: 0.18rem;
     color: #595754;
     position: absolute;
@@ -1238,85 +1224,136 @@ parallax2 {
     line-height: 1.8;
 }
 
-.list-title img {
-    width: 15%;
+.list-title-wrap img {
+    width: 10%;
     color: #b27293;
     position: absolute;
-    top: 0;
-    left: 20px;
+    top: 10%;
+    left: 10%;
 }
 
-.list-title span {
+.list-title-wrap span {
     font-size: 0.25rem;
     color: #b27293;
 }
 
 .list-textbody {
+    width: 100%;
+    height: 60%;
     position: relative;
-    padding-bottom: 100px;
 }
 
-.list-text p {
+.list-text1,
+.list-text2,
+.list-text3,
+.list-text4 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+.list-text1 p,
+.list-text2 p,
+.list-text3 p,
+.list-text4 p{
+    width: 80%;
     font-size: 0.14rem;
     color: #595754;
     letter-spacing: 8px;
     line-height: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 /*　テキスト省略  */
-.open {
-    overflow: hidden;
-    transition: 0.5s;
+.set-readmore-button1 label:before,
+.set-readmore-button2 label:before,
+.set-readmore-button3 label:before,
+.set-readmore-button4 label:before {
+    /*閉じている際のボタンのテキスト*/
+    content: "More";
+    cursor: pointer;
 }
 
-.btn-open {
-    width: 130px;
-    height: 50px;
-    line-height: 50px;
-    margin-top: 30px;
-    border: 1px solid #b27293;
-    box-sizing: border-box;
-    text-align: center;
-    position: relative;
+.set-readmore-button1 input:checked + label:before,
+.set-readmore-button2 input:checked + label:before,
+.set-readmore-button3 input:checked + label:before,
+.set-readmore-button4 input:checked + label:before {
+    /*開いているときは:checked状態なので、その際はボタンテキストを変える*/
+    content: "Close";
+    cursor: pointer;
+}
+
+.set-readmore-button1 input,
+.set-readmore-button2 input,
+.set-readmore-button2 input,
+.set-readmore-button3 input,
+.set-readmore-button4 input {
+    /*input要素は隠しておく*/
+    visibility: hidden;
     position: absolute;
+    top: 0;
+    left: 0;
     right: 0;
-    font-size: 0.16rem;
-    color: #b27293;
-    letter-spacing: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
 }
 
-.btn-close {
+.set-readmore-button1 label,
+.set-readmore-button2 label,
+.set-readmore-button3 label,
+.set-readmore-button4 label {
+    /*input要素は隠しておく*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.set-readmore-button1,
+.set-readmore-button2,
+.set-readmore-button3,
+.set-readmore-button4 {
+    font-family: "Noto Serif JP", serif;
     width: 130px;
     height: 50px;
-    margin-top: 30px;
-    line-height: 50px;
     background-color: #b27293;
-    box-sizing: border-box;
     text-align: center;
     position: relative;
     position: absolute;
-    right: 0;
-    font-size: 0.16rem;
+    bottom: 10%;
+    right: 10%;
+    line-height: 50px;
     color: #fff;
+    font-size: 0.16rem;
     letter-spacing: 5px;
+    box-sizing: border-box;
+    z-index: 999;
 }
 
-
-.btn-open:before {
-    width: 60px;
-    content: '';
-    border-top: 1px solid #b27293;
-    flex-grow: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    left: -60px;
-    z-index: 3;
+.set-readmore-button1:hover,
+.set-readmore-button2:hover,
+.set-readmore-button3:hover,
+.set-readmore-button4:hover {
+    cursor: pointer;
 }
 
-.btn-close:before {
+.set-readmore-button1:before,
+.set-readmore-button2:before,
+.set-readmore-button3:before,
+.set-readmore-button4:before {
     width: 60px;
     content: '';
     border-top: 1px solid #595754;
@@ -1327,11 +1364,10 @@ parallax2 {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     left: -60px;
-    z-index: 3;
 }
 /* ここまで */
 
-/*　セット内容 */
+/*　ポイント */
 .set-point {
     font-family: "Noto Serif JP", serif;
     color: #595754;
@@ -1433,7 +1469,7 @@ parallax2 {
     width: 8%;
     color: #b27293;
     position: absolute;
-    top: 100px;
+    top: 20%;
     left: 20%;
 }
 
@@ -1502,7 +1538,7 @@ parallax2 {
     position: relative;
     position: absolute;
     right: 20%;
-    bottom: 100px;
+    bottom: 20%;
     line-height: 50px;
     color: #fff;
     font-size: 0.16rem;
@@ -1815,7 +1851,7 @@ parallax2 {
 
 .movie-list {
     display: flex;
-    margin: 100px 0;
+    margin: 10% 0;
 }
 
 .howto-movie-contents {
