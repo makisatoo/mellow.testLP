@@ -749,23 +749,23 @@ parallax2 {
 }
 
 .concept-body {
-    max-width: 820px;
+    width: 50%;
     position: absolute;
     top: 300px;
     left: 40%;
     display: flex;
     flex-direction: column;
     z-index: 3;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .concept-text {
+    padding: 10%;
     margin-right: 0 auto;
     font-size: 0.16rem;
     color: #4e4a54;
     line-height: 2.5;
     letter-spacing: 5px;
-    padding: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .txt {

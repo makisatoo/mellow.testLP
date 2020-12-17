@@ -264,13 +264,17 @@
         right: 0;
     }
     
-    /*  */
+    /* ハンバーガーメニュー */
     .drawer-item a, .shop-icon-drawer {
         font-size: 0.25rem;
     }
     
     .drawer-item {
         margin: 10% 0;
+    }
+    
+    .drawer-open {
+        width: 40px;
     }
     
     /* ヘッタ― */
@@ -296,18 +300,18 @@
     
     .concept-img {
         width: 70%;
-        height: 45%;
+        height: 30%;
+        padding-top: 300px;
     }
     
     .concept-img2 {
         width: 70%;
-        margin-top: 80px;
+        padding-top: 80px;
     }
     
     .concept-body {
         width: 90%;
         top: 20%;
-        left: 50%;
         left: 50%;
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
@@ -315,10 +319,11 @@
         display: flex;
         flex-direction: column;
         z-index: 3;
+        background-color: rgba(255, 255, 255, 0);
     }
     
     .concept-text {
-        padding: 50px;
+        padding: 5%;
     }
     
     /* 右メニュー */
@@ -344,6 +349,10 @@
     }
     
     /* セット */
+    .product-title {
+        width: 100%;
+    }
+    
     .product-setcontents {
         flex-direction: column;
     }
