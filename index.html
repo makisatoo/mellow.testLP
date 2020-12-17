@@ -74,8 +74,8 @@
                     <ul class="g-nav-menu">
                         <li><a class="btn btn-action" href="#concept-wrap">Concept</a></li>
                         <li><a class="btn btn-action" href="#product-wrap">Product</a></li>
-                        <li><a class="btn btn-action" href="#howto-wrap">How TO</a></li>
                         <li><a class="btn btn-action" href="#onlineshop-wrap">Buy</a></li>
+                        <li><a class="btn btn-action" href="#howto-wrap">How TO</a></li>
                     </ul>
                 </nav>
                 <!-- ハンバーガーメニュー部分 -->
@@ -95,10 +95,10 @@
                                 <a href="#product-wrap">Product</a>
                             </li>
                             <li class="drawer-item">
-                                <a href="#howto-wrap">How TO</a>
+                                <a href="#onlineshop-wrap">Buy</a>
                             </li>
                             <li class="drawer-item">
-                                <a href="#onlineshop-wrap">Buy</a>
+                                <a href="#howto-wrap">How TO</a>
                             </li>
                             <li class="drawer-item">
                                 <a class="shop-icon-drawer icons-m" href="https://www.me-ll-ow.jp" target=”_blank”>Online Shop<i class="fas fa-shopping-cart fa-fw icons-m"></i></a>
@@ -131,7 +131,7 @@
 
         <span class="space"></span>
 
-        <div class="concept-wrap">
+        <div id="concept-wrap" class="concept-wrap">
             <h1 class="catchcopy2-fixed">― I make Ideal self. ―</h1>
             <div class="concept-title">
                 <h2>Consept</h2>
@@ -582,7 +582,7 @@
                 </div>
             </div>
             <div class="message-body fade-in">
-                <p>メロウはバストケアサロン監修のもと、たくさんの想いを<br>詰め込んで誕生しました。<br>
+                <p>メロウはバストケアサロン監修のもと、<br>たくさんの想いを詰め込んで誕生しました。<br><br>
                     これからも「昨日の自分より今日の自分が好き」<br>そんな毎日の積み重ねをあなたに贈ります。</p>
                 <img class="message-signe" src="img/mellow_signfonts.svg">
             </div>
@@ -664,6 +664,11 @@
                 headNav.removeClass('fixed');
             }
         });
+    });
+    
+    //ハンバーガーメニュー閉じる
+    $('.drawer-list a[href]').on('click', function(event) {
+        $('#drawer-check').trigger('click');
     });
 
     //アニメーション

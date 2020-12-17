@@ -644,9 +644,7 @@ body {
     position: absolute;
     bottom: 20%;
     left: 10%;
-    transform: rotate(-8deg);
-    -moz-transform: rotate(-8deg);
-    -webkit-transform: rotate(-8deg);
+    
     z-index: 4;
 }
 
@@ -660,7 +658,7 @@ body {
 
 #svganimation {
     position: absolute;
-    bottom: 18%;
+    bottom: 15%;
     left: 35%;
     z-index: 4;
     max-width: 180px;
@@ -2045,7 +2043,7 @@ parallax2 {
 }
 
 .message-body p {
-    font-size: 0.18rem;
+    font-size: 0.16rem;
     color: #fff;
     line-height: 3;
     letter-spacing: 5px;
