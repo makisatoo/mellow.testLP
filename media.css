@@ -286,7 +286,8 @@
     #svganimation {
         max-width: 130px;
         left: 65%;
-        top: 25%;
+        top: auto;
+        bottom: 10%;
     }
     
     /* コンセプト */
