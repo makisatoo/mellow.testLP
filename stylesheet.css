@@ -280,7 +280,6 @@ body {
     z-index: 2;
     padding: 10px 10px 110px;
     overflow: hidden;
-    color: #fff;
     font-size: 0.13rem;
     line-height: 1;
     letter-spacing: .2em;
@@ -407,7 +406,7 @@ body {
     left: 100%;
     /* メニューを画面の外に飛ばす */
     z-index: 2000;
-    background: #e3e0da url("img/menu-background-img.jpg") no-repeat right / 50% 100vh;
+    background: #f8f2f5 url("img/menu-background-img.jpg") no-repeat right / 50% 100vh;
     transition: .5s;
 }
 
@@ -610,7 +609,7 @@ body {
 /* ヘッダー */
 .header-wrapper {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background-color: #fff;
     overflow: hidden;
@@ -640,10 +639,21 @@ body {
     font-family: 'object-fit: cover; object-position: bottom;'
 }
 
+.catchcopy-text {
+    font-size: 0.18rem;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    z-index: 4;
+    color: #fff;
+    line-height: 2;
+    letter-spacing: 5px;
+}
+
 .catchcopy-img {
     width: 40%;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 10%;
     z-index: 4;
 }
@@ -658,8 +668,8 @@ body {
 
 #svganimation {
     position: absolute;
-    bottom: 20%;
-    right: 10%;
+    bottom: 10%;
+    left: 45%;
     z-index: 4;
     width: 10%;
 }
@@ -952,7 +962,7 @@ parallax2 {
 
 .product-set-imgbody {
     width: 50%;
-    height: 1100px;
+    height: 1200px;
 }
 
 .product-set-imgbody img {
@@ -962,7 +972,7 @@ parallax2 {
 
 .product-set-textbody {
     width: 50%;
-    height: 1100px;
+    height: 1200px;
     position: relative;
 }
 
@@ -986,7 +996,7 @@ parallax2 {
 }
 
 .name-sub {
-    line-height: 50px;
+    line-height: 80px;
     display: flex;
     padding: 5px 0;
 }
@@ -1006,7 +1016,7 @@ parallax2 {
 
 .set-catchcopy-main {
     width: 80%;
-    padding: 80px 0;
+    padding: 40px 0;
     color: #b27293;
     font-size: 0.2rem;
     letter-spacing: 3px;
@@ -1030,7 +1040,7 @@ parallax2 {
 
 
 .set-buy-button {
-    margin-top: 100px;
+    margin-top: 40px;
     width: 130px;
     height: 50px;
     background-color: #b27293;
@@ -1082,25 +1092,50 @@ parallax2 {
 }
 
 .set-contentsbody {
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .set-contentsbody h4 {
-    font-size: 0.2rem;
+    font-size: 0.18rem;
     color: #b27293;
     padding: 10px 0;
 }
 
 .set-contentsbody p {
-    font-size: 0.16rem;
+    width: 50%;
+    font-size: 0.14rem;
     color: #4e4a54;
     line-height: 2;
+    border: 1px solid #b27293;
+    padding: 3%;
+}
+
+.set-contentsbody-2 {
+    margin-top: 30px;
+}
+
+.set-contentsbody-2 h4 {
+    font-size: 0.18rem;
+    color: #b27293;
+    padding: 10px 0;
+}
+
+.set-contentsbody-2 p {
+    font-size: 0.14rem;
+    color: #4e4a54;
+    line-height: 2;
+    border: 1px solid #b27293;
+    padding: 3%;
+}
+
+.set-contentsbody-2 span {
+    font-size: 0.12rem;
 }
 
 /* セットコンテンツリスト */
 .set-listcontents-title {
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: #F8F2F5;
     position: relative;
 }
@@ -1120,6 +1155,17 @@ parallax2 {
 
 .set-title-wrap p {
     font-size: 0.2rem;
+}
+
+.set-listcontents-olive {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.8;
 }
 
 /* コンテンツ内容 */
@@ -1165,13 +1211,14 @@ parallax2 {
 }
 
 .list-title-wrap {
+    width: 100%;
     height: 40%;
     background-color: rgba(255, 255, 255, 0.8);
     position: relative;
 }
 
 .list-title-wrap h3 {
-    font-size: 0.18rem;
+    font-size: 0.16rem;
     color: #4e4a54;
     position: absolute;
     top: 50%;
@@ -1179,7 +1226,7 @@ parallax2 {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    line-height: 1.8;
+    white-space: nowrap;
 }
 
 .list-title-wrap img {
@@ -1191,7 +1238,7 @@ parallax2 {
 }
 
 .list-title-wrap span {
-    font-size: 0.25rem;
+    font-size: 0.23rem;
     color: #b27293;
 }
 
@@ -1218,7 +1265,7 @@ parallax2 {
     width: 80%;
     font-size: 0.14rem;
     color: #4e4a54;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     line-height: 2;
     position: absolute;
     top: 50%;
@@ -1226,6 +1273,7 @@ parallax2 {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    text-align:justify;
 }
 
 /*　テキスト省略  */
@@ -1384,7 +1432,7 @@ parallax2 {
 }
 
 .set-img-text p {
-    font-size: 0.2rem;
+    font-size: 0.16rem;
     color: #fff;
     letter-spacing: 3px;
     line-height: 2;
@@ -1393,7 +1441,7 @@ parallax2 {
 /* ポイントコンテンツ */
 .point-list-contents {
     width: 100%;
-    height: 600px;
+    height: 450px;
     display: flex;
 }
 
@@ -1420,11 +1468,11 @@ parallax2 {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .point-list-title-wrap img {
-    width: 8%;
+    width: 7%;
     color: #b27293;
     position: absolute;
     top: 20%;
@@ -1588,6 +1636,7 @@ parallax2 {
     -ms-transform: translate(-50%, -50%);
     letter-spacing: 5px;
     line-height: 2.5;
+    text-align:justify;
 }
 
 /* オンラインショップ */
@@ -1597,6 +1646,16 @@ parallax2 {
     background-color: #f8f2f5;
     padding-bottom: 200px;
     position: relative;
+}
+
+.onlineshop-olive {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
 }
 
 .onlineshop-title {
@@ -1862,14 +1921,26 @@ parallax2 {
     width: 50%;
     height: 100%;
     background-color: #f8f2f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
+.message-olive {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+}
 
 .bottom-message-left-textbody {
-    padding: 0 50px
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    right: 5%;
 }
 
 .bottom-message-left-textbody p {
@@ -2029,7 +2100,7 @@ parallax2 {
 /* メッセージ */
 .message-body {
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-image: url(img/bottom-messageimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -2043,9 +2114,9 @@ parallax2 {
 }
 
 .message-body p {
-    font-size: 0.16rem;
+    font-size: 0.14rem;
     color: #fff;
-    line-height: 3;
+    line-height: 2;
     letter-spacing: 5px;
 }
 
@@ -2059,7 +2130,7 @@ parallax2 {
 /* フッター */
 .footer-wrap {
     width: 100%;
-    height: 300px;
+    height: 150px;
     display: flex;
 }
 

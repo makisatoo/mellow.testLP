@@ -14,6 +14,7 @@
     .catchcopy-img {
         left: 5%;
     }
+    
     #svganimation {
         right: 5%;
     }
@@ -47,12 +48,11 @@
         height: 150px;
     }
     
-    /* ヘッタ― */
+    /* ヘッダー */
     #svganimation {
-        width: 13%;
+        width: 15%;
     }
 
-    
     /* メニュー */
     .g-nav {
         display: none;
@@ -77,6 +77,11 @@
     .set-buy-button p {
         line-height: 40px;
     }
+    
+    .set-contentsbody p {
+        width: auto
+    }
+
     
     /* コンテンツ内容 */
     .set-contents-wrap {
@@ -170,7 +175,7 @@
     }
     
     .shop-list2-name p {
-        padding-top: 10px;
+        padding-top: 10px
     }
     
     .shoplist1-buy-button,
@@ -183,6 +188,11 @@
     .shoplist2-buy-button:before {
         width: 40px;
         left: -40px;
+    }
+    
+    .shoplist1-buy-button p,
+    .shoplist2-buy-button p {
+        line-height: 40px;
     }
     
     /* howto動画 */
@@ -243,14 +253,10 @@
         !important;
     }
     
-    
     /* 商品欄 */
-    .product-set-imgbody, .product-set-textbody {
-        height: 1000px;
-    }
-    
     .name-sub {
         flex-direction: column;
+        line-height: 2;
     }
     
     .name-sub h2 {
@@ -265,7 +271,14 @@
     }
     
     .scroll {
+        color: #fff;
         right: 0;
+        position: absolute;
+        padding: 10px 10px 60px;
+    }
+    
+    .scroll::after {
+        height: 50px;
     }
     
     /* ハンバーガーメニュー */
@@ -285,12 +298,18 @@
     .catchcopy-img {
         width: 90%;
         top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
     }
     
     #svganimation {
         width: 30%;
-        left: auto;
-        right: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         top: auto;
         bottom: 15%;
     }
@@ -375,7 +394,6 @@
     }
     
     .product-set-text {
-        padding: 0;
         padding: 30px;
     }
     
@@ -384,11 +402,15 @@
         padding: 30px 0;
     }
 
-    .set-bottom-contents {
+    .set-bottom-contents, .set-catchcopy-sub p {
         width: 100%;
     }
     
     /* コンテンツ内容 */
+    .set-listcontents-title {
+        height: 200px;
+    }
+    
     .set-contents-wrap {
         height: 2000px;
         flex-direction: column;
@@ -396,6 +418,13 @@
     
     .set-contents-list {
         width: 100%;
+    }
+    
+    .list-text1 p,
+    .list-text2 p,
+    .list-text3 p,
+    .list-text4 p {
+        font-size: 0.16rem;
     }
     
     /* ポイント */
@@ -426,6 +455,15 @@
         flex-direction: column;
     }
     
+    .set-img-text {
+        width: 90%;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+    }
+    
     .point-list-left1,
     .point-list-left2,
     .point-list-left3,
@@ -439,6 +477,10 @@
     }
     
     /* オンラインショップ */
+    .onlineshop-olive {
+        height: 50%;
+    }
+    
     .shop-contents-list {
         height: 700px;
         flex-direction: column;
